@@ -1352,14 +1352,6 @@ List<Map<String,dynamic>> currencies =[
 "position": "first"
 },
 {
-"code": "XXX",
-"name": "The codes assigned for transactions where no currency is involved",
-"symbol": "XXX",
-"emoji": "❌",
-"decimal_digits": 0,
-"position": "first"
-},
-{
 "code": "YER",
 "name": "Yemeni rial",
 "symbol": "﷼",

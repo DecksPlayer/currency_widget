@@ -1,9 +1,8 @@
 name: currency_widget
 description: "A currency list of widgets which you can choose or get information about the currency"
-version: 0.0.1
+version: 0.0.6
 homepage: https://github.com/DecksPlayer/currency_widget
-github: https://github.com/DecksPlayer/currency_widget
-
+repository: https://github.com/DecksPlayer/currency_widget
 
 environment:
   sdk: '>=3.0.0 <4.0.0'
@@ -25,7 +24,9 @@ dev_dependencies:
 topics:
   - currency
   - widgets
-  - currency widget
+  - formatting
+  - currencies
+  - currency-picker
 
   # To add assets to your package, add an assets section, like this:
   # assets:
