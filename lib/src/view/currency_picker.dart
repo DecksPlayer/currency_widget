@@ -13,7 +13,7 @@ class CurrencyPicker extends StatefulWidget{
 }
 
 class _CurrencyPicker extends State<CurrencyPicker>{
-  List<Currency> _currencies  = supportedCurrencies;
+  final List<Currency> _currencies  = supportedCurrencies;
   TextEditingController controller = TextEditingController();
   @override
   void initState() {
@@ -36,18 +36,18 @@ class _CurrencyPicker extends State<CurrencyPicker>{
           keyboardType: TextInputType.number,
           textAlign: TextAlign.center,
           decoration: InputDecoration(
-            hintText: "${0.toStringAsFixed(widget.currencyController.currency.decimal_digits)}",
+            hintText: 0.toStringAsFixed(widget.currencyController.currency.decimalDigits),
             labelText: countryNames(widget.currencyController.lang, widget.currencyController.currency.code),
             prefixText:widget.currencyController.currency.position=='first'?widget.currencyController.currency.symbol:null,
             suffixText: widget.currencyController.currency.position=='last'?widget.currencyController.currency.symbol:null
           ),
           onChanged: (str){
             String value = controller.text.replaceAll(',','');
-            widget.currencyController!.mount.value = double.parse(value);
+            widget.currencyController.mount.value = double.parse(value);
           },
           inputFormatters: [
             AutoDecimalNumberFormatter(
-              decimalDigits: widget.currencyController.currency.decimal_digits
+              decimalDigits: widget.currencyController.currency.decimalDigits
             ),
           ],
         )

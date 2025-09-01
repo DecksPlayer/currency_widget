@@ -5,7 +5,7 @@ class Currency{
   String name;
   String symbol;
   String emoji;
-  int decimal_digits;
+  int decimalDigits;
   String position;
 
   Currency({
@@ -13,7 +13,7 @@ class Currency{
     required this.name,
     required this.symbol,
     required this.emoji,
-    required this.decimal_digits,
+    required this.decimalDigits,
     required this.position
   });
 
@@ -23,7 +23,7 @@ class Currency{
       name: json['name'] as String? ?? '',
       symbol: json['symbol'] as String? ?? '',
       emoji: json['emoji'] as String? ?? '',
-      decimal_digits: json['decimal_digits'] as int? ?? 0,
+      decimalDigits: json['decimal_digits'] as int? ?? 0,
       position: json['position'] as String? ?? '',
     );
   }
@@ -35,7 +35,7 @@ class Currency{
       'name': name,
       'symbol': symbol,
       'emoji': emoji,
-      'decimal_digits': decimal_digits,
+      'decimal_digits': decimalDigits,
       'position': position,
     };
   }

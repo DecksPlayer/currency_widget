@@ -28,6 +28,14 @@ A read-only widget to **display a formatted currency value**.
 *   Formats the value with the correct decimal places and currency symbol.
 *   Ideal for showing final values or summaries.
 
+### `CurrencyCardReport`
+A widget for **displaying a list of currency values in a card format**. This is useful for reports or summaries where multiple currency amounts need to be shown clearly.
+*   Presents data in a structured and readable card layout.
+*   Each item in the list can represent a different currency or aspect of a report.
+*   Customizable to fit various reporting needs.
+
+
+
 ## Getting Started
 
 To use this package, add `currency_widget` as a dependency in your `pubspec.yaml` file.
@@ -91,6 +99,13 @@ class _MyCurrencyScreenState extends State<MyCurrencyScreen> {
                 return Text('Selected Currency: ${currency.code}');
               },
             ),
+            CurrencyCardViewReport(
+              currencyCode: 'usd',
+              mount: 200,
+              currencyController: _controller,
+              title: Text('Currency Report'),
+              icon: Icon(Icons.currency_exchange),
+            )
           ],
         ),
       ),

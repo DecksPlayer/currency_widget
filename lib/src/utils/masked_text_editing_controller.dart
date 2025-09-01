@@ -40,7 +40,7 @@ class AutoDecimalNumberFormatter extends TextInputFormatter {
     }
 
     // Calcular posición del cursor
-    final cursorPosition = newValue.selection.baseOffset ?? newValue.text.length;
+    final cursorPosition = newValue.selection.baseOffset;
 
     // Separar parte entera y decimal
     String integerPart;

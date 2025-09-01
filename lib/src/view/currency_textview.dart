@@ -40,7 +40,7 @@ class CurrencyTextView extends StatelessWidget {
               'Error loading currency'));
 
     final controller = TextEditingController(
-        text: mount.toStringAsFixed(currency.decimal_digits));
+        text: mount.toStringAsFixed(currency.decimalDigits));
 
     return Padding(
         padding: EdgeInsets.all(7),

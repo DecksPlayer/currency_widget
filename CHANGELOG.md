@@ -23,3 +23,15 @@
 
 ## 0.0.7
 * remove the xts  money
+
+## 0.0.8
+* Solve lint issues
+
+## 0.0.9
+* Solve minor bugs
+
+## 0.0.10
+* Change the changelog decimal_digits to decimalDigits
+
+## 0.0.11
+* Add a new widget called Currency Card View Report

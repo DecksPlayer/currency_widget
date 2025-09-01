@@ -6,12 +6,12 @@ import '../utils/currency_errors.dart';
 import '../utils/masked_text_editing_controller.dart';
 
 class CurrencyTextField extends StatelessWidget {
-  String currencyCode;
+  final String currencyCode;
 
-  CurrencyController? currencyController;
+ final CurrencyController? currencyController;
 
   // The currency object associated with the currencyCode.
-  Currency? currency;
+  late Currency? currency;
 
   TextEditingController controller = TextEditingController();
 
@@ -52,7 +52,7 @@ class CurrencyTextField extends StatelessWidget {
                 },
                 inputFormatters: [
                   AutoDecimalNumberFormatter(
-                      decimalDigits: currency!.decimal_digits
+                      decimalDigits: currency!.decimalDigits
                   ),
                 ]
             )),
