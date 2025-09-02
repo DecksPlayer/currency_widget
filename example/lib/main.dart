@@ -77,7 +77,12 @@ class _MyHomePageState extends State<MyHomePage> {
             SizedBox(
               width: 200,
               child:
-            CurrencyCardReport(currencyCode: 'ars', mount: 200, currencyController: currencyController, title: Text('Currency Report'), icon: Icon(Icons.currency_exchange))
+              CurrencyCardReport( title: Text('Currency Report'), icon: Icon(Icons.currency_exchange),mount: 250.24, currencyCode: 'eu', lang: 'en',)
+            ),
+            SizedBox(
+              width: 200,
+              child:
+              CurrencyCardReport( title: Text('Currency Report'), icon: Icon(Icons.currency_exchange),mount: 250.24, currencyCode: 'usd', lang: 'en',)
             )
 
           ],

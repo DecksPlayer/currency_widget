@@ -12,7 +12,7 @@ class CurrencyController{
   ValueNotifier<double?> mount = ValueNotifier<double?>(0);
   ValueNotifier<Currency?> _currency = ValueNotifier<Currency?>(null);
   Currency get currency => _currency.value??supportedCurrencies[0];
-  void set currency(Currency currency){
+  void set currency(Currency? currency){
     _currency.value = currency;
   }
 

@@ -35,3 +35,6 @@
 
 ## 0.0.11
 * Add a new widget called Currency Card View Report
+
+## 0.0.12
+* Improve the new widget called Currency Card View Report
