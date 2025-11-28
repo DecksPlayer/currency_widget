@@ -39,12 +39,12 @@ A widget for **displaying a list of currency values in a card format**. This is 
 ## Properties per Widget
 
 
-| Widget               | Properties                                                                                                                                                                                                                                                                                                          |
-|----------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| `CurrencyPicker`     | `currencyController`: (required) Manages currency state.<br> |
-| `CurrencyTextField`  | `currencyController`: (required) Manages currency state.<br>`currencyCode`: (required) Code of the currency to use.<br> |
-| `CurrencyTextView`   | `mount`: (required) Amount to display.<br>`currencyCode`: (required) Code of the currency.<br>`CurrencyControler` : (required)Manages currency state                                                                                                                                                                |
-| `CurrencyCardReport` | `title`: (required) Title widget for the card.<br>`icon`: (required) Icon widget for the card.<br>`mount`: (required) Amount to display.<br>`currencyCode`: (required) Code of the currency.<br>`lang`: (required) Language for formatting.<br>                                                                     |
+| Widget               | Properties                                                                                                                                                                                                                                                         |
+|----------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| `CurrencyPicker`     | `currencyController`: (required) Manages currency state.<br>                                                                                                                                                                                                       |
+| `CurrencyTextField`  | `currencyController`: (required) Manages currency state.<br>`currencyCode`: (required) Code of the currency to use.<br>                                                                                                                                            |
+| `CurrencyTextView`   | `mount`: (required) Amount to display.<br>`currencyCode`: (required) Code of the currency.<br>`CurrencyControler` : (required)Manages currency state                                                                                                               |
+| `CurrencyCardReport` | `title`: (required) Title widget for the card.<br>`icon`: (required) Icon widget for the card.<br>`mount`: (required) Amount to display.<br>`currencyCode`: (required) Code of the currency.<br>`lang`: (required) Language for formatting.<br>`style`: Text Style |
 
 **Note**: All widgets also accept standard Flutter widget properties like `key`, `padding`, `margin`, etc.
 

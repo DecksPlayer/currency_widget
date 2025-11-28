@@ -38,3 +38,9 @@
 
 ## 0.0.12
 * Improve the new widget called Currency Card View Report
+* Improve the documentation
+## 0.0.13
+* Fixed the design of Currency Card View Report
+
+## 0.0.14
+* Improved the design of Currency Card View Report

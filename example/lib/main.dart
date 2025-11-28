@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:currency_widget/currency_widget.dart';
+
 void main() {
   runApp(const MyApp());
 }
@@ -31,16 +32,12 @@ class MyHomePage extends StatefulWidget {
 }
 
 class _MyHomePageState extends State<MyHomePage> {
-  final CurrencyController controller = CurrencyController(
-    lang: 'es',
-  );
+  final CurrencyController controller = CurrencyController(lang: 'es');
 
   final String currencyCode = 'usd';
-  final CurrencyController currencyController = CurrencyController(
-    lang: 'es',
-  );
+  final CurrencyController currencyController = CurrencyController(lang: 'es');
   final CurrencyController currencyControllerEn = CurrencyController(
-    lang: 'en',
+    lang: 'es',
   );
 
   @override
@@ -67,24 +64,52 @@ class _MyHomePageState extends State<MyHomePage> {
         child: Column(
           mainAxisAlignment: MainAxisAlignment.center,
           children: <Widget>[
-          CurrencyPicker(currencyController: currencyControllerEn),
-            CurrencyTextView(currencyCode: 'usd',mount: 250.24,currencyController:currencyControllerEn),
-            ListenableBuilder(listenable: currencyControllerEn.mount, builder: (context,child){
-              return  CurrencyTextView(currencyCode: currencyControllerEn.currency.code,mount: currencyControllerEn.mount.value??0,currencyController:currencyControllerEn);
-            }),
-            CurrencyTextView(currencyCode: 'usa',mount: 250.24,currencyController:CurrencyController(lang: 'es')),
-            CurrencyTextField(currencyCode: currencyCode, currencyController: currencyController),
-            SizedBox(
-              width: 200,
-              child:
-              CurrencyCardReport( title: Text('Currency Report'), icon: Icon(Icons.currency_exchange),mount: 250.24, currencyCode: 'eu', lang: 'en',)
+            CurrencyPicker(currencyController: currencyControllerEn),
+            CurrencyTextView(
+              currencyCode: 'usd',
+              mount: 250.24,
+              currencyController: currencyControllerEn,
+            ),
+            ListenableBuilder(
+              listenable: currencyControllerEn.mount,
+              builder: (context, child) {
+                return CurrencyTextView(
+                  currencyCode: currencyControllerEn.currency.code,
+                  mount: currencyControllerEn.mount.value ?? 0,
+                  currencyController: currencyControllerEn,
+                );
+              },
+            ),
+            CurrencyTextView(
+              currencyCode: 'usa',
+              mount: 250.24,
+              currencyController: CurrencyController(lang: 'es'),
+            ),
+            CurrencyTextField(
+              currencyCode: currencyCode,
+              currencyController: currencyController,
             ),
             SizedBox(
               width: 200,
-              child:
-              CurrencyCardReport( title: Text('Currency Report'), icon: Icon(Icons.currency_exchange),mount: 250.24, currencyCode: 'usd', lang: 'en',)
-            )
-
+              child: CurrencyCardReport(
+                title: 'Currency Report',
+                icon: Icon(Icons.currency_exchange),
+                mount: 250.24,
+                currencyCode: 'eu',
+                lang: 'en',
+                style: TextStyle(fontSize: 10, fontWeight: FontWeight.bold),
+              ),
+            ),
+            SizedBox(
+              width: 200,
+              child: CurrencyCardReport(
+                title: 'Currency Report',
+                icon: Icon(Icons.currency_exchange),
+                mount: 250.24,
+                currencyCode: 'usd',
+                lang: 'en',
+              ),
+            ),
           ],
         ),
       ), // This trailing comma makes auto-formatting nicer for build methods.
