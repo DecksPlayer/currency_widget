@@ -50,3 +50,6 @@
 
 ## 1.0.1
 * Fix Changelog documentation
+
+## 1.0.2
+* Add Devin Ai Documentation
