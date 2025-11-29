@@ -44,3 +44,9 @@
 
 ## 0.0.14
 * Improved the design of Currency Card View Report
+
+## 1.0.0
+* Add Favourites Currencies list
+
+## 1.0.1
+* Fix Changelog documentation
