@@ -48,7 +48,18 @@ A widget for **displaying a list of currency values in a card format**. This is 
 
 **Note**: All widgets also accept standard Flutter widget properties like `key`, `padding`, `margin`, etc.
 
+## Screenshots
 
+Here are some visual examples of the widgets in action:
+
+### Example 1: Currency Picker
+![Currency Picker Example](https://raw.githubusercontent.com/DecksPlayer/currency_widget/main/assets/image.png)
+
+### Example 2: Currency TextField
+![Currency TextField Example](https://raw.githubusercontent.com/DecksPlayer/currency_widget/main/assets/image_2.png)
+
+### Example 3: Currency Card Report
+![Currency Card Report Example](https://raw.githubusercontent.com/DecksPlayer/currency_widget/main/assets/image_3.png)
 
 
 

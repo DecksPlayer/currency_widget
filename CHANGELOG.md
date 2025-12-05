@@ -53,3 +53,7 @@
 
 ## 1.0.2
 * Add Devin Ai Documentation
+
+## 1.0.3 
+ * Add an Screenshot
+ * Fixed the issue where the currency symbol was not displayed correctly in some cases.
