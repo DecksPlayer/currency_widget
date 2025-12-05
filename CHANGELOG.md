@@ -57,3 +57,6 @@
 ## 1.0.3 
  * Add an Screenshot
  * Fixed the issue where the currency symbol was not displayed correctly in some cases.
+
+ ## 1.0.4
+ * Fix Documentation
