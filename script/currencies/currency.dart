@@ -468,7 +468,7 @@ List<Map<String,dynamic>> currencies =[
 "name": "Hungarian forint",
 "symbol": "Ft",
 "emoji": "🇭🇺",
-"decimal_digits": 2,
+"decimal_digits": 0,
 "position": "last"
 },
 {
@@ -476,7 +476,7 @@ List<Map<String,dynamic>> currencies =[
 "name": "Indonesian rupiah",
 "symbol": "Rp",
 "emoji": "🇮🇩",
-"decimal_digits": 2,
+"decimal_digits": 0,
 "position": "first"
 },
 {
@@ -1116,7 +1116,7 @@ List<Map<String,dynamic>> currencies =[
 "name": "New Taiwan dollar",
 "symbol": "NT\$",
 "emoji": "🇹🇼",
-"decimal_digits": 2,
+"decimal_digits": 0,
 "position": "first"
 },
 {

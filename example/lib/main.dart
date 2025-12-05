@@ -12,12 +12,12 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      title: 'Flutter Demo',
+      title: 'Currency Widget Demo',
       debugShowCheckedModeBanner: false,
       theme: ThemeData(
         colorScheme: ColorScheme.fromSeed(seedColor: Colors.deepPurple),
       ),
-      home: const MyHomePage(title: 'Flutter Demo Home Page'),
+      home: const MyHomePage(title: 'Currency Widget Demo'),
     );
   }
 }
@@ -37,7 +37,7 @@ class _MyHomePageState extends State<MyHomePage> {
   final String currencyCode = 'usd';
   final CurrencyController currencyController = CurrencyController(lang: 'es');
   final CurrencyController currencyControllerEn = CurrencyController(
-    lang: 'es',
+    lang: 'en',
   );
 
   @override
