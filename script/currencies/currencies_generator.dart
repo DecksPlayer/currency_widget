@@ -19,7 +19,7 @@ void main() async {
     buffer.writeln('    name: "${currency['name']}",');
     buffer.writeln('    symbol: "${cleanSymbol(currency['symbol'])}",');
     buffer.writeln('    emoji: "${currency['emoji']}",');
-    buffer.writeln('    decimal_digits: ${currency['decimal_digits']},');
+    buffer.writeln('    decimalDigits: ${currency['decimal_digits']},');
     buffer.writeln('    position: "${currency['position']}",');
     buffer.writeln('  ),');
   }

@@ -44,15 +44,20 @@ class AutoDecimalNumberFormatter extends TextInputFormatter {
 
     // Separar parte entera y decimal
     String integerPart;
-    String decimalPart;
+    String decimalPart = '';
 
-    if (digitsOnly.length <= decimalDigits) {
-      integerPart = '0';
-      decimalPart = digitsOnly.padLeft(decimalDigits, '0');
+    // Caso especial: 0 decimales (JPY, IDR, HUF, TWD, etc.)
+    if (decimalDigits == 0) {
+      integerPart = digitsOnly;
     } else {
-      final splitIndex = digitsOnly.length - decimalDigits;
-      integerPart = digitsOnly.substring(0, splitIndex);
-      decimalPart = digitsOnly.substring(splitIndex);
+      if (digitsOnly.length <= decimalDigits) {
+        integerPart = '0';
+        decimalPart = digitsOnly.padLeft(decimalDigits, '0');
+      } else {
+        final splitIndex = digitsOnly.length - decimalDigits;
+        integerPart = digitsOnly.substring(0, splitIndex);
+        decimalPart = digitsOnly.substring(splitIndex);
+      }
     }
 
     // Eliminar ceros a la izquierda
@@ -69,7 +74,10 @@ class AutoDecimalNumberFormatter extends TextInputFormatter {
       }
     }
 
-    final formatted = '$formattedInt$decimalSeparator$decimalPart';
+    // Construir texto formateado (sin decimales si decimalDigits = 0)
+    final formatted = decimalDigits == 0
+        ? formattedInt
+        : '$formattedInt$decimalSeparator$decimalPart';
 
     // Calcular nueva posición del cursor
     int newCursorPosition = formatted.length;

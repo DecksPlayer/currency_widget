@@ -9,7 +9,7 @@ final supportedCurrencies = <Currency>[
     name: "United Arab Emirates dirham",
     symbol: "د.إ",
     emoji: "🇦🇪",
-    decimal_digits: 2,
+    decimalDigits: 2,
     position: "first",
   ),
   Currency(
@@ -17,7 +17,7 @@ final supportedCurrencies = <Currency>[
     name: "Afghan afghani",
     symbol: "؋",
     emoji: "🇦🇫",
-    decimal_digits: 2,
+    decimalDigits: 2,
     position: "last",
   ),
   Currency(
@@ -25,7 +25,7 @@ final supportedCurrencies = <Currency>[
     name: "Albanian lek",
     symbol: "L",
     emoji: "🇦🇱",
-    decimal_digits: 2,
+    decimalDigits: 2,
     position: "last",
   ),
   Currency(
@@ -33,7 +33,7 @@ final supportedCurrencies = <Currency>[
     name: "Armenian dram",
     symbol: "֏",
     emoji: "🇦🇲",
-    decimal_digits: 2,
+    decimalDigits: 2,
     position: "last",
   ),
   Currency(
@@ -41,7 +41,7 @@ final supportedCurrencies = <Currency>[
     name: "Angolan kwanza",
     symbol: "Kz",
     emoji: "🇦🇴",
-    decimal_digits: 2,
+    decimalDigits: 2,
     position: "first",
   ),
   Currency(
@@ -49,7 +49,7 @@ final supportedCurrencies = <Currency>[
     name: "Argentine peso",
     symbol: "\$",
     emoji: "🇦🇷",
-    decimal_digits: 2,
+    decimalDigits: 2,
     position: "first",
   ),
   Currency(
@@ -57,7 +57,7 @@ final supportedCurrencies = <Currency>[
     name: "Australian dollar",
     symbol: "AU\$",
     emoji: "🇦🇺",
-    decimal_digits: 2,
+    decimalDigits: 2,
     position: "first",
   ),
   Currency(
@@ -65,7 +65,7 @@ final supportedCurrencies = <Currency>[
     name: "Aruban florin",
     symbol: "ƒ",
     emoji: "🇦🇼",
-    decimal_digits: 2,
+    decimalDigits: 2,
     position: "first",
   ),
   Currency(
@@ -73,7 +73,7 @@ final supportedCurrencies = <Currency>[
     name: "Azerbaijani manat",
     symbol: "₼",
     emoji: "🇦🇿",
-    decimal_digits: 2,
+    decimalDigits: 2,
     position: "last",
   ),
   Currency(
@@ -81,7 +81,7 @@ final supportedCurrencies = <Currency>[
     name: "Bosnia and Herzegovina convertible mark",
     symbol: "KM",
     emoji: "🇧🇦",
-    decimal_digits: 2,
+    decimalDigits: 2,
     position: "last",
   ),
   Currency(
@@ -89,7 +89,7 @@ final supportedCurrencies = <Currency>[
     name: "Barbados dollar",
     symbol: "Bds\$",
     emoji: "🇧🇧",
-    decimal_digits: 2,
+    decimalDigits: 2,
     position: "first",
   ),
   Currency(
@@ -97,7 +97,7 @@ final supportedCurrencies = <Currency>[
     name: "Bangladeshi taka",
     symbol: "৳",
     emoji: "🇧🇩",
-    decimal_digits: 2,
+    decimalDigits: 2,
     position: "first",
   ),
   Currency(
@@ -105,7 +105,7 @@ final supportedCurrencies = <Currency>[
     name: "Bulgarian lev",
     symbol: "лв",
     emoji: "🇧🇬",
-    decimal_digits: 2,
+    decimalDigits: 2,
     position: "last",
   ),
   Currency(
@@ -113,7 +113,7 @@ final supportedCurrencies = <Currency>[
     name: "Bahraini dinar",
     symbol: ".د.ب",
     emoji: "🇧🇭",
-    decimal_digits: 3,
+    decimalDigits: 3,
     position: "first",
   ),
   Currency(
@@ -121,7 +121,7 @@ final supportedCurrencies = <Currency>[
     name: "Burundian franc",
     symbol: "FBu",
     emoji: "🇧🇮",
-    decimal_digits: 0,
+    decimalDigits: 0,
     position: "last",
   ),
   Currency(
@@ -129,7 +129,7 @@ final supportedCurrencies = <Currency>[
     name: "Bermudian dollar",
     symbol: "BD\$",
     emoji: "🇧🇲",
-    decimal_digits: 2,
+    decimalDigits: 2,
     position: "first",
   ),
   Currency(
@@ -137,7 +137,7 @@ final supportedCurrencies = <Currency>[
     name: "Brunei dollar",
     symbol: "B\$",
     emoji: "🇧🇳",
-    decimal_digits: 2,
+    decimalDigits: 2,
     position: "first",
   ),
   Currency(
@@ -145,7 +145,7 @@ final supportedCurrencies = <Currency>[
     name: "Boliviano",
     symbol: "Bs.",
     emoji: "🇧🇴",
-    decimal_digits: 2,
+    decimalDigits: 2,
     position: "first",
   ),
   Currency(
@@ -153,7 +153,7 @@ final supportedCurrencies = <Currency>[
     name: "Bolivian Mvdol (funds code)",
     symbol: "BOV",
     emoji: "🇧🇴",
-    decimal_digits: 2,
+    decimalDigits: 2,
     position: "first",
   ),
   Currency(
@@ -161,7 +161,7 @@ final supportedCurrencies = <Currency>[
     name: "Brazilian real",
     symbol: "R\$",
     emoji: "🇧🇷",
-    decimal_digits: 2,
+    decimalDigits: 2,
     position: "first",
   ),
   Currency(
@@ -169,7 +169,7 @@ final supportedCurrencies = <Currency>[
     name: "Bahamian dollar",
     symbol: "B\$",
     emoji: "🇧🇸",
-    decimal_digits: 2,
+    decimalDigits: 2,
     position: "first",
   ),
   Currency(
@@ -177,7 +177,7 @@ final supportedCurrencies = <Currency>[
     name: "Bhutanese ngultrum",
     symbol: "Nu.",
     emoji: "🇧🇹",
-    decimal_digits: 2,
+    decimalDigits: 2,
     position: "last",
   ),
   Currency(
@@ -185,7 +185,7 @@ final supportedCurrencies = <Currency>[
     name: "Botswana pula",
     symbol: "P",
     emoji: "🇧🇼",
-    decimal_digits: 2,
+    decimalDigits: 2,
     position: "first",
   ),
   Currency(
@@ -193,7 +193,7 @@ final supportedCurrencies = <Currency>[
     name: "Belarusian ruble",
     symbol: "Br",
     emoji: "🇧🇾",
-    decimal_digits: 2,
+    decimalDigits: 2,
     position: "last",
   ),
   Currency(
@@ -201,7 +201,7 @@ final supportedCurrencies = <Currency>[
     name: "Belize dollar",
     symbol: "BZ\$",
     emoji: "🇧🇿",
-    decimal_digits: 2,
+    decimalDigits: 2,
     position: "first",
   ),
   Currency(
@@ -209,7 +209,7 @@ final supportedCurrencies = <Currency>[
     name: "Canadian dollar",
     symbol: "CA\$",
     emoji: "🇨🇦",
-    decimal_digits: 2,
+    decimalDigits: 2,
     position: "first",
   ),
   Currency(
@@ -217,7 +217,7 @@ final supportedCurrencies = <Currency>[
     name: "Congolese franc",
     symbol: "FC",
     emoji: "🇨🇩",
-    decimal_digits: 2,
+    decimalDigits: 2,
     position: "last",
   ),
   Currency(
@@ -225,7 +225,7 @@ final supportedCurrencies = <Currency>[
     name: "Swiss franc",
     symbol: "CHF",
     emoji: "🇨🇭",
-    decimal_digits: 2,
+    decimalDigits: 2,
     position: "first",
   ),
   Currency(
@@ -233,7 +233,7 @@ final supportedCurrencies = <Currency>[
     name: "Unidad de Fomento (funds code)",
     symbol: "UF",
     emoji: "🇨🇱",
-    decimal_digits: 4,
+    decimalDigits: 4,
     position: "first",
   ),
   Currency(
@@ -241,7 +241,7 @@ final supportedCurrencies = <Currency>[
     name: "Chilean peso",
     symbol: "CLP\$",
     emoji: "🇨🇱",
-    decimal_digits: 0,
+    decimalDigits: 0,
     position: "first",
   ),
   Currency(
@@ -249,7 +249,7 @@ final supportedCurrencies = <Currency>[
     name: "Renminbi",
     symbol: "¥",
     emoji: "🇨🇳",
-    decimal_digits: 2,
+    decimalDigits: 2,
     position: "first",
   ),
   Currency(
@@ -257,7 +257,7 @@ final supportedCurrencies = <Currency>[
     name: "Colombian peso",
     symbol: "COL\$",
     emoji: "🇨🇴",
-    decimal_digits: 2,
+    decimalDigits: 2,
     position: "first",
   ),
   Currency(
@@ -265,7 +265,7 @@ final supportedCurrencies = <Currency>[
     name: "Unidad de Valor Real (UVR) (funds code)",
     symbol: "UVR",
     emoji: "🇨🇴",
-    decimal_digits: 2,
+    decimalDigits: 2,
     position: "first",
   ),
   Currency(
@@ -273,7 +273,7 @@ final supportedCurrencies = <Currency>[
     name: "Costa Rican colon",
     symbol: "₡",
     emoji: "🇨🇷",
-    decimal_digits: 2,
+    decimalDigits: 2,
     position: "first",
   ),
   Currency(
@@ -281,7 +281,7 @@ final supportedCurrencies = <Currency>[
     name: "Cuban peso",
     symbol: "₱",
     emoji: "🇨🇺",
-    decimal_digits: 2,
+    decimalDigits: 2,
     position: "first",
   ),
   Currency(
@@ -289,7 +289,7 @@ final supportedCurrencies = <Currency>[
     name: "Cape Verdean escudo",
     symbol: "Esc",
     emoji: "🇨🇻",
-    decimal_digits: 2,
+    decimalDigits: 2,
     position: "first",
   ),
   Currency(
@@ -297,7 +297,7 @@ final supportedCurrencies = <Currency>[
     name: "Czech koruna",
     symbol: "Kč",
     emoji: "🇨🇿",
-    decimal_digits: 2,
+    decimalDigits: 2,
     position: "last",
   ),
   Currency(
@@ -305,7 +305,7 @@ final supportedCurrencies = <Currency>[
     name: "Djiboutian franc",
     symbol: "Fdj",
     emoji: "🇩🇯",
-    decimal_digits: 0,
+    decimalDigits: 0,
     position: "last",
   ),
   Currency(
@@ -313,7 +313,7 @@ final supportedCurrencies = <Currency>[
     name: "Danish krone",
     symbol: "kr",
     emoji: "🇩🇰",
-    decimal_digits: 2,
+    decimalDigits: 2,
     position: "last",
   ),
   Currency(
@@ -321,7 +321,7 @@ final supportedCurrencies = <Currency>[
     name: "Dominican peso",
     symbol: "RD\$",
     emoji: "🇩🇴",
-    decimal_digits: 2,
+    decimalDigits: 2,
     position: "first",
   ),
   Currency(
@@ -329,7 +329,7 @@ final supportedCurrencies = <Currency>[
     name: "Algerian dinar",
     symbol: "دج",
     emoji: "🇩🇿",
-    decimal_digits: 2,
+    decimalDigits: 2,
     position: "first",
   ),
   Currency(
@@ -337,7 +337,7 @@ final supportedCurrencies = <Currency>[
     name: "Egyptian pound",
     symbol: "£",
     emoji: "🇪🇬",
-    decimal_digits: 2,
+    decimalDigits: 2,
     position: "first",
   ),
   Currency(
@@ -345,7 +345,7 @@ final supportedCurrencies = <Currency>[
     name: "Eritrean nakfa",
     symbol: "Nfk",
     emoji: "🇪🇷",
-    decimal_digits: 2,
+    decimalDigits: 2,
     position: "last",
   ),
   Currency(
@@ -353,7 +353,7 @@ final supportedCurrencies = <Currency>[
     name: "Ethiopian birr",
     symbol: "Br",
     emoji: "🇪🇹",
-    decimal_digits: 2,
+    decimalDigits: 2,
     position: "last",
   ),
   Currency(
@@ -361,7 +361,7 @@ final supportedCurrencies = <Currency>[
     name: "Euro",
     symbol: "€",
     emoji: "🇪🇺",
-    decimal_digits: 2,
+    decimalDigits: 2,
     position: "first",
   ),
   Currency(
@@ -369,7 +369,7 @@ final supportedCurrencies = <Currency>[
     name: "Fiji dollar",
     symbol: "FJ\$",
     emoji: "🇫🇯",
-    decimal_digits: 2,
+    decimalDigits: 2,
     position: "first",
   ),
   Currency(
@@ -377,7 +377,7 @@ final supportedCurrencies = <Currency>[
     name: "Falkland Islands pound",
     symbol: "£",
     emoji: "🇫🇰",
-    decimal_digits: 2,
+    decimalDigits: 2,
     position: "first",
   ),
   Currency(
@@ -385,7 +385,7 @@ final supportedCurrencies = <Currency>[
     name: "Pound sterling",
     symbol: "£",
     emoji: "🇬🇧",
-    decimal_digits: 2,
+    decimalDigits: 2,
     position: "first",
   ),
   Currency(
@@ -393,7 +393,7 @@ final supportedCurrencies = <Currency>[
     name: "Georgian lari",
     symbol: "₾",
     emoji: "🇬🇪",
-    decimal_digits: 2,
+    decimalDigits: 2,
     position: "last",
   ),
   Currency(
@@ -401,7 +401,7 @@ final supportedCurrencies = <Currency>[
     name: "Ghanaian cedi",
     symbol: "₵",
     emoji: "🇬🇭",
-    decimal_digits: 2,
+    decimalDigits: 2,
     position: "first",
   ),
   Currency(
@@ -409,7 +409,7 @@ final supportedCurrencies = <Currency>[
     name: "Gibraltar pound",
     symbol: "£",
     emoji: "🇬🇮",
-    decimal_digits: 2,
+    decimalDigits: 2,
     position: "first",
   ),
   Currency(
@@ -417,7 +417,7 @@ final supportedCurrencies = <Currency>[
     name: "Gambian dalasi",
     symbol: "D",
     emoji: "🇬🇲",
-    decimal_digits: 2,
+    decimalDigits: 2,
     position: "last",
   ),
   Currency(
@@ -425,7 +425,7 @@ final supportedCurrencies = <Currency>[
     name: "Guinean franc",
     symbol: "FG",
     emoji: "🇬🇳",
-    decimal_digits: 0,
+    decimalDigits: 0,
     position: "last",
   ),
   Currency(
@@ -433,7 +433,7 @@ final supportedCurrencies = <Currency>[
     name: "Guatemalan quetzal",
     symbol: "Q",
     emoji: "🇬🇹",
-    decimal_digits: 2,
+    decimalDigits: 2,
     position: "first",
   ),
   Currency(
@@ -441,7 +441,7 @@ final supportedCurrencies = <Currency>[
     name: "Guyanese dollar",
     symbol: "GY\$",
     emoji: "🇬🇾",
-    decimal_digits: 2,
+    decimalDigits: 2,
     position: "first",
   ),
   Currency(
@@ -449,7 +449,7 @@ final supportedCurrencies = <Currency>[
     name: "Hong Kong dollar",
     symbol: "HK\$",
     emoji: "🇭🇰",
-    decimal_digits: 2,
+    decimalDigits: 2,
     position: "first",
   ),
   Currency(
@@ -457,7 +457,7 @@ final supportedCurrencies = <Currency>[
     name: "Honduran lempira",
     symbol: "L",
     emoji: "🇭🇳",
-    decimal_digits: 2,
+    decimalDigits: 2,
     position: "first",
   ),
   Currency(
@@ -465,7 +465,7 @@ final supportedCurrencies = <Currency>[
     name: "Haitian gourde",
     symbol: "G",
     emoji: "🇭🇹",
-    decimal_digits: 2,
+    decimalDigits: 2,
     position: "first",
   ),
   Currency(
@@ -473,7 +473,7 @@ final supportedCurrencies = <Currency>[
     name: "Hungarian forint",
     symbol: "Ft",
     emoji: "🇭🇺",
-    decimal_digits: 0,
+    decimalDigits: 0,
     position: "last",
   ),
   Currency(
@@ -481,7 +481,7 @@ final supportedCurrencies = <Currency>[
     name: "Indonesian rupiah",
     symbol: "Rp",
     emoji: "🇮🇩",
-    decimal_digits: 0,
+    decimalDigits: 0,
     position: "first",
   ),
   Currency(
@@ -489,7 +489,7 @@ final supportedCurrencies = <Currency>[
     name: "Israeli new shekel",
     symbol: "₪",
     emoji: "🇮🇱",
-    decimal_digits: 2,
+    decimalDigits: 2,
     position: "first",
   ),
   Currency(
@@ -497,7 +497,7 @@ final supportedCurrencies = <Currency>[
     name: "Indian rupee",
     symbol: "₹",
     emoji: "🇮🇳",
-    decimal_digits: 2,
+    decimalDigits: 2,
     position: "first",
   ),
   Currency(
@@ -505,7 +505,7 @@ final supportedCurrencies = <Currency>[
     name: "Iraqi dinar",
     symbol: "ع.د",
     emoji: "🇮🇶",
-    decimal_digits: 3,
+    decimalDigits: 3,
     position: "first",
   ),
   Currency(
@@ -513,7 +513,7 @@ final supportedCurrencies = <Currency>[
     name: "Iranian rial",
     symbol: "﷼",
     emoji: "🇮🇷",
-    decimal_digits: 2,
+    decimalDigits: 2,
     position: "first",
   ),
   Currency(
@@ -521,7 +521,7 @@ final supportedCurrencies = <Currency>[
     name: "Icelandic króna",
     symbol: "kr",
     emoji: "🇮🇸",
-    decimal_digits: 0,
+    decimalDigits: 0,
     position: "last",
   ),
   Currency(
@@ -529,7 +529,7 @@ final supportedCurrencies = <Currency>[
     name: "Jamaican dollar",
     symbol: "J\$",
     emoji: "🇯🇲",
-    decimal_digits: 2,
+    decimalDigits: 2,
     position: "first",
   ),
   Currency(
@@ -537,7 +537,7 @@ final supportedCurrencies = <Currency>[
     name: "Jordanian dinar",
     symbol: "JD",
     emoji: "🇯🇴",
-    decimal_digits: 3,
+    decimalDigits: 3,
     position: "first",
   ),
   Currency(
@@ -545,7 +545,7 @@ final supportedCurrencies = <Currency>[
     name: "Japanese yen",
     symbol: "¥",
     emoji: "🇯🇵",
-    decimal_digits: 0,
+    decimalDigits: 0,
     position: "first",
   ),
   Currency(
@@ -553,7 +553,7 @@ final supportedCurrencies = <Currency>[
     name: "Kenyan shilling",
     symbol: "KSh",
     emoji: "🇰🇪",
-    decimal_digits: 2,
+    decimalDigits: 2,
     position: "first",
   ),
   Currency(
@@ -561,7 +561,7 @@ final supportedCurrencies = <Currency>[
     name: "Kyrgyzstani som",
     symbol: "лв",
     emoji: "🇰🇬",
-    decimal_digits: 2,
+    decimalDigits: 2,
     position: "last",
   ),
   Currency(
@@ -569,7 +569,7 @@ final supportedCurrencies = <Currency>[
     name: "Cambodian riel",
     symbol: "៛",
     emoji: "🇰🇭",
-    decimal_digits: 2,
+    decimalDigits: 2,
     position: "last",
   ),
   Currency(
@@ -577,7 +577,7 @@ final supportedCurrencies = <Currency>[
     name: "Comoro franc",
     symbol: "CF",
     emoji: "🇰🇲",
-    decimal_digits: 0,
+    decimalDigits: 0,
     position: "last",
   ),
   Currency(
@@ -585,7 +585,7 @@ final supportedCurrencies = <Currency>[
     name: "North Korean won",
     symbol: "₩",
     emoji: "🇰🇵",
-    decimal_digits: 2,
+    decimalDigits: 2,
     position: "first",
   ),
   Currency(
@@ -593,7 +593,7 @@ final supportedCurrencies = <Currency>[
     name: "South Korean won",
     symbol: "₩",
     emoji: "🇰🇷",
-    decimal_digits: 0,
+    decimalDigits: 0,
     position: "first",
   ),
   Currency(
@@ -601,7 +601,7 @@ final supportedCurrencies = <Currency>[
     name: "Kuwaiti dinar",
     symbol: "د.ك",
     emoji: "🇰🇼",
-    decimal_digits: 3,
+    decimalDigits: 3,
     position: "first",
   ),
   Currency(
@@ -609,7 +609,7 @@ final supportedCurrencies = <Currency>[
     name: "Cayman Islands dollar",
     symbol: "CI\$",
     emoji: "🇰🇾",
-    decimal_digits: 2,
+    decimalDigits: 2,
     position: "first",
   ),
   Currency(
@@ -617,7 +617,7 @@ final supportedCurrencies = <Currency>[
     name: "Kazakhstani tenge",
     symbol: "₸",
     emoji: "🇰🇿",
-    decimal_digits: 2,
+    decimalDigits: 2,
     position: "last",
   ),
   Currency(
@@ -625,7 +625,7 @@ final supportedCurrencies = <Currency>[
     name: "Lao kip",
     symbol: "₭",
     emoji: "🇱🇦",
-    decimal_digits: 2,
+    decimalDigits: 2,
     position: "last",
   ),
   Currency(
@@ -633,7 +633,7 @@ final supportedCurrencies = <Currency>[
     name: "Lebanese pound",
     symbol: "£",
     emoji: "🇱🇧",
-    decimal_digits: 2,
+    decimalDigits: 2,
     position: "first",
   ),
   Currency(
@@ -641,7 +641,7 @@ final supportedCurrencies = <Currency>[
     name: "Sri Lankan rupee",
     symbol: "Rs",
     emoji: "🇱🇰",
-    decimal_digits: 2,
+    decimalDigits: 2,
     position: "first",
   ),
   Currency(
@@ -649,7 +649,7 @@ final supportedCurrencies = <Currency>[
     name: "Liberian dollar",
     symbol: "L\$",
     emoji: "🇱🇷",
-    decimal_digits: 2,
+    decimalDigits: 2,
     position: "first",
   ),
   Currency(
@@ -657,7 +657,7 @@ final supportedCurrencies = <Currency>[
     name: "Lesotho loti",
     symbol: "M",
     emoji: "🇱🇸",
-    decimal_digits: 2,
+    decimalDigits: 2,
     position: "first",
   ),
   Currency(
@@ -665,7 +665,7 @@ final supportedCurrencies = <Currency>[
     name: "Libyan dinar",
     symbol: "ل.د",
     emoji: "🇱🇾",
-    decimal_digits: 3,
+    decimalDigits: 3,
     position: "first",
   ),
   Currency(
@@ -673,7 +673,7 @@ final supportedCurrencies = <Currency>[
     name: "Moroccan dirham",
     symbol: "د.م.",
     emoji: "🇲🇦",
-    decimal_digits: 2,
+    decimalDigits: 2,
     position: "first",
   ),
   Currency(
@@ -681,7 +681,7 @@ final supportedCurrencies = <Currency>[
     name: "Moldovan leu",
     symbol: "L",
     emoji: "🇲🇩",
-    decimal_digits: 2,
+    decimalDigits: 2,
     position: "last",
   ),
   Currency(
@@ -689,7 +689,7 @@ final supportedCurrencies = <Currency>[
     name: "Malagasy ariary",
     symbol: "Ar",
     emoji: "🇲🇬",
-    decimal_digits: 2,
+    decimalDigits: 2,
     position: "first",
   ),
   Currency(
@@ -697,7 +697,7 @@ final supportedCurrencies = <Currency>[
     name: "Macedonian denar",
     symbol: "ден",
     emoji: "🇲🇰",
-    decimal_digits: 2,
+    decimalDigits: 2,
     position: "last",
   ),
   Currency(
@@ -705,7 +705,7 @@ final supportedCurrencies = <Currency>[
     name: "Myanmar kyat",
     symbol: "K",
     emoji: "🇲🇲",
-    decimal_digits: 2,
+    decimalDigits: 2,
     position: "first",
   ),
   Currency(
@@ -713,7 +713,7 @@ final supportedCurrencies = <Currency>[
     name: "Mongolian tögrög",
     symbol: "₮",
     emoji: "🇲🇳",
-    decimal_digits: 2,
+    decimalDigits: 2,
     position: "first",
   ),
   Currency(
@@ -721,7 +721,7 @@ final supportedCurrencies = <Currency>[
     name: "Macanese pataca",
     symbol: "P",
     emoji: "🇲🇴",
-    decimal_digits: 2,
+    decimalDigits: 2,
     position: "last",
   ),
   Currency(
@@ -729,7 +729,7 @@ final supportedCurrencies = <Currency>[
     name: "Mauritanian ouguiya",
     symbol: "UM",
     emoji: "🇲🇷",
-    decimal_digits: 2,
+    decimalDigits: 2,
     position: "last",
   ),
   Currency(
@@ -737,7 +737,7 @@ final supportedCurrencies = <Currency>[
     name: "Mauritian rupee",
     symbol: "Rs",
     emoji: "🇲🇺",
-    decimal_digits: 2,
+    decimalDigits: 2,
     position: "first",
   ),
   Currency(
@@ -745,7 +745,7 @@ final supportedCurrencies = <Currency>[
     name: "Maldivian rufiyaa",
     symbol: "Rf",
     emoji: "🇲🇻",
-    decimal_digits: 2,
+    decimalDigits: 2,
     position: "last",
   ),
   Currency(
@@ -753,7 +753,7 @@ final supportedCurrencies = <Currency>[
     name: "Malawian kwacha",
     symbol: "MK",
     emoji: "🇲🇼",
-    decimal_digits: 2,
+    decimalDigits: 2,
     position: "first",
   ),
   Currency(
@@ -761,7 +761,7 @@ final supportedCurrencies = <Currency>[
     name: "Mexican peso",
     symbol: "\$",
     emoji: "🇲🇽",
-    decimal_digits: 2,
+    decimalDigits: 2,
     position: "first",
   ),
   Currency(
@@ -769,7 +769,7 @@ final supportedCurrencies = <Currency>[
     name: "Mexican Unidad de Inversion (UDI) (funds code)",
     symbol: "MXV",
     emoji: "🇲🇽",
-    decimal_digits: 2,
+    decimalDigits: 2,
     position: "first",
   ),
   Currency(
@@ -777,7 +777,7 @@ final supportedCurrencies = <Currency>[
     name: "Malaysian ringgit",
     symbol: "RM",
     emoji: "🇲🇾",
-    decimal_digits: 2,
+    decimalDigits: 2,
     position: "first",
   ),
   Currency(
@@ -785,7 +785,7 @@ final supportedCurrencies = <Currency>[
     name: "Mozambican metical",
     symbol: "MT",
     emoji: "🇲🇿",
-    decimal_digits: 2,
+    decimalDigits: 2,
     position: "first",
   ),
   Currency(
@@ -793,7 +793,7 @@ final supportedCurrencies = <Currency>[
     name: "Namibian dollar",
     symbol: "N\$",
     emoji: "🇳🇦",
-    decimal_digits: 2,
+    decimalDigits: 2,
     position: "first",
   ),
   Currency(
@@ -801,7 +801,7 @@ final supportedCurrencies = <Currency>[
     name: "Nigerian naira",
     symbol: "₦",
     emoji: "🇳🇬",
-    decimal_digits: 2,
+    decimalDigits: 2,
     position: "first",
   ),
   Currency(
@@ -809,7 +809,7 @@ final supportedCurrencies = <Currency>[
     name: "Nicaraguan córdoba",
     symbol: "C\$",
     emoji: "🇳🇮",
-    decimal_digits: 2,
+    decimalDigits: 2,
     position: "first",
   ),
   Currency(
@@ -817,7 +817,7 @@ final supportedCurrencies = <Currency>[
     name: "Norwegian krone",
     symbol: "kr",
     emoji: "🇳🇴",
-    decimal_digits: 2,
+    decimalDigits: 2,
     position: "last",
   ),
   Currency(
@@ -825,7 +825,7 @@ final supportedCurrencies = <Currency>[
     name: "Nepalese rupee",
     symbol: "Rs",
     emoji: "🇳🇵",
-    decimal_digits: 2,
+    decimalDigits: 2,
     position: "first",
   ),
   Currency(
@@ -833,7 +833,7 @@ final supportedCurrencies = <Currency>[
     name: "New Zealand dollar",
     symbol: "NZ\$",
     emoji: "🇳🇿",
-    decimal_digits: 2,
+    decimalDigits: 2,
     position: "first",
   ),
   Currency(
@@ -841,7 +841,7 @@ final supportedCurrencies = <Currency>[
     name: "Omani rial",
     symbol: "ر.ع.",
     emoji: "🇴🇲",
-    decimal_digits: 3,
+    decimalDigits: 3,
     position: "first",
   ),
   Currency(
@@ -849,7 +849,7 @@ final supportedCurrencies = <Currency>[
     name: "Panamanian balboa",
     symbol: "B/.",
     emoji: "🇵🇦",
-    decimal_digits: 2,
+    decimalDigits: 2,
     position: "first",
   ),
   Currency(
@@ -857,7 +857,7 @@ final supportedCurrencies = <Currency>[
     name: "Peruvian sol",
     symbol: "S/",
     emoji: "🇵🇪",
-    decimal_digits: 2,
+    decimalDigits: 2,
     position: "first",
   ),
   Currency(
@@ -865,7 +865,7 @@ final supportedCurrencies = <Currency>[
     name: "Papua New Guinean kina",
     symbol: "K",
     emoji: "🇵🇬",
-    decimal_digits: 2,
+    decimalDigits: 2,
     position: "first",
   ),
   Currency(
@@ -873,7 +873,7 @@ final supportedCurrencies = <Currency>[
     name: "Philippine peso",
     symbol: "₱",
     emoji: "🇵🇭",
-    decimal_digits: 2,
+    decimalDigits: 2,
     position: "first",
   ),
   Currency(
@@ -881,7 +881,7 @@ final supportedCurrencies = <Currency>[
     name: "Pakistani rupee",
     symbol: "Rs",
     emoji: "🇵🇰",
-    decimal_digits: 2,
+    decimalDigits: 2,
     position: "first",
   ),
   Currency(
@@ -889,7 +889,7 @@ final supportedCurrencies = <Currency>[
     name: "Polish złoty",
     symbol: "zł",
     emoji: "🇵🇱",
-    decimal_digits: 2,
+    decimalDigits: 2,
     position: "last",
   ),
   Currency(
@@ -897,7 +897,7 @@ final supportedCurrencies = <Currency>[
     name: "Paraguayan guaraní",
     symbol: "₲",
     emoji: "🇵🇾",
-    decimal_digits: 0,
+    decimalDigits: 0,
     position: "first",
   ),
   Currency(
@@ -905,7 +905,7 @@ final supportedCurrencies = <Currency>[
     name: "Qatari riyal",
     symbol: "ر.ق",
     emoji: "🇶🇦",
-    decimal_digits: 2,
+    decimalDigits: 2,
     position: "first",
   ),
   Currency(
@@ -913,7 +913,7 @@ final supportedCurrencies = <Currency>[
     name: "Romanian leu",
     symbol: "lei",
     emoji: "🇷🇴",
-    decimal_digits: 2,
+    decimalDigits: 2,
     position: "last",
   ),
   Currency(
@@ -921,7 +921,7 @@ final supportedCurrencies = <Currency>[
     name: "Serbian dinar",
     symbol: "дин.",
     emoji: "🇷🇸",
-    decimal_digits: 2,
+    decimalDigits: 2,
     position: "last",
   ),
   Currency(
@@ -929,7 +929,7 @@ final supportedCurrencies = <Currency>[
     name: "Russian ruble",
     symbol: "₽",
     emoji: "🇷🇺",
-    decimal_digits: 2,
+    decimalDigits: 2,
     position: "last",
   ),
   Currency(
@@ -937,7 +937,7 @@ final supportedCurrencies = <Currency>[
     name: "Rwandan franc",
     symbol: "FRw",
     emoji: "🇷🇼",
-    decimal_digits: 0,
+    decimalDigits: 0,
     position: "last",
   ),
   Currency(
@@ -945,7 +945,7 @@ final supportedCurrencies = <Currency>[
     name: "Saudi riyal",
     symbol: "ر.س",
     emoji: "🇸🇦",
-    decimal_digits: 2,
+    decimalDigits: 2,
     position: "first",
   ),
   Currency(
@@ -953,7 +953,7 @@ final supportedCurrencies = <Currency>[
     name: "Solomon Islands dollar",
     symbol: "SI\$",
     emoji: "🇸🇧",
-    decimal_digits: 2,
+    decimalDigits: 2,
     position: "first",
   ),
   Currency(
@@ -961,7 +961,7 @@ final supportedCurrencies = <Currency>[
     name: "Seychelles rupee",
     symbol: "SR",
     emoji: "🇸🇨",
-    decimal_digits: 2,
+    decimalDigits: 2,
     position: "first",
   ),
   Currency(
@@ -969,7 +969,7 @@ final supportedCurrencies = <Currency>[
     name: "Sudanese pound",
     symbol: "SDG",
     emoji: "🇸🇩",
-    decimal_digits: 2,
+    decimalDigits: 2,
     position: "first",
   ),
   Currency(
@@ -977,7 +977,7 @@ final supportedCurrencies = <Currency>[
     name: "Swedish krona",
     symbol: "kr",
     emoji: "🇸🇪",
-    decimal_digits: 2,
+    decimalDigits: 2,
     position: "last",
   ),
   Currency(
@@ -985,7 +985,7 @@ final supportedCurrencies = <Currency>[
     name: "Singapore dollar",
     symbol: "S\$",
     emoji: "🇸🇬",
-    decimal_digits: 2,
+    decimalDigits: 2,
     position: "first",
   ),
   Currency(
@@ -993,7 +993,7 @@ final supportedCurrencies = <Currency>[
     name: "Saint Helena pound",
     symbol: "£",
     emoji: "🇸🇭",
-    decimal_digits: 2,
+    decimalDigits: 2,
     position: "first",
   ),
   Currency(
@@ -1001,7 +1001,7 @@ final supportedCurrencies = <Currency>[
     name: "Sierra Leonean leone",
     symbol: "Le",
     emoji: "🇸🇱",
-    decimal_digits: 2,
+    decimalDigits: 2,
     position: "first",
   ),
   Currency(
@@ -1009,7 +1009,7 @@ final supportedCurrencies = <Currency>[
     name: "Somalian shilling",
     symbol: "Ssh",
     emoji: "🇸🇴",
-    decimal_digits: 2,
+    decimalDigits: 2,
     position: "first",
   ),
   Currency(
@@ -1017,7 +1017,7 @@ final supportedCurrencies = <Currency>[
     name: "Surinamese dollar",
     symbol: "SR\$",
     emoji: "🇸🇷",
-    decimal_digits: 2,
+    decimalDigits: 2,
     position: "first",
   ),
   Currency(
@@ -1025,7 +1025,7 @@ final supportedCurrencies = <Currency>[
     name: "South Sudanese pound",
     symbol: "SS£",
     emoji: "🇸🇸",
-    decimal_digits: 2,
+    decimalDigits: 2,
     position: "first",
   ),
   Currency(
@@ -1033,7 +1033,7 @@ final supportedCurrencies = <Currency>[
     name: "São Tomé and Príncipe dobra",
     symbol: "Db",
     emoji: "🇸🇹",
-    decimal_digits: 2,
+    decimalDigits: 2,
     position: "last",
   ),
   Currency(
@@ -1041,7 +1041,7 @@ final supportedCurrencies = <Currency>[
     name: "Salvadoran colón",
     symbol: "₡",
     emoji: "🇸🇻",
-    decimal_digits: 2,
+    decimalDigits: 2,
     position: "first",
   ),
   Currency(
@@ -1049,7 +1049,7 @@ final supportedCurrencies = <Currency>[
     name: "Syrian pound",
     symbol: "£",
     emoji: "🇸🇾",
-    decimal_digits: 2,
+    decimalDigits: 2,
     position: "first",
   ),
   Currency(
@@ -1057,7 +1057,7 @@ final supportedCurrencies = <Currency>[
     name: "Swazi lilangeni",
     symbol: "E",
     emoji: "🇸🇿",
-    decimal_digits: 2,
+    decimalDigits: 2,
     position: "first",
   ),
   Currency(
@@ -1065,7 +1065,7 @@ final supportedCurrencies = <Currency>[
     name: "Thai baht",
     symbol: "฿",
     emoji: "🇹🇭",
-    decimal_digits: 2,
+    decimalDigits: 2,
     position: "first",
   ),
   Currency(
@@ -1073,7 +1073,7 @@ final supportedCurrencies = <Currency>[
     name: "Tajikistani somoni",
     symbol: "ЅМ",
     emoji: "🇹🇯",
-    decimal_digits: 2,
+    decimalDigits: 2,
     position: "last",
   ),
   Currency(
@@ -1081,7 +1081,7 @@ final supportedCurrencies = <Currency>[
     name: "Turkmenistan manat",
     symbol: "m",
     emoji: "🇹🇲",
-    decimal_digits: 2,
+    decimalDigits: 2,
     position: "last",
   ),
   Currency(
@@ -1089,7 +1089,7 @@ final supportedCurrencies = <Currency>[
     name: "Tunisian dinar",
     symbol: "د.ت",
     emoji: "🇹🇳",
-    decimal_digits: 3,
+    decimalDigits: 3,
     position: "first",
   ),
   Currency(
@@ -1097,7 +1097,7 @@ final supportedCurrencies = <Currency>[
     name: "Tongan paʻanga",
     symbol: "T\$",
     emoji: "🇹🇴",
-    decimal_digits: 2,
+    decimalDigits: 2,
     position: "first",
   ),
   Currency(
@@ -1105,7 +1105,7 @@ final supportedCurrencies = <Currency>[
     name: "Turkish lira",
     symbol: "₺",
     emoji: "🇹🇷",
-    decimal_digits: 2,
+    decimalDigits: 2,
     position: "first",
   ),
   Currency(
@@ -1113,7 +1113,7 @@ final supportedCurrencies = <Currency>[
     name: "Trinidad and Tobago dollar",
     symbol: "TT\$",
     emoji: "🇹🇹",
-    decimal_digits: 2,
+    decimalDigits: 2,
     position: "first",
   ),
   Currency(
@@ -1121,7 +1121,7 @@ final supportedCurrencies = <Currency>[
     name: "New Taiwan dollar",
     symbol: "NT\$",
     emoji: "🇹🇼",
-    decimal_digits: 0,
+    decimalDigits: 0,
     position: "first",
   ),
   Currency(
@@ -1129,7 +1129,7 @@ final supportedCurrencies = <Currency>[
     name: "Tanzanian shilling",
     symbol: "TZS",
     emoji: "🇹🇿",
-    decimal_digits: 2,
+    decimalDigits: 2,
     position: "first",
   ),
   Currency(
@@ -1137,7 +1137,7 @@ final supportedCurrencies = <Currency>[
     name: "Ukrainian hryvnia",
     symbol: "₴",
     emoji: "🇺🇦",
-    decimal_digits: 2,
+    decimalDigits: 2,
     position: "last",
   ),
   Currency(
@@ -1145,7 +1145,7 @@ final supportedCurrencies = <Currency>[
     name: "Ugandan shilling",
     symbol: "USh",
     emoji: "🇺🇬",
-    decimal_digits: 0,
+    decimalDigits: 0,
     position: "first",
   ),
   Currency(
@@ -1153,7 +1153,7 @@ final supportedCurrencies = <Currency>[
     name: "United States dollar",
     symbol: "\$",
     emoji: "🇺🇸",
-    decimal_digits: 2,
+    decimalDigits: 2,
     position: "first",
   ),
   Currency(
@@ -1161,7 +1161,7 @@ final supportedCurrencies = <Currency>[
     name: "United States dollar (next day)",
     symbol: "USN",
     emoji: "🇺🇸",
-    decimal_digits: 2,
+    decimalDigits: 2,
     position: "first",
   ),
   Currency(
@@ -1169,7 +1169,7 @@ final supportedCurrencies = <Currency>[
     name: "Uruguay Peso en Unidades Indexadas (URUIURUI) (funds code)",
     symbol: "UYI",
     emoji: "🇺🇾",
-    decimal_digits: 0,
+    decimalDigits: 0,
     position: "first",
   ),
   Currency(
@@ -1177,7 +1177,7 @@ final supportedCurrencies = <Currency>[
     name: "Uruguayan peso",
     symbol: "\$U",
     emoji: "🇺🇾",
-    decimal_digits: 2,
+    decimalDigits: 2,
     position: "first",
   ),
   Currency(
@@ -1185,7 +1185,7 @@ final supportedCurrencies = <Currency>[
     name: "Unidad previsional",
     symbol: "UYW",
     emoji: "🇺🇾",
-    decimal_digits: 4,
+    decimalDigits: 4,
     position: "first",
   ),
   Currency(
@@ -1193,7 +1193,7 @@ final supportedCurrencies = <Currency>[
     name: "Uzbekistani soʻm",
     symbol: "лв",
     emoji: "🇺🇿",
-    decimal_digits: 2,
+    decimalDigits: 2,
     position: "last",
   ),
   Currency(
@@ -1201,7 +1201,7 @@ final supportedCurrencies = <Currency>[
     name: "Venezuelan bolívar soberano",
     symbol: "Bs.",
     emoji: "🇻🇪",
-    decimal_digits: 2,
+    decimalDigits: 2,
     position: "first",
   ),
   Currency(
@@ -1209,7 +1209,7 @@ final supportedCurrencies = <Currency>[
     name: "Vietnamese đồng",
     symbol: "₫",
     emoji: "🇻🇳",
-    decimal_digits: 0,
+    decimalDigits: 0,
     position: "last",
   ),
   Currency(
@@ -1217,7 +1217,7 @@ final supportedCurrencies = <Currency>[
     name: "Vanuatu vatu",
     symbol: "VT",
     emoji: "🇻🇺",
-    decimal_digits: 0,
+    decimalDigits: 0,
     position: "first",
   ),
   Currency(
@@ -1225,7 +1225,7 @@ final supportedCurrencies = <Currency>[
     name: "Samoan tala",
     symbol: "WS\$",
     emoji: "🇼🇸",
-    decimal_digits: 2,
+    decimalDigits: 2,
     position: "first",
   ),
   Currency(
@@ -1233,7 +1233,7 @@ final supportedCurrencies = <Currency>[
     name: "Central African CFA franc",
     symbol: "FCFA",
     emoji: "🇨🇲",
-    decimal_digits: 0,
+    decimalDigits: 0,
     position: "first",
   ),
   Currency(
@@ -1241,7 +1241,7 @@ final supportedCurrencies = <Currency>[
     name: "Silver (one troy ounce)",
     symbol: "XAG",
     emoji: "🪙",
-    decimal_digits: 0,
+    decimalDigits: 0,
     position: "first",
   ),
   Currency(
@@ -1249,7 +1249,7 @@ final supportedCurrencies = <Currency>[
     name: "Gold (one troy ounce)",
     symbol: "XAU",
     emoji: "🪙",
-    decimal_digits: 0,
+    decimalDigits: 0,
     position: "first",
   ),
   Currency(
@@ -1257,7 +1257,7 @@ final supportedCurrencies = <Currency>[
     name: "European Composite Unit (EURCO) (bond market unit)",
     symbol: "XBA",
     emoji: "🇪🇺",
-    decimal_digits: 0,
+    decimalDigits: 0,
     position: "first",
   ),
   Currency(
@@ -1265,7 +1265,7 @@ final supportedCurrencies = <Currency>[
     name: "European Monetary Unit (E.M.U.-6) (bond market unit)",
     symbol: "XBB",
     emoji: "🇪🇺",
-    decimal_digits: 0,
+    decimalDigits: 0,
     position: "first",
   ),
   Currency(
@@ -1273,7 +1273,7 @@ final supportedCurrencies = <Currency>[
     name: "European Unit of Account 9 (E.U.A.-9) (bond market unit)",
     symbol: "XBC",
     emoji: "🇪🇺",
-    decimal_digits: 0,
+    decimalDigits: 0,
     position: "first",
   ),
   Currency(
@@ -1281,7 +1281,7 @@ final supportedCurrencies = <Currency>[
     name: "European Unit of Account 17 (E.U.A.-17) (bond market unit)",
     symbol: "XBD",
     emoji: "🇪🇺",
-    decimal_digits: 0,
+    decimalDigits: 0,
     position: "first",
   ),
   Currency(
@@ -1289,7 +1289,7 @@ final supportedCurrencies = <Currency>[
     name: "East Caribbean dollar",
     symbol: "EC\$",
     emoji: "🇰🇳",
-    decimal_digits: 2,
+    decimalDigits: 2,
     position: "first",
   ),
   Currency(
@@ -1297,7 +1297,7 @@ final supportedCurrencies = <Currency>[
     name: "Special Drawing Rights",
     symbol: "SDR",
     emoji: "🏦",
-    decimal_digits: 0,
+    decimalDigits: 0,
     position: "first",
   ),
   Currency(
@@ -1305,7 +1305,7 @@ final supportedCurrencies = <Currency>[
     name: "West African CFA franc",
     symbol: "CFA",
     emoji: "🇨🇮",
-    decimal_digits: 0,
+    decimalDigits: 0,
     position: "first",
   ),
   Currency(
@@ -1313,7 +1313,7 @@ final supportedCurrencies = <Currency>[
     name: "Palladium (one troy ounce)",
     symbol: "XPD",
     emoji: "🪙",
-    decimal_digits: 0,
+    decimalDigits: 0,
     position: "first",
   ),
   Currency(
@@ -1321,7 +1321,7 @@ final supportedCurrencies = <Currency>[
     name: "CFP franc",
     symbol: "F",
     emoji: "🇵🇫",
-    decimal_digits: 0,
+    decimalDigits: 0,
     position: "last",
   ),
   Currency(
@@ -1329,7 +1329,7 @@ final supportedCurrencies = <Currency>[
     name: "Platinum (one troy ounce)",
     symbol: "XPT",
     emoji: "🪙",
-    decimal_digits: 0,
+    decimalDigits: 0,
     position: "first",
   ),
   Currency(
@@ -1337,7 +1337,7 @@ final supportedCurrencies = <Currency>[
     name: "Sucre",
     symbol: "XSU",
     emoji: "🇪🇨",
-    decimal_digits: 0,
+    decimalDigits: 0,
     position: "first",
   ),
   Currency(
@@ -1345,7 +1345,7 @@ final supportedCurrencies = <Currency>[
     name: "Codes specifically reserved for testing purposes",
     symbol: "XTS",
     emoji: "❓",
-    decimal_digits: 0,
+    decimalDigits: 0,
     position: "first",
   ),
   Currency(
@@ -1353,7 +1353,7 @@ final supportedCurrencies = <Currency>[
     name: "ADB Unit of Account",
     symbol: "XUA",
     emoji: "🏦",
-    decimal_digits: 0,
+    decimalDigits: 0,
     position: "first",
   ),
   Currency(
@@ -1361,7 +1361,7 @@ final supportedCurrencies = <Currency>[
     name: "Yemeni rial",
     symbol: "﷼",
     emoji: "🇾🇪",
-    decimal_digits: 2,
+    decimalDigits: 2,
     position: "first",
   ),
   Currency(
@@ -1369,7 +1369,7 @@ final supportedCurrencies = <Currency>[
     name: "South African rand",
     symbol: "R",
     emoji: "🇿🇦",
-    decimal_digits: 2,
+    decimalDigits: 2,
     position: "first",
   ),
   Currency(
@@ -1377,7 +1377,7 @@ final supportedCurrencies = <Currency>[
     name: "Zambian kwacha",
     symbol: "ZK",
     emoji: "🇿🇲",
-    decimal_digits: 2,
+    decimalDigits: 2,
     position: "first",
   ),
   Currency(
@@ -1385,7 +1385,7 @@ final supportedCurrencies = <Currency>[
     name: "Zimbabwean dollar",
     symbol: "Z\$",
     emoji: "🇿🇼",
-    decimal_digits: 2,
+    decimalDigits: 2,
     position: "first",
   ),
 ];

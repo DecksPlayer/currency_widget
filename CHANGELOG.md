@@ -60,3 +60,13 @@
 
  ## 1.0.4
  * Fix Documentation
+ * Unastable version
+
+ ## 1.0.5
+ * Fix Currency Error
+ * Stable version   
+
+ ## 1.0.6
+ * Fix Memory issues 
+ * Fix Cursor Issue
+ * Fix Currency Mask format.
