@@ -43,7 +43,15 @@ class _CurrencyPicker extends State<CurrencyPicker> {
         widget.currencyController.currency.decimalDigits,
       );
       if (controller.text != formatted) {
+        // Remover listener temporalmente para evitar loops
+        widget.currencyController.mount.removeListener(_onMountChanged);
+        
         controller.text = formatted;
+        // Poner cursor al final para evitar auto-selección
+        controller.selection = TextSelection.collapsed(offset: formatted.length);
+        
+        // Re-agregar listener
+        widget.currencyController.mount.addListener(_onMountChanged);
       }
     }
   }
@@ -115,7 +123,8 @@ class _CurrencyPicker extends State<CurrencyPicker> {
                   return;
                 }
                 try {
-                  String value = controller.text.replaceAll(',', '');
+                  // Usar str en lugar de controller.text para evitar conflictos
+                  String value = str.replaceAll(',', '');
                   widget.currencyController.mount.value = double.parse(value);
                 } catch (e) {
                   // Invalid input, ignore

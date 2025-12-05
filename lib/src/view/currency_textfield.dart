@@ -5,28 +5,44 @@ import '../../currency_widget.dart';
 import '../utils/currency_errors.dart';
 import '../utils/masked_text_editing_controller.dart';
 
-class CurrencyTextField extends StatelessWidget {
+class CurrencyTextField extends StatefulWidget {
   final String currencyCode;
+  final CurrencyController? currencyController;
 
- final CurrencyController? currencyController;
+  const CurrencyTextField({
+    super.key,
+    required this.currencyCode,
+    required this.currencyController,
+  });
 
-  // The currency object associated with the currencyCode.
-  late Currency? currency;
+  @override
+  State<CurrencyTextField> createState() => _CurrencyTextFieldState();
+}
 
-  TextEditingController controller = TextEditingController();
+class _CurrencyTextFieldState extends State<CurrencyTextField> {
+  late TextEditingController controller;
+  Currency? currency;
 
+  @override
+  void initState() {
+    super.initState();
+    controller = TextEditingController();
+    currency = widget.currencyController!.getCurrencyByCode(widget.currencyCode);
+  }
 
-  CurrencyTextField({super.key,required this.currencyCode,
-    required this.currencyController});
+  @override
+  void dispose() {
+    controller.dispose();
+    super.dispose();
+  }
 
   @override
   Widget build(BuildContext context) {
-    currency = currencyController!.getCurrencyByCode(currencyCode);
     // Check if the currency is null, which indicates an error in loading or an invalid currency code.
     if (currency == null) {
       // Display an error message if the currency is not found.
       // The message is localized based on the currencyController's language.
-      return Text(empty_currency_messages[currencyController!.lang] ??
+      return Text(empty_currency_messages[widget.currencyController!.lang] ??
           'Error loading currency');
     }
     // Return a Row widget containing the TextField.
@@ -35,29 +51,36 @@ class CurrencyTextField extends StatelessWidget {
         // Use Flexible to allow the TextField to take up available space.
         child: Padding(
             // Add padding around the TextField.
-            padding: EdgeInsets.all(7),
+            padding: const EdgeInsets.all(7),
             child: TextField(
                 enabled: true,
                 // Set readOnly to false to allow user input.
                 readOnly: false,
                 textAlign: currency!.position == 'first'
                     ? TextAlign.start
-                    : currency!.position == 'last' ? TextAlign.end : TextAlign
-                    .center,
-                decoration:  getCurrencyDecoration(currency!, currencyController!),
+                    : currency!.position == 'last'
+                        ? TextAlign.end
+                        : TextAlign.center,
+                decoration: getCurrencyDecoration(
+                    currency!, widget.currencyController!),
                 controller: controller,
-                onChanged: (str){
-                  String value = controller.text.replaceAll(',','');
-                  currencyController!.mount.value = double.parse(value);
+                onChanged: (str) {
+                  // Usar str en lugar de controller.text para evitar conflictos
+                  String value = str.replaceAll(',', '');
+                  try {
+                    widget.currencyController!.mount.value =
+                        double.parse(value);
+                  } catch (e) {
+                    // Invalid input, set to 0
+                    widget.currencyController!.mount.value = 0;
+                  }
                 },
                 inputFormatters: [
                   AutoDecimalNumberFormatter(
-                      decimalDigits: currency!.decimalDigits
+                    decimalDigits: currency!.decimalDigits,
                   ),
-                ]
-            )),
+                ])),
       )
     ]);
-
   }
 }
