@@ -52,14 +52,14 @@ A widget for **displaying a list of currency values in a card format**. This is 
 
 Here are some visual examples of the widgets in action:
 
-### Example 1: Currency Picker
-![Currency Picker Example](https://raw.githubusercontent.com/DecksPlayer/currency_widget/main/assets/image.png)
+### Example 1: All Widgets
+![All Widgets Example](https://raw.githubusercontent.com/DecksPlayer/currency_widget/main/assets/image.png)
 
-### Example 2: Currency TextField
-![Currency TextField Example](https://raw.githubusercontent.com/DecksPlayer/currency_widget/main/assets/image_2.png)
+### Example 2: Currency Picker Favourites currencies
+![Currency Picker Favourites currencies](https://raw.githubusercontent.com/DecksPlayer/currency_widget/main/assets/image_2.png)
 
-### Example 3: Currency Card Report
-![Currency Card Report Example](https://raw.githubusercontent.com/DecksPlayer/currency_widget/main/assets/image_3.png)
+### Example 3: Currency Picker all currencies
+![Currency Picker all currencies](https://raw.githubusercontent.com/DecksPlayer/currency_widget/main/assets/image_3.png)
 
 
 
