@@ -70,3 +70,8 @@
  * Fix Memory issues 
  * Fix Cursor Issue
  * Fix Currency Mask format.
+
+ ## 1.0.7
+ * Fix Controller on TextEditingController
+ * Fix Relative Cursor Issue
+ 

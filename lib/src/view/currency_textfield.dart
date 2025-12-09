@@ -27,7 +27,8 @@ class _CurrencyTextFieldState extends State<CurrencyTextField> {
   void initState() {
     super.initState();
     controller = TextEditingController();
-    currency = widget.currencyController!.getCurrencyByCode(widget.currencyCode);
+    currency =
+        widget.currencyController!.getCurrencyByCode(widget.currencyCode);
   }
 
   @override
@@ -56,6 +57,7 @@ class _CurrencyTextFieldState extends State<CurrencyTextField> {
                 enabled: true,
                 // Set readOnly to false to allow user input.
                 readOnly: false,
+                enableInteractiveSelection: true,
                 textAlign: currency!.position == 'first'
                     ? TextAlign.start
                     : currency!.position == 'last'

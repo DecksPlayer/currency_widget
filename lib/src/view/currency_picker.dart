@@ -31,29 +31,6 @@ class _CurrencyPicker extends State<CurrencyPicker> {
           ? widget.currencyController.mount.value.toString()
           : '',
     );
-
-    // Listen to mount changes to update TextField
-    widget.currencyController.mount.addListener(_onMountChanged);
-  }
-
-  void _onMountChanged() {
-    final mount = widget.currencyController.mount.value;
-    if (mount != null && mount > 0) {
-      final formatted = mount.toStringAsFixed(
-        widget.currencyController.currency.decimalDigits,
-      );
-      if (controller.text != formatted) {
-        // Remover listener temporalmente para evitar loops
-        widget.currencyController.mount.removeListener(_onMountChanged);
-        
-        controller.text = formatted;
-        // Poner cursor al final para evitar auto-selección
-        controller.selection = TextSelection.collapsed(offset: formatted.length);
-        
-        // Re-agregar listener
-        widget.currencyController.mount.addListener(_onMountChanged);
-      }
-    }
   }
 
   void _updateCurrencyList() {
@@ -103,6 +80,7 @@ class _CurrencyPicker extends State<CurrencyPicker> {
               controller: controller,
               keyboardType: TextInputType.number,
               textAlign: TextAlign.center,
+              enableInteractiveSelection: true,
               decoration: InputDecoration(
                 hintText: 0.toStringAsFixed(
                     widget.currencyController.currency.decimalDigits),
@@ -176,7 +154,6 @@ class _CurrencyPicker extends State<CurrencyPicker> {
 
   @override
   void dispose() {
-    widget.currencyController.mount.removeListener(_onMountChanged);
     controller.dispose();
     super.dispose();
   }

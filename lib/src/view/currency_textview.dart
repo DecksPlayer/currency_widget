@@ -40,6 +40,7 @@ class _CurrencyTextViewState extends State<CurrencyTextView> {
   @override
   void initState() {
     super.initState();
+    controller = TextEditingController();
     _updateCurrency();
     _updateController();
   }
@@ -52,17 +53,20 @@ class _CurrencyTextViewState extends State<CurrencyTextView> {
       _updateCurrency();
     }
     // Si cambió el monto o la moneda, actualizar el controller
-    if (oldWidget.mount != widget.mount || oldWidget.currencyCode != widget.currencyCode) {
+    if (oldWidget.mount != widget.mount ||
+        oldWidget.currencyCode != widget.currencyCode) {
       _updateController();
     }
   }
 
   void _updateCurrency() {
-    currency = widget.currencyController?.getCurrencyByCode(widget.currencyCode);
+    currency =
+        widget.currencyController?.getCurrencyByCode(widget.currencyCode);
   }
 
   void _updateController() {
-    controller.text = widget.mount.toStringAsFixed(currency?.decimalDigits ?? 0);
+    controller.text =
+        widget.mount.toStringAsFixed(currency?.decimalDigits ?? 0);
   }
 
   @override
