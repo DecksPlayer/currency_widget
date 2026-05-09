@@ -56,6 +56,7 @@ class _CurrencyTextFieldState extends State<CurrencyTextField> {
                 enabled: true,
                 // Set readOnly to false to allow user input.
                 readOnly: false,
+                enableInteractiveSelection: true,
                 textAlign: currency!.position == 'first'
                     ? TextAlign.start
                     : currency!.position == 'last'

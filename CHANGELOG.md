@@ -70,3 +70,14 @@
  * Fix Memory issues 
  * Fix Cursor Issue
  * Fix Currency Mask format.
+
+  ## 1.0.7
+ * Fix Controller on TextEditingController
+ * Fix Relative Cursor Issue
+
+ ## 1.0.8
+ * add currencyChooser
+
+ ## 1.0.9
+ * Minor refactor in currencyChooser
+ 

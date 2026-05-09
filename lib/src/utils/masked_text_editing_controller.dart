@@ -25,22 +25,38 @@ class AutoDecimalNumberFormatter extends TextInputFormatter {
   });
   @override
   TextEditingValue formatEditUpdate(
-      TextEditingValue oldValue,
-      TextEditingValue newValue,
-      ) {
+    TextEditingValue oldValue,
+    TextEditingValue newValue,
+  ) {
     // Permitir borrado completo
     if (newValue.text.isEmpty) {
-      return newValue.copyWith(selection: const TextSelection.collapsed(offset: 0));
+      return newValue.copyWith(
+          selection: const TextSelection.collapsed(offset: 0));
     }
 
     // Solo permitir dígitos
     final digitsOnly = newValue.text.replaceAll(RegExp(r'[^\d]'), '');
     if (digitsOnly.isEmpty) {
-      return newValue.copyWith(text: '');
+      return const TextEditingValue(
+        text: '',
+        selection: TextSelection.collapsed(offset: 0),
+      );
     }
 
-    // Calcular posición del cursor
-    final cursorPosition = newValue.selection.baseOffset;
+    // Guardar la posición del cursor original
+    // Si hay una selección (rango), usar el final de la selección
+    final oldCursorPosition = newValue.selection.isCollapsed
+        ? newValue.selection.baseOffset
+        : newValue.selection.end;
+
+    // Contar cuántos dígitos hay DESPUÉS del cursor en el texto sin formatear
+    // Esto mantiene la posición relativa desde el final
+    int digitsAfterCursor = 0;
+    for (int i = oldCursorPosition; i < newValue.text.length; i++) {
+      if (RegExp(r'\d').hasMatch(newValue.text[i])) {
+        digitsAfterCursor++;
+      }
+    }
 
     // Separar parte entera y decimal
     String integerPart;
@@ -80,11 +96,26 @@ class AutoDecimalNumberFormatter extends TextInputFormatter {
         : '$formattedInt$decimalSeparator$decimalPart';
 
     // Calcular nueva posición del cursor
-    int newCursorPosition = formatted.length;
-    if (cursorPosition > 0 && cursorPosition <= newValue.text.length) {
-      // Lógica para mantener el cursor en una posición relativa
-      final relativePosition = cursorPosition / newValue.text.length;
-      newCursorPosition = (formatted.length * relativePosition).round();
+    int newCursorPosition;
+
+    // Caso especial: si no hay dígitos después del cursor, poner al final
+    if (digitsAfterCursor == 0) {
+      newCursorPosition = formatted.length;
+    } else {
+      // Contar dígitos desde el final para encontrar la posición correcta
+      int digitCount = 0;
+      newCursorPosition = formatted.length;
+
+      for (int i = formatted.length - 1; i >= 0; i--) {
+        if (RegExp(r'\d').hasMatch(formatted[i])) {
+          digitCount++;
+          if (digitCount == digitsAfterCursor) {
+            // El cursor debe ir ANTES de este dígito
+            newCursorPosition = i;
+            break;
+          }
+        }
+      }
     }
 
     return TextEditingValue(

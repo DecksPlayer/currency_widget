@@ -40,6 +40,7 @@ class _CurrencyTextViewState extends State<CurrencyTextView> {
   @override
   void initState() {
     super.initState();
+    controller = TextEditingController();
     _updateCurrency();
     _updateController();
   }

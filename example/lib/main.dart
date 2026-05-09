@@ -39,6 +39,9 @@ class _MyHomePageState extends State<MyHomePage> {
   final CurrencyController currencyControllerEn = CurrencyController(
     lang: 'en',
   );
+  final CurrencyController currencyChooserController = CurrencyController(
+    lang: 'es',
+  );
 
   @override
   Widget build(BuildContext context) {
@@ -109,6 +112,17 @@ class _MyHomePageState extends State<MyHomePage> {
                 currencyCode: 'usd',
                 lang: 'en',
               ),
+            ),
+            const Divider(),
+            const Text('CurrencyChooser (sin monto)'),
+            CurrencyChooser(currencyController: currencyChooserController),
+            ListenableBuilder(
+              listenable: currencyChooserController.currencyNotifier,
+              builder: (context, child) {
+                return Text(
+                  'Moneda seleccionada: ${currencyChooserController.currency.getDefaultView()}',
+                );
+              },
             ),
           ],
         ),

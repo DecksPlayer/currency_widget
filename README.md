@@ -34,6 +34,13 @@ A widget for **displaying a list of currency values in a card format**. This is 
 *   Each item in the list can represent a different currency or aspect of a report.
 *   Customizable to fit various reporting needs.
 
+### `CurrencyChooser`
+A lightweight widget to **select a currency without requiring an amount**. Use it when you only need the user to pick a currency, with no amount input involved.
+*   Dropdown to select from common or all supported currencies.
+*   Toggle button (⭐ / 🌐) to switch between most-used and all currencies.
+*   Displays the full localized name of the selected currency.
+*   Exposes the selection via `CurrencyController.currency` and `CurrencyController.currencyNotifier`.
+
 
 
 ## Properties per Widget
@@ -45,6 +52,7 @@ A widget for **displaying a list of currency values in a card format**. This is 
 | `CurrencyTextField`  | `currencyController`: (required) Manages currency state.<br>`currencyCode`: (required) Code of the currency to use.<br>                                                                                                                                            |
 | `CurrencyTextView`   | `mount`: (required) Amount to display.<br>`currencyCode`: (required) Code of the currency.<br>`CurrencyControler` : (required)Manages currency state                                                                                                               |
 | `CurrencyCardReport` | `title`: (required) Title widget for the card.<br>`icon`: (required) Icon widget for the card.<br>`mount`: (required) Amount to display.<br>`currencyCode`: (required) Code of the currency.<br>`lang`: (required) Language for formatting.<br>`style`: Text Style |
+| `CurrencyChooser`    | `currencyController`: (required) Manages currency state and exposes the selected currency via `controller.currency` and `controller.currencyNotifier`. |
 
 **Note**: All widgets also accept standard Flutter widget properties like `key`, `padding`, `margin`, etc.
 
@@ -133,7 +141,16 @@ class _MyCurrencyScreenState extends State<MyCurrencyScreen> {
                 width: 200,
                 child:
                 CurrencyCardReport( title: Text('Currency Report'), icon: Icon(Icons.currency_exchange),mount: 250.24, currencyCode: 'usd', lang: 'en',)
-            )
+            ),
+            SizedBox(height: 20),
+            // CurrencyChooser: pick a currency without entering an amount
+            CurrencyChooser(currencyController: _controller),
+            ValueListenableBuilder<Currency?>(
+              valueListenable: _controller.currencyNotifier,
+              builder: (_, currency, __) {
+                return Text('Selected: ${currency?.getDefaultView() ?? ''}');
+              },
+            ),
           ],
         ),
       ),
