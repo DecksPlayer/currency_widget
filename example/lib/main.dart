@@ -42,6 +42,13 @@ class _MyHomePageState extends State<MyHomePage> {
   final CurrencyController currencyChooserController = CurrencyController(
     lang: 'es',
   );
+  
+  final CurrencyController customCurrencyController = CurrencyController(
+    lang: 'es',
+  );
+  List<Currency> _selectedCurrencies = [];
+  List<String> get _selectedCurrencyCodes =>
+      _selectedCurrencies.map((c) => c.code).toList();
 
   @override
   Widget build(BuildContext context) {
@@ -61,12 +68,13 @@ class _MyHomePageState extends State<MyHomePage> {
         // the App.build method, and use it to set our appbar title.
         title: Text(widget.title),
       ),
-      body: Center(
-        // Center is a layout widget. It takes a single child and positions it
-        // in the middle of the parent.
-        child: Column(
-          mainAxisAlignment: MainAxisAlignment.center,
-          children: <Widget>[
+      body: SingleChildScrollView(
+        child: Center(
+          // Center is a layout widget. It takes a single child and positions it
+          // in the middle of the parent.
+          child: Column(
+            mainAxisAlignment: MainAxisAlignment.center,
+            children: <Widget>[
             CurrencyPicker(currencyController: currencyControllerEn),
             CurrencyTextView(
               currencyCode: 'usd',
@@ -124,9 +132,43 @@ class _MyHomePageState extends State<MyHomePage> {
                 );
               },
             ),
+            const Divider(),
+            const Text('Multi-Selector & Custom Chooser', style: TextStyle(fontWeight: FontWeight.bold)),
+            const SizedBox(height: 10),
+            CurrencyMultiSelector(
+              showOnlyCommon: true,
+              initialSelected: _selectedCurrencies,
+              onChanged: (selected) {
+                setState(() {
+                  _selectedCurrencies = selected;
+                });
+              },
+            ),
+            if (_selectedCurrencyCodes.isNotEmpty) ...[
+              const SizedBox(height: 10),
+              CustomCurrencyChooser(
+                currencyController: customCurrencyController,
+                currencyCodes: _selectedCurrencyCodes,
+              ),
+              ListenableBuilder(
+                listenable: customCurrencyController.currencyNotifier,
+                builder: (context, child) {
+                  return Text(
+                    'Custom seleccionada: ${customCurrencyController.currency.getDefaultView()}',
+                  );
+                },
+              ),
+            ] else ...[
+              const Padding(
+                padding: EdgeInsets.all(8.0),
+                child: Text('Selecciona al menos una moneda arriba'),
+              ),
+            ],
+            const SizedBox(height: 40),
           ],
         ),
-      ), // This trailing comma makes auto-formatting nicer for build methods.
-    );
+      ),
+    ), // closes SingleChildScrollView
+  ); // closes Scaffold
   }
 }

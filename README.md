@@ -41,6 +41,15 @@ A lightweight widget to **select a currency without requiring an amount**. Use i
 *   Displays the full localized name of the selected currency.
 *   Exposes the selection via `CurrencyController.currency` and `CurrencyController.currencyNotifier`.
 
+### `CustomCurrencyPicker`
+Similar to `CurrencyPicker` (includes amount input), but allows you to restrict the selectable currencies to a specific list of currency codes (e.g., `['USD', 'EUR']`).
+
+### `CustomCurrencyChooser`
+Similar to `CurrencyChooser` (no amount input), but displays the options as selectable chips (`ChoiceChip`) instead of a dropdown, and restricts the selectable currencies to a specific list.
+
+### `CurrencyMultiSelector`
+A widget that allows the user to select multiple currencies at once. It displays currencies as actionable chips (`FilterChip`) in a responsive `Wrap` layout, including a toggle button to switch between favorite and all currencies.
+
 
 
 ## Properties per Widget
@@ -53,6 +62,9 @@ A lightweight widget to **select a currency without requiring an amount**. Use i
 | `CurrencyTextView`   | `mount`: (required) Amount to display.<br>`currencyCode`: (required) Code of the currency.<br>`CurrencyControler` : (required)Manages currency state                                                                                                               |
 | `CurrencyCardReport` | `title`: (required) Title widget for the card.<br>`icon`: (required) Icon widget for the card.<br>`mount`: (required) Amount to display.<br>`currencyCode`: (required) Code of the currency.<br>`lang`: (required) Language for formatting.<br>`style`: Text Style |
 | `CurrencyChooser`    | `currencyController`: (required) Manages currency state and exposes the selected currency via `controller.currency` and `controller.currencyNotifier`. |
+| `CustomCurrencyPicker`| `currencyController`: (required) Manages currency state.<br>`currencyCodes`: (required) List of currency codes to allow.<br> |
+| `CustomCurrencyChooser`| `currencyController`: (required) Manages currency state.<br>`currencyCodes`: (required) List of currency codes to allow.<br> |
+| `CurrencyMultiSelector`| `onChanged`: (required) Callback fired when selection changes.<br>`initialSelected`: List of initially selected currencies.<br>`showOnlyCommon`: Toggle between common or all currencies.<br> |
 
 **Note**: All widgets also accept standard Flutter widget properties like `key`, `padding`, `margin`, etc.
 
@@ -150,6 +162,20 @@ class _MyCurrencyScreenState extends State<MyCurrencyScreen> {
               builder: (_, currency, __) {
                 return Text('Selected: ${currency?.getDefaultView() ?? ''}');
               },
+            ),
+            SizedBox(height: 20),
+            // CurrencyMultiSelector: pick multiple currencies at once
+            CurrencyMultiSelector(
+              showOnlyCommon: true,
+              onChanged: (selectedList) {
+                print('Selected currencies: $selectedList');
+              },
+            ),
+            SizedBox(height: 20),
+            // CustomCurrencyChooser: pick a single currency from a restricted list using chips
+            CustomCurrencyChooser(
+              currencyController: _controller,
+              currencyCodes: ['USD', 'EUR', 'ARS'],
             ),
           ],
         ),

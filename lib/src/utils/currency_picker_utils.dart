@@ -13,6 +13,14 @@ List<Currency> filteredCurrencies(bool showOnlyCommon) {
   return supportedCurrencies;
 }
 
+/// Returns the filtered list of currencies based on a custom list of [codes].
+List<Currency> customFilteredCurrencies(List<String> codes) {
+  final upperCodes = codes.map((c) => c.toUpperCase()).toList();
+  return supportedCurrencies
+      .where((c) => upperCodes.contains(c.code.toUpperCase()))
+      .toList();
+}
+
 /// Returns the localized tooltip text for the common/all toggle button.
 String currencyFilterTooltip(String lang, bool showOnlyCommon) {
   const Map<String, Map<String, String>> translations = {
