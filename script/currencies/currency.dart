@@ -554,7 +554,7 @@ List<Map<String,dynamic>> currencies =[
 {
 "code": "KGS",
 "name": "Kyrgyzstani som",
-"symbol": "лв",
+"symbol": "с",
 "emoji": "🇰🇬",
 "decimal_digits": 2,
 "position": "last"
@@ -1186,7 +1186,7 @@ List<Map<String,dynamic>> currencies =[
 {
 "code": "UZS",
 "name": "Uzbekistani soʻm",
-"symbol": "лв",
+"symbol": "so'm",
 "emoji": "🇺🇿",
 "decimal_digits": 2,
 "position": "last"

@@ -81,3 +81,7 @@
  ## 1.0.9
  * Minor refactor in currencyChooser
  
+ ## 1.0.10
+ * Add `CustomCurrencyPicker` and `CustomCurrencyChooser` to restrict selectable currencies to a specific list.
+ * Add `CurrencyMultiSelector` widget to support selecting multiple currencies simultaneously.
+ 

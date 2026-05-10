@@ -559,7 +559,7 @@ final supportedCurrencies = <Currency>[
   Currency(
     code: "KGS",
     name: "Kyrgyzstani som",
-    symbol: "лв",
+    symbol: "с",
     emoji: "🇰🇬",
     decimalDigits: 2,
     position: "last",
@@ -1191,7 +1191,7 @@ final supportedCurrencies = <Currency>[
   Currency(
     code: "UZS",
     name: "Uzbekistani soʻm",
-    symbol: "лв",
+    symbol: "so'm",
     emoji: "🇺🇿",
     decimalDigits: 2,
     position: "last",
