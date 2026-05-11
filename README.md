@@ -57,13 +57,13 @@ A widget that allows the user to select multiple currencies at once. It displays
 
 | Widget               | Properties                                                                                                                                                                                                                                                         |
 |----------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| `CurrencyPicker`     | `currencyController`: (required) Manages currency state.<br>                                                                                                                                                                                                       |
+| `CurrencyPicker`     | `currencyController`: (required) Manages currency state.<br>`defaultCurrencyCode`: (optional) Initial currency to select. |
 | `CurrencyTextField`  | `currencyController`: (required) Manages currency state.<br>`currencyCode`: (required) Code of the currency to use.<br>                                                                                                                                            |
 | `CurrencyTextView`   | `mount`: (required) Amount to display.<br>`currencyCode`: (required) Code of the currency.<br>`CurrencyControler` : (required)Manages currency state                                                                                                               |
 | `CurrencyCardReport` | `title`: (required) Title widget for the card.<br>`icon`: (required) Icon widget for the card.<br>`mount`: (required) Amount to display.<br>`currencyCode`: (required) Code of the currency.<br>`lang`: (required) Language for formatting.<br>`style`: Text Style |
 | `CurrencyChooser`    | `currencyController`: (required) Manages currency state and exposes the selected currency via `controller.currency` and `controller.currencyNotifier`. |
-| `CustomCurrencyPicker`| `currencyController`: (required) Manages currency state.<br>`currencyCodes`: (required) List of currency codes to allow.<br> |
-| `CustomCurrencyChooser`| `currencyController`: (required) Manages currency state.<br>`currencyCodes`: (required) List of currency codes to allow.<br> |
+| `CustomCurrencyPicker`| `currencyController`: (required) Manages currency state.<br>`currencyCodes`: (required) List of currency codes to allow.<br>`defaultCurrencyCode`: (optional) Initial currency to select. |
+| `CustomCurrencyChooser`| `currencyController`: (required) Manages currency state.<br>`currencyCodes`: (required) List of currency codes to allow.<br>`defaultCurrencyCode`: (optional) Initial currency to select. |
 | `CurrencyMultiSelector`| `onChanged`: (required) Callback fired when selection changes.<br>`initialSelected`: List of initially selected currencies.<br>`showOnlyCommon`: Toggle between common or all currencies.<br> |
 
 **Note**: All widgets also accept standard Flutter widget properties like `key`, `padding`, `margin`, etc.
@@ -122,7 +122,7 @@ class MyCurrencyScreen extends StatefulWidget {
 }
 
 class _MyCurrencyScreenState extends State<MyCurrencyScreen> {
-  final CurrencyController _controller = CurrencyController();
+  final CurrencyController _controller = CurrencyController(lang: 'es', initialCurrencyCode: 'EUR');
 
   @override
   void dispose() {
@@ -140,7 +140,10 @@ class _MyCurrencyScreenState extends State<MyCurrencyScreen> {
         padding: const EdgeInsets.all(16.0),
         child: Column(
           children: [
-            CurrencyPicker(currencyController: _controller),
+            CurrencyPicker(
+              currencyController: _controller,
+              defaultCurrencyCode: 'EUR',
+            ),
             SizedBox(height: 20),
             // You can listen to changes in the controller
             ValueListenableBuilder<Currency>(
@@ -176,6 +179,14 @@ class _MyCurrencyScreenState extends State<MyCurrencyScreen> {
             CustomCurrencyChooser(
               currencyController: _controller,
               currencyCodes: ['USD', 'EUR', 'ARS'],
+              defaultCurrencyCode: 'USD',
+            ),
+            SizedBox(height: 20),
+            // CustomCurrencyPicker: pick a currency from a restricted list with amount input
+            CustomCurrencyPicker(
+              currencyController: _controller,
+              currencyCodes: ['USD', 'GBP', 'JPY'],
+              defaultCurrencyCode: 'GBP',
             ),
           ],
         ),

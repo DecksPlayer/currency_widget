@@ -6,7 +6,8 @@ import 'package:flutter/material.dart';
 
 class CurrencyPicker extends StatefulWidget {
   final CurrencyController currencyController;
-  const CurrencyPicker({super.key, required this.currencyController});
+  final String? defaultCurrencyCode;
+  const CurrencyPicker({super.key, required this.currencyController, this.defaultCurrencyCode});
 
   @override
   State<CurrencyPicker> createState() => _CurrencyPicker();
@@ -21,7 +22,17 @@ class _CurrencyPicker extends State<CurrencyPicker> {
   void initState() {
     super.initState();
     _updateCurrencyList();
-    widget.currencyController.currency = _currencies[0];
+
+    if (widget.defaultCurrencyCode != null) {
+      final defaultCurrency = _currencies.firstWhere(
+        (c) =>
+            c.code.toLowerCase() == widget.defaultCurrencyCode!.toLowerCase(),
+        orElse: () => _currencies[0],
+      );
+      widget.currencyController.currency = defaultCurrency;
+    } else if (widget.currencyController.currencyNotifier.value == null) {
+      widget.currencyController.currency = _currencies[0];
+    }
 
     // Initialize controller with current value
     controller = TextEditingController(

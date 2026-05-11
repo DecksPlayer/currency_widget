@@ -10,11 +10,13 @@ import 'package:flutter/material.dart';
 class CustomCurrencyChooser extends StatefulWidget {
   final CurrencyController currencyController;
   final List<String> currencyCodes;
+  final String? defaultCurrencyCode;
 
   const CustomCurrencyChooser({
     super.key,
     required this.currencyController,
     required this.currencyCodes,
+    this.defaultCurrencyCode,
   });
 
   @override
@@ -28,7 +30,22 @@ class _CustomCurrencyChooserState extends State<CustomCurrencyChooser> {
   void initState() {
     super.initState();
     _updateCurrencyList();
-    if (_currencies.isNotEmpty) {
+
+    if (widget.defaultCurrencyCode != null) {
+      final defaultCurrency = _currencies.firstWhere(
+        (c) =>
+            c.code.toLowerCase() == widget.defaultCurrencyCode!.toLowerCase(),
+        orElse: () => _currencies.isNotEmpty ? _currencies[0] : _currencies[0],
+      );
+      widget.currencyController.currency = defaultCurrency;
+    } else if (widget.currencyController.currencyNotifier.value == null &&
+        _currencies.isNotEmpty) {
+      widget.currencyController.currency = _currencies[0];
+    }
+
+    // Ensure the selected currency is within the allowed list
+    if (_currencies.isNotEmpty &&
+        !_currencies.contains(widget.currencyController.currency)) {
       widget.currencyController.currency = _currencies[0];
     }
   }

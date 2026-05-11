@@ -7,7 +7,12 @@ class CurrencyController{
   String lang;
   /// Creates a new `CurrencyController` instance.
   /// The `lang` parameter is required and specifies the language code for localization.
-  CurrencyController({required this.lang});
+  /// The `initialCurrencyCode` parameter is optional and sets the initial currency.
+  CurrencyController({required this.lang, String? initialCurrencyCode}) {
+    if (initialCurrencyCode != null) {
+      currency = getCurrencyByCode(initialCurrencyCode);
+    }
+  }
 
   ValueNotifier<double?> mount = ValueNotifier<double?>(0);
   ValueNotifier<Currency?> _currency = ValueNotifier<Currency?>(null);
