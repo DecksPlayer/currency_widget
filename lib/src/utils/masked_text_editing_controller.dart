@@ -20,8 +20,8 @@ class AutoDecimalNumberFormatter extends TextInputFormatter {
   ///   - `thousandSeparator`: ','
   AutoDecimalNumberFormatter({
     this.decimalDigits = 2,
-    this.decimalSeparator = '.',
-    this.thousandSeparator = ',',
+    required this.decimalSeparator,
+    required this.thousandSeparator,
   });
   @override
   TextEditingValue formatEditUpdate(

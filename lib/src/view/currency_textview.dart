@@ -3,6 +3,7 @@ import 'package:flutter/material.dart';
 
 import '../../currency_widget.dart';
 import '../utils/currency_errors.dart';
+import '../utils/currency_format_utils.dart';
 
 ///[CurrencyTextView]
 ///
@@ -63,7 +64,9 @@ class _CurrencyTextViewState extends State<CurrencyTextView> {
   }
 
   void _updateController() {
-    controller.text = widget.mount.toStringAsFixed(currency?.decimalDigits ?? 0);
+    controller.text = currency != null
+        ? CurrencyFormatUtils.formatAmount(widget.mount, currency!)
+        : widget.mount.toStringAsFixed(0);
   }
 
   @override

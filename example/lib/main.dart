@@ -41,7 +41,7 @@ class _MyHomePageState extends State<MyHomePage> {
   );
   final CurrencyController currencyControllerEn = CurrencyController(
     lang: 'en',
-    initialCurrencyCode: 'ARS',
+    initialCurrencyCode: 'EUR',
   );
   final CurrencyController currencyChooserController = CurrencyController(
     lang: 'es',
@@ -105,6 +105,7 @@ class _MyHomePageState extends State<MyHomePage> {
               CurrencyTextField(
                 currencyCode: currencyCode,
                 currencyController: currencyController,
+                defaultAmount: 20,
               ),
               SizedBox(
                 width: 200,

@@ -1,5 +1,6 @@
 import 'package:currency_widget/currency_widget.dart';
 import 'package:currency_widget/src/assets/currencies_names/currencies_names.dart';
+import 'package:currency_widget/src/utils/currency_format_utils.dart';
 import 'package:currency_widget/src/utils/currency_picker_utils.dart';
 import 'package:currency_widget/src/utils/masked_text_editing_controller.dart';
 import 'package:flutter/material.dart';
@@ -35,10 +36,11 @@ class _CurrencyPicker extends State<CurrencyPicker> {
     }
 
     // Initialize controller with current value
+    final mount = widget.currencyController.mount.value;
     controller = TextEditingController(
-      text: widget.currencyController.mount.value != null &&
-              widget.currencyController.mount.value! > 0
-          ? widget.currencyController.mount.value.toString()
+      text: mount != null && mount > 0
+          ? CurrencyFormatUtils.formatAmount(
+              mount, widget.currencyController.currency)
           : '',
     );
 
@@ -104,9 +106,12 @@ class _CurrencyPicker extends State<CurrencyPicker> {
                   widget.currencyController.mount.value = 0;
                   return;
                 }
+                final currency = widget.currencyController.currency;
                 try {
                   // Usar str en lugar de controller.text para evitar conflictos
-                  String value = str.replaceAll(',', '');
+                  String value = str
+                      .replaceAll(currency.thousandSeparator, '')
+                      .replaceAll(currency.decimalSeparator, '.');
                   widget.currencyController.mount.value = double.parse(value);
                 } catch (e) {
                   // Invalid input, ignore
@@ -115,8 +120,13 @@ class _CurrencyPicker extends State<CurrencyPicker> {
               },
               inputFormatters: [
                 AutoDecimalNumberFormatter(
-                    decimalDigits:
-                        widget.currencyController.currency.decimalDigits),
+                  decimalDigits:
+                      widget.currencyController.currency.decimalDigits,
+                  thousandSeparator:
+                      widget.currencyController.currency.thousandSeparator,
+                  decimalSeparator:
+                      widget.currencyController.currency.decimalSeparator,
+                ),
               ],
             ),
           ),
@@ -144,7 +154,7 @@ class _CurrencyPicker extends State<CurrencyPicker> {
       // Update TextField formatting when currency changes
       final mount = widget.currencyController.mount.value;
       if (mount != null && mount > 0) {
-        controller.text = mount.toStringAsFixed(selected.decimalDigits);
+        controller.text = CurrencyFormatUtils.formatAmount(mount, selected);
       }
     });
   }

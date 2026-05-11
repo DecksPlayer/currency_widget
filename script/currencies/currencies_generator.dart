@@ -21,6 +21,8 @@ void main() async {
     buffer.writeln('    emoji: "${currency['emoji']}",');
     buffer.writeln('    decimalDigits: ${currency['decimal_digits']},');
     buffer.writeln('    position: "${currency['position']}",');
+    buffer.writeln('    thousandSeparator: "${currency['thousand_separator'] ?? ','}",');
+    buffer.writeln('    decimalSeparator: "${currency['decimal_separator'] ?? '.'}",');
     buffer.writeln('  ),');
   }
 

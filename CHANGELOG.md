@@ -85,3 +85,17 @@
  * Add `CustomCurrencyPicker` and `CustomCurrencyChooser` to restrict selectable currencies to a specific list.
  * Add `CurrencyMultiSelector` widget to support selecting multiple currencies simultaneously.
  
+ ## 1.0.11
+ 
+ * Add default currency selector
+
+ ## 1.0.12
+
+ * Fix `CurrencyTextField` to display the default amount when the currency is initialized.
+
+# 1.0.13
+
+* Fix pub dev issues.
+
+# 1.0.14
+* Fix Currency Decimal Format.
