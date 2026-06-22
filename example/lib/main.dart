@@ -35,10 +35,25 @@ class _MyHomePageState extends State<MyHomePage> {
   final CurrencyController controller = CurrencyController(lang: 'es');
 
   final String currencyCode = 'usd';
-  final CurrencyController currencyController = CurrencyController(lang: 'es');
+  final CurrencyController currencyController = CurrencyController(
+    lang: 'es',
+    initialCurrencyCode: 'ARS',
+  );
   final CurrencyController currencyControllerEn = CurrencyController(
     lang: 'en',
+    initialCurrencyCode: 'EUR',
   );
+  final CurrencyController currencyChooserController = CurrencyController(
+    lang: 'es',
+    initialCurrencyCode: 'GBP',
+  );
+
+  final CurrencyController customCurrencyController = CurrencyController(
+    lang: 'es',
+  );
+  List<Currency> _selectedCurrencies = [];
+  List<String> get _selectedCurrencyCodes =>
+      _selectedCurrencies.map((c) => c.code).toList();
 
   @override
   Widget build(BuildContext context) {
@@ -58,61 +73,121 @@ class _MyHomePageState extends State<MyHomePage> {
         // the App.build method, and use it to set our appbar title.
         title: Text(widget.title),
       ),
-      body: Center(
-        // Center is a layout widget. It takes a single child and positions it
-        // in the middle of the parent.
-        child: Column(
-          mainAxisAlignment: MainAxisAlignment.center,
-          children: <Widget>[
-            CurrencyPicker(currencyController: currencyControllerEn),
-            CurrencyTextView(
-              currencyCode: 'usd',
-              mount: 250.24,
-              currencyController: currencyControllerEn,
-            ),
-            ListenableBuilder(
-              listenable: currencyControllerEn.mount,
-              builder: (context, child) {
-                return CurrencyTextView(
-                  currencyCode: currencyControllerEn.currency.code,
-                  mount: currencyControllerEn.mount.value ?? 0,
-                  currencyController: currencyControllerEn,
-                );
-              },
-            ),
-            CurrencyTextView(
-              currencyCode: 'usa',
-              mount: 250.24,
-              currencyController: CurrencyController(lang: 'es'),
-            ),
-            CurrencyTextField(
-              currencyCode: currencyCode,
-              currencyController: currencyController,
-            ),
-            SizedBox(
-              width: 200,
-              child: CurrencyCardReport(
-                title: 'Currency Report',
-                icon: Icon(Icons.currency_exchange),
-                mount: 250.24,
-                currencyCode: 'eu',
-                lang: 'en',
-                style: TextStyle(fontSize: 10, fontWeight: FontWeight.bold),
-              ),
-            ),
-            SizedBox(
-              width: 200,
-              child: CurrencyCardReport(
-                title: 'Currency Report',
-                icon: Icon(Icons.currency_exchange),
-                mount: 250.24,
+      body: SingleChildScrollView(
+        child: Center(
+          // Center is a layout widget. It takes a single child and positions it
+          // in the middle of the parent.
+          child: Column(
+            mainAxisAlignment: MainAxisAlignment.center,
+            children: <Widget>[
+              // Se inicializará con 'EUR' por el controlador
+              CurrencyPicker(currencyController: currencyControllerEn),
+              CurrencyTextView(
                 currencyCode: 'usd',
-                lang: 'en',
+                mount: 250.24,
+                currencyController: currencyControllerEn,
               ),
-            ),
-          ],
+              ListenableBuilder(
+                listenable: currencyControllerEn.mount,
+                builder: (context, child) {
+                  return CurrencyTextView(
+                    currencyCode: currencyControllerEn.currency.code,
+                    mount: currencyControllerEn.mount.value ?? 0,
+                    currencyController: currencyControllerEn,
+                  );
+                },
+              ),
+              CurrencyTextView(
+                currencyCode: 'usa',
+                mount: 250.24,
+                currencyController: CurrencyController(lang: 'es'),
+              ),
+              CurrencyTextField(
+                currencyCode: currencyCode,
+                currencyController: currencyController,
+                defaultAmount: 20,
+              ),
+              SizedBox(
+                width: 200,
+                child: CurrencyCardReport(
+                  title: 'Currency Report',
+                  icon: Icon(Icons.currency_exchange),
+                  mount: 250.24,
+                  currencyCode: 'eu',
+                  lang: 'en',
+                  style: TextStyle(fontSize: 10, fontWeight: FontWeight.bold),
+                ),
+              ),
+              SizedBox(
+                width: 200,
+                child: CurrencyCardReport(
+                  title: 'Currency Report',
+                  icon: Icon(Icons.currency_exchange),
+                  mount: 250.24,
+                  currencyCode: 'usd',
+                  lang: 'en',
+                ),
+              ),
+              const Divider(),
+              const Text('CurrencyChooser (sin monto)'),
+              CurrencyChooser(currencyController: currencyChooserController),
+              ListenableBuilder(
+                listenable: currencyChooserController.currencyNotifier,
+                builder: (context, child) {
+                  return Text(
+                    'Moneda seleccionada: ${currencyChooserController.currency.getDefaultView()}',
+                  );
+                },
+              ),
+              const Divider(),
+              const Text(
+                'Multi-Selector & Custom Chooser',
+                style: TextStyle(fontWeight: FontWeight.bold),
+              ),
+              const SizedBox(height: 10),
+              CurrencyMultiSelector(
+                showOnlyCommon: true,
+                initialSelected: _selectedCurrencies,
+                onChanged: (selected) {
+                  setState(() {
+                    _selectedCurrencies = selected;
+                  });
+                },
+              ),
+              if (_selectedCurrencyCodes.isNotEmpty) ...[
+                const SizedBox(height: 10),
+                CustomCurrencyChooser(
+                  currencyController: customCurrencyController,
+                  currencyCodes: _selectedCurrencyCodes,
+                  // Podemos sobrescribir el del controlador si queremos
+                  defaultCurrencyCode: 'EUR',
+                ),
+                const SizedBox(height: 10),
+                const Text('CustomCurrencyPicker'),
+                CustomCurrencyPicker(
+                  currencyController: customCurrencyController,
+                  currencyCodes: _selectedCurrencyCodes,
+                  defaultCurrencyCode: 'USD',
+                ),
+                ListenableBuilder(
+                  listenable: customCurrencyController.currencyNotifier,
+                  builder: (context, child) {
+                    return Text(
+                      'Custom seleccionada: ${customCurrencyController.currency.getDefaultView()}',
+                    );
+                  },
+                ),
+              ] else ...[
+                const Padding(
+                  padding: EdgeInsets.all(8.0),
+                  child: Text('Selecciona al menos una moneda arriba'),
+                ),
+              ],
+              const SizedBox(height: 40),
+            ],
+          ),
         ),
-      ), // This trailing comma makes auto-formatting nicer for build methods.
-    );
+      ), // closes SingleChildScrollView
+    ); // closes Scaffold
   }
 }

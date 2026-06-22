@@ -4,15 +4,18 @@ import 'package:flutter/material.dart';
 import '../../currency_widget.dart';
 import '../utils/currency_errors.dart';
 import '../utils/masked_text_editing_controller.dart';
+import '../utils/currency_format_utils.dart';
 
 class CurrencyTextField extends StatefulWidget {
   final String currencyCode;
   final CurrencyController? currencyController;
+  final double? defaultAmount;
 
   const CurrencyTextField({
     super.key,
     required this.currencyCode,
     required this.currencyController,
+    this.defaultAmount,
   });
 
   @override
@@ -26,8 +29,39 @@ class _CurrencyTextFieldState extends State<CurrencyTextField> {
   @override
   void initState() {
     super.initState();
-    controller = TextEditingController();
-    currency = widget.currencyController!.getCurrencyByCode(widget.currencyCode);
+    _updateCurrency();
+
+    if (widget.defaultAmount != null &&
+        (widget.currencyController?.mount.value == null ||
+            widget.currencyController?.mount.value == 0)) {
+      widget.currencyController?.mount.value = widget.defaultAmount;
+    }
+
+    final initialMount = widget.currencyController?.mount.value;
+    controller = TextEditingController(
+      text: initialMount != null && initialMount > 0 && currency != null
+          ? CurrencyFormatUtils.formatAmount(initialMount, currency!)
+          : '',
+    );
+  }
+
+  void _updateCurrency() {
+    currency =
+        widget.currencyController?.getCurrencyByCode(widget.currencyCode);
+  }
+
+  @override
+  void didUpdateWidget(covariant CurrencyTextField oldWidget) {
+    super.didUpdateWidget(oldWidget);
+    if (widget.currencyCode != oldWidget.currencyCode) {
+      setState(() {
+        _updateCurrency();
+        final mount = widget.currencyController?.mount.value;
+        if (mount != null && mount > 0 && currency != null) {
+          controller.text = CurrencyFormatUtils.formatAmount(mount, currency!);
+        }
+      });
+    }
   }
 
   @override
@@ -56,6 +90,7 @@ class _CurrencyTextFieldState extends State<CurrencyTextField> {
                 enabled: true,
                 // Set readOnly to false to allow user input.
                 readOnly: false,
+                enableInteractiveSelection: true,
                 textAlign: currency!.position == 'first'
                     ? TextAlign.start
                     : currency!.position == 'last'
@@ -66,7 +101,10 @@ class _CurrencyTextFieldState extends State<CurrencyTextField> {
                 controller: controller,
                 onChanged: (str) {
                   // Usar str en lugar de controller.text para evitar conflictos
-                  String value = str.replaceAll(',', '');
+                  // Remover separador de miles y reemplazar separador decimal por punto para parsear
+                  String value = str
+                      .replaceAll(currency!.thousandSeparator, '')
+                      .replaceAll(currency!.decimalSeparator, '.');
                   try {
                     widget.currencyController!.mount.value =
                         double.parse(value);
@@ -78,6 +116,8 @@ class _CurrencyTextFieldState extends State<CurrencyTextField> {
                 inputFormatters: [
                   AutoDecimalNumberFormatter(
                     decimalDigits: currency!.decimalDigits,
+                    thousandSeparator: currency!.thousandSeparator,
+                    decimalSeparator: currency!.decimalSeparator,
                   ),
                 ])),
       )

@@ -70,3 +70,32 @@
  * Fix Memory issues 
  * Fix Cursor Issue
  * Fix Currency Mask format.
+
+  ## 1.0.7
+ * Fix Controller on TextEditingController
+ * Fix Relative Cursor Issue
+
+ ## 1.0.8
+ * add currencyChooser
+
+ ## 1.0.9
+ * Minor refactor in currencyChooser
+ 
+ ## 1.0.10
+ * Add `CustomCurrencyPicker` and `CustomCurrencyChooser` to restrict selectable currencies to a specific list.
+ * Add `CurrencyMultiSelector` widget to support selecting multiple currencies simultaneously.
+ 
+ ## 1.0.11
+ 
+ * Add default currency selector
+
+ ## 1.0.12
+
+ * Fix `CurrencyTextField` to display the default amount when the currency is initialized.
+
+# 1.0.13
+
+* Fix pub dev issues.
+
+# 1.0.14
+* Fix Currency Decimal Format.

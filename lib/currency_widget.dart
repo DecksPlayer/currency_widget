@@ -5,3 +5,7 @@ export 'package:currency_widget/src/Controller/currency_controller.dart';
 export 'package:currency_widget/src/view/currency_textview.dart';
 export 'package:currency_widget/src/view/currency_textfield.dart';
 export 'package:currency_widget/src/view/currency_card_view_report.dart';
+export 'package:currency_widget/src/view/currency_chooser.dart';
+export 'package:currency_widget/src/view/custom_currency_chooser.dart';
+export 'package:currency_widget/src/view/custom_currency_picker.dart';
+export 'package:currency_widget/src/view/currency_multi_selector.dart';

@@ -7,6 +7,8 @@ class Currency{
   String emoji;
   int decimalDigits;
   String position;
+  String thousandSeparator;
+  String decimalSeparator;
 
   Currency({
     required this.code,
@@ -14,7 +16,9 @@ class Currency{
     required this.symbol,
     required this.emoji,
     required this.decimalDigits,
-    required this.position
+    required this.position,
+    this.thousandSeparator = ',',
+    this.decimalSeparator = '.',
   });
 
   factory Currency.fromJson(Map<String, dynamic> json) {
@@ -25,6 +29,8 @@ class Currency{
       emoji: json['emoji'] as String? ?? '',
       decimalDigits: json['decimal_digits'] as int? ?? 0,
       position: json['position'] as String? ?? '',
+      thousandSeparator: json['thousand_separator'] as String? ?? ',',
+      decimalSeparator: json['decimal_separator'] as String? ?? '.',
     );
   }
 
@@ -37,6 +43,8 @@ class Currency{
       'emoji': emoji,
       'decimal_digits': decimalDigits,
       'position': position,
+      'thousand_separator': thousandSeparator,
+      'decimal_separator': decimalSeparator,
     };
   }
 

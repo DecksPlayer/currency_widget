@@ -5,18 +5,28 @@ import 'package:currency_widget/src/utils/currency_picker_utils.dart';
 import 'package:currency_widget/src/utils/masked_text_editing_controller.dart';
 import 'package:flutter/material.dart';
 
-class CurrencyPicker extends StatefulWidget {
+/// A widget that allows the user to select a currency from a custom list and input an amount.
+///
+/// Use [CustomCurrencyPicker] when you want to restrict the selectable
+/// currencies to a specific list of currency codes (e.g., `['USD', 'EUR']`).
+class CustomCurrencyPicker extends StatefulWidget {
   final CurrencyController currencyController;
+  final List<String> currencyCodes;
   final String? defaultCurrencyCode;
-  const CurrencyPicker({super.key, required this.currencyController, this.defaultCurrencyCode});
+
+  const CustomCurrencyPicker({
+    super.key,
+    required this.currencyController,
+    required this.currencyCodes,
+    this.defaultCurrencyCode,
+  });
 
   @override
-  State<CurrencyPicker> createState() => _CurrencyPicker();
+  State<CustomCurrencyPicker> createState() => _CustomCurrencyPickerState();
 }
 
-class _CurrencyPicker extends State<CurrencyPicker> {
+class _CustomCurrencyPickerState extends State<CustomCurrencyPicker> {
   List<Currency> _currencies = [];
-  bool _showOnlyCommon = true;
   late TextEditingController controller;
 
   @override
@@ -28,14 +38,20 @@ class _CurrencyPicker extends State<CurrencyPicker> {
       final defaultCurrency = _currencies.firstWhere(
         (c) =>
             c.code.toLowerCase() == widget.defaultCurrencyCode!.toLowerCase(),
-        orElse: () => _currencies[0],
+        orElse: () => _currencies.isNotEmpty ? _currencies[0] : _currencies[0],
       );
       widget.currencyController.currency = defaultCurrency;
-    } else if (widget.currencyController.currencyNotifier.value == null) {
+    } else if (widget.currencyController.currencyNotifier.value == null &&
+        _currencies.isNotEmpty) {
       widget.currencyController.currency = _currencies[0];
     }
 
-    // Initialize controller with current value
+    // Ensure the selected currency is within the allowed list
+    if (_currencies.isNotEmpty &&
+        !_currencies.contains(widget.currencyController.currency)) {
+      widget.currencyController.currency = _currencies[0];
+    }
+
     final mount = widget.currencyController.mount.value;
     controller = TextEditingController(
       text: mount != null && mount > 0
@@ -43,43 +59,45 @@ class _CurrencyPicker extends State<CurrencyPicker> {
               mount, widget.currencyController.currency)
           : '',
     );
-
   }
 
   void _updateCurrencyList() {
-    _currencies = filteredCurrencies(_showOnlyCommon);
+    _currencies = customFilteredCurrencies(widget.currencyCodes);
+  }
+
+  @override
+  void didUpdateWidget(covariant CustomCurrencyPicker oldWidget) {
+    super.didUpdateWidget(oldWidget);
+    if (widget.currencyCodes != oldWidget.currencyCodes) {
+      setState(() {
+        _updateCurrencyList();
+        if (_currencies.isNotEmpty && !_currencies.contains(widget.currencyController.currency)) {
+          widget.currencyController.currency = _currencies[0];
+          final mount = widget.currencyController.mount.value;
+          if (mount != null && mount > 0) {
+            controller.text =
+                CurrencyFormatUtils.formatAmount(mount, _currencies[0]);
+          }
+        }
+      });
+    }
   }
 
   @override
   Widget build(BuildContext context) {
+    if (_currencies.isEmpty) {
+      return const SizedBox.shrink();
+    }
+
     return Container(
-      margin: EdgeInsets.all(10),
+      margin: const EdgeInsets.all(10),
       child: Column(
         mainAxisSize: MainAxisSize.min,
         children: [
           ListTile(
             title: Row(
               children: [
-                Expanded(child: getCurrenciesDropdown()),
-                Tooltip(
-                  message: _getTooltipText(),
-                  child: IconButton(
-                    icon: Icon(
-                      _showOnlyCommon ? Icons.star : Icons.public,
-                      size: 22,
-                    ),
-                    onPressed: () {
-                      setState(() {
-                        _showOnlyCommon = !_showOnlyCommon;
-                        _updateCurrencyList();
-                        if (!_currencies
-                            .contains(widget.currencyController.currency)) {
-                          widget.currencyController.currency = _currencies[0];
-                        }
-                      });
-                    },
-                  ),
-                ),
+                Expanded(child: _buildDropdown()),
               ],
             ),
             subtitle: TextField(
@@ -90,7 +108,8 @@ class _CurrencyPicker extends State<CurrencyPicker> {
               decoration: InputDecoration(
                 hintText: 0.toStringAsFixed(
                     widget.currencyController.currency.decimalDigits),
-                labelText: countryNames(widget.currencyController.lang,
+                labelText: countryNames(
+                    widget.currencyController.lang,
                     widget.currencyController.currency.code),
                 prefixText:
                     widget.currencyController.currency.position == 'first'
@@ -108,13 +127,11 @@ class _CurrencyPicker extends State<CurrencyPicker> {
                 }
                 final currency = widget.currencyController.currency;
                 try {
-                  // Usar str en lugar de controller.text para evitar conflictos
                   String value = str
                       .replaceAll(currency.thousandSeparator, '')
                       .replaceAll(currency.decimalSeparator, '.');
                   widget.currencyController.mount.value = double.parse(value);
                 } catch (e) {
-                  // Invalid input, ignore
                   widget.currencyController.mount.value = 0;
                 }
               },
@@ -135,23 +152,21 @@ class _CurrencyPicker extends State<CurrencyPicker> {
     );
   }
 
-  // Returns a DropdownButton widget for selecting currencies.
-  DropdownButton<Currency> getCurrenciesDropdown() {
+  DropdownButton<Currency> _buildDropdown() {
     return DropdownButton<Currency>(
       value: widget.currencyController.currency,
+      isExpanded: true,
       onChanged: (Currency? newValue) async {
-        chooseCurrency(newValue!);
+        chooseCurrency(newValue);
       },
       items: currencyDropdownItems(_currencies),
     );
   }
 
-  // Handles the selection of a new currency.
-  Future<void> chooseCurrency(Currency? selected) async {
+  void chooseCurrency(Currency? selected) {
     if (selected == null) return;
     setState(() {
       widget.currencyController.currency = selected;
-      // Update TextField formatting when currency changes
       final mount = widget.currencyController.mount.value;
       if (mount != null && mount > 0) {
         controller.text = CurrencyFormatUtils.formatAmount(mount, selected);
@@ -163,9 +178,5 @@ class _CurrencyPicker extends State<CurrencyPicker> {
   void dispose() {
     controller.dispose();
     super.dispose();
-  }
-
-  String _getTooltipText() {
-    return currencyFilterTooltip(widget.currencyController.lang, _showOnlyCommon);
   }
 }

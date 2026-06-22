@@ -5,7 +5,9 @@ List<Map<String,dynamic>> currencies =[
 "symbol": "د.إ",
 "emoji": "🇦🇪",
 "decimal_digits": 2,
-"position": "first"
+"position": "first",
+"thousand_separator": ",",
+"decimal_separator": "."
 },
 {
 "code": "AFN",
@@ -13,7 +15,9 @@ List<Map<String,dynamic>> currencies =[
 "symbol": "؋",
 "emoji": "🇦🇫",
 "decimal_digits": 2,
-"position": "last"
+"position": "last",
+"thousand_separator": ",",
+"decimal_separator": "."
 },
 {
 "code": "ALL",
@@ -21,7 +25,9 @@ List<Map<String,dynamic>> currencies =[
 "symbol": "L",
 "emoji": "🇦🇱",
 "decimal_digits": 2,
-"position": "last"
+"position": "last",
+"thousand_separator": ",",
+"decimal_separator": "."
 },
 {
 "code": "AMD",
@@ -29,7 +35,9 @@ List<Map<String,dynamic>> currencies =[
 "symbol": "֏",
 "emoji": "🇦🇲",
 "decimal_digits": 2,
-"position": "last"
+"position": "last",
+"thousand_separator": ",",
+"decimal_separator": "."
 },
 {
 "code": "AOA",
@@ -37,7 +45,9 @@ List<Map<String,dynamic>> currencies =[
 "symbol": "Kz",
 "emoji": "🇦🇴",
 "decimal_digits": 2,
-"position": "first"
+"position": "first",
+"thousand_separator": ",",
+"decimal_separator": "."
 },
 {
 "code": "ARS",
@@ -45,7 +55,9 @@ List<Map<String,dynamic>> currencies =[
 "symbol": "\$",
 "emoji": "🇦🇷",
 "decimal_digits": 2,
-"position": "first"
+"position": "first",
+"thousand_separator": ".",
+"decimal_separator": ","
 },
 {
 "code": "AUD",
@@ -53,7 +65,9 @@ List<Map<String,dynamic>> currencies =[
 "symbol": "AU\$",
 "emoji": "🇦🇺",
 "decimal_digits": 2,
-"position": "first"
+"position": "first",
+"thousand_separator": ",",
+"decimal_separator": "."
 },
 {
 "code": "AWG",
@@ -61,7 +75,9 @@ List<Map<String,dynamic>> currencies =[
 "symbol": "ƒ",
 "emoji": "🇦🇼",
 "decimal_digits": 2,
-"position": "first"
+"position": "first",
+"thousand_separator": ",",
+"decimal_separator": "."
 },
 {
 "code": "AZN",
@@ -69,7 +85,9 @@ List<Map<String,dynamic>> currencies =[
 "symbol": "₼",
 "emoji": "🇦🇿",
 "decimal_digits": 2,
-"position": "last"
+"position": "last",
+"thousand_separator": ",",
+"decimal_separator": "."
 },
 {
 "code": "BAM",
@@ -77,7 +95,9 @@ List<Map<String,dynamic>> currencies =[
 "symbol": "KM",
 "emoji": "🇧🇦",
 "decimal_digits": 2,
-"position": "last"
+"position": "last",
+"thousand_separator": ",",
+"decimal_separator": "."
 },
 {
 "code": "BBD",
@@ -85,7 +105,9 @@ List<Map<String,dynamic>> currencies =[
 "symbol": "Bds\$",
 "emoji": "🇧🇧",
 "decimal_digits": 2,
-"position": "first"
+"position": "first",
+"thousand_separator": ",",
+"decimal_separator": "."
 },
 {
 "code": "BDT",
@@ -93,7 +115,9 @@ List<Map<String,dynamic>> currencies =[
 "symbol": "৳",
 "emoji": "🇧🇩",
 "decimal_digits": 2,
-"position": "first"
+"position": "first",
+"thousand_separator": ",",
+"decimal_separator": "."
 },
 {
 "code": "BGN",
@@ -101,7 +125,9 @@ List<Map<String,dynamic>> currencies =[
 "symbol": "лв",
 "emoji": "🇧🇬",
 "decimal_digits": 2,
-"position": "last"
+"position": "last",
+"thousand_separator": ",",
+"decimal_separator": "."
 },
 {
 "code": "BHD",
@@ -109,7 +135,9 @@ List<Map<String,dynamic>> currencies =[
 "symbol": ".د.ب",
 "emoji": "🇧🇭",
 "decimal_digits": 3,
-"position": "first"
+"position": "first",
+"thousand_separator": ",",
+"decimal_separator": "."
 },
 {
 "code": "BIF",
@@ -117,7 +145,9 @@ List<Map<String,dynamic>> currencies =[
 "symbol": "FBu",
 "emoji": "🇧🇮",
 "decimal_digits": 0,
-"position": "last"
+"position": "last",
+"thousand_separator": ",",
+"decimal_separator": "."
 },
 {
 "code": "BMD",
@@ -125,7 +155,9 @@ List<Map<String,dynamic>> currencies =[
 "symbol": "BD\$",
 "emoji": "🇧🇲",
 "decimal_digits": 2,
-"position": "first"
+"position": "first",
+"thousand_separator": ",",
+"decimal_separator": "."
 },
 {
 "code": "BND",
@@ -133,7 +165,9 @@ List<Map<String,dynamic>> currencies =[
 "symbol": "B\$",
 "emoji": "🇧🇳",
 "decimal_digits": 2,
-"position": "first"
+"position": "first",
+"thousand_separator": ",",
+"decimal_separator": "."
 },
 {
 "code": "BOB",
@@ -141,7 +175,9 @@ List<Map<String,dynamic>> currencies =[
 "symbol": "Bs.",
 "emoji": "🇧🇴",
 "decimal_digits": 2,
-"position": "first"
+"position": "first",
+"thousand_separator": ".",
+"decimal_separator": ","
 },
 {
 "code": "BOV",
@@ -149,7 +185,9 @@ List<Map<String,dynamic>> currencies =[
 "symbol": "BOV",
 "emoji": "🇧🇴",
 "decimal_digits": 2,
-"position": "first"
+"position": "first",
+"thousand_separator": ",",
+"decimal_separator": "."
 },
 {
 "code": "BRL",
@@ -157,7 +195,9 @@ List<Map<String,dynamic>> currencies =[
 "symbol": "R\$",
 "emoji": "🇧🇷",
 "decimal_digits": 2,
-"position": "first"
+"position": "first",
+"thousand_separator": ".",
+"decimal_separator": ","
 },
 {
 "code": "BSD",
@@ -165,7 +205,9 @@ List<Map<String,dynamic>> currencies =[
 "symbol": "B\$",
 "emoji": "🇧🇸",
 "decimal_digits": 2,
-"position": "first"
+"position": "first",
+"thousand_separator": ",",
+"decimal_separator": "."
 },
 {
 "code": "BTN",
@@ -173,7 +215,9 @@ List<Map<String,dynamic>> currencies =[
 "symbol": "Nu.",
 "emoji": "🇧🇹",
 "decimal_digits": 2,
-"position": "last"
+"position": "last",
+"thousand_separator": ",",
+"decimal_separator": "."
 },
 {
 "code": "BWP",
@@ -181,7 +225,9 @@ List<Map<String,dynamic>> currencies =[
 "symbol": "P",
 "emoji": "🇧🇼",
 "decimal_digits": 2,
-"position": "first"
+"position": "first",
+"thousand_separator": ",",
+"decimal_separator": "."
 },
 {
 "code": "BYN",
@@ -189,7 +235,9 @@ List<Map<String,dynamic>> currencies =[
 "symbol": "Br",
 "emoji": "🇧🇾",
 "decimal_digits": 2,
-"position": "last"
+"position": "last",
+"thousand_separator": ",",
+"decimal_separator": "."
 },
 {
 "code": "BZD",
@@ -197,7 +245,9 @@ List<Map<String,dynamic>> currencies =[
 "symbol": "BZ\$",
 "emoji": "🇧🇿",
 "decimal_digits": 2,
-"position": "first"
+"position": "first",
+"thousand_separator": ",",
+"decimal_separator": "."
 },
 {
 "code": "CAD",
@@ -205,7 +255,9 @@ List<Map<String,dynamic>> currencies =[
 "symbol": "CA\$",
 "emoji": "🇨🇦",
 "decimal_digits": 2,
-"position": "first"
+"position": "first",
+"thousand_separator": ",",
+"decimal_separator": "."
 },
 {
 "code": "CDF",
@@ -213,7 +265,9 @@ List<Map<String,dynamic>> currencies =[
 "symbol": "FC",
 "emoji": "🇨🇩",
 "decimal_digits": 2,
-"position": "last"
+"position": "last",
+"thousand_separator": ",",
+"decimal_separator": "."
 },
 {
 "code": "CHF",
@@ -221,7 +275,9 @@ List<Map<String,dynamic>> currencies =[
 "symbol": "CHF",
 "emoji": "🇨🇭",
 "decimal_digits": 2,
-"position": "first"
+"position": "first",
+"thousand_separator": ",",
+"decimal_separator": "."
 },
 {
 "code": "CLF",
@@ -229,7 +285,9 @@ List<Map<String,dynamic>> currencies =[
 "symbol": "UF",
 "emoji": "🇨🇱",
 "decimal_digits": 4,
-"position": "first"
+"position": "first",
+"thousand_separator": ",",
+"decimal_separator": "."
 },
 {
 "code": "CLP",
@@ -237,7 +295,9 @@ List<Map<String,dynamic>> currencies =[
 "symbol": "CLP\$",
 "emoji": "🇨🇱",
 "decimal_digits": 0,
-"position": "first"
+"position": "first",
+"thousand_separator": ".",
+"decimal_separator": ","
 },
 {
 "code": "CNY",
@@ -245,7 +305,9 @@ List<Map<String,dynamic>> currencies =[
 "symbol": "¥",
 "emoji": "🇨🇳",
 "decimal_digits": 2,
-"position": "first"
+"position": "first",
+"thousand_separator": ",",
+"decimal_separator": "."
 },
 {
 "code": "COP",
@@ -253,7 +315,9 @@ List<Map<String,dynamic>> currencies =[
 "symbol": "COL\$",
 "emoji": "🇨🇴",
 "decimal_digits": 2,
-"position": "first"
+"position": "first",
+"thousand_separator": ".",
+"decimal_separator": ","
 },
 {
 "code": "COU",
@@ -261,7 +325,9 @@ List<Map<String,dynamic>> currencies =[
 "symbol": "UVR",
 "emoji": "🇨🇴",
 "decimal_digits": 2,
-"position": "first"
+"position": "first",
+"thousand_separator": ",",
+"decimal_separator": "."
 },
 {
 "code": "CRC",
@@ -269,7 +335,9 @@ List<Map<String,dynamic>> currencies =[
 "symbol": "₡",
 "emoji": "🇨🇷",
 "decimal_digits": 2,
-"position": "first"
+"position": "first",
+"thousand_separator": ".",
+"decimal_separator": ","
 },
 {
 "code": "CUP",
@@ -277,7 +345,9 @@ List<Map<String,dynamic>> currencies =[
 "symbol": "₱",
 "emoji": "🇨🇺",
 "decimal_digits": 2,
-"position": "first"
+"position": "first",
+"thousand_separator": ",",
+"decimal_separator": "."
 },
 {
 "code": "CVE",
@@ -285,7 +355,9 @@ List<Map<String,dynamic>> currencies =[
 "symbol": "Esc",
 "emoji": "🇨🇻",
 "decimal_digits": 2,
-"position": "first"
+"position": "first",
+"thousand_separator": ",",
+"decimal_separator": "."
 },
 {
 "code": "CZK",
@@ -293,7 +365,9 @@ List<Map<String,dynamic>> currencies =[
 "symbol": "Kč",
 "emoji": "🇨🇿",
 "decimal_digits": 2,
-"position": "last"
+"position": "last",
+"thousand_separator": ",",
+"decimal_separator": "."
 },
 {
 "code": "DJF",
@@ -301,7 +375,9 @@ List<Map<String,dynamic>> currencies =[
 "symbol": "Fdj",
 "emoji": "🇩🇯",
 "decimal_digits": 0,
-"position": "last"
+"position": "last",
+"thousand_separator": ",",
+"decimal_separator": "."
 },
 {
 "code": "DKK",
@@ -309,7 +385,9 @@ List<Map<String,dynamic>> currencies =[
 "symbol": "kr",
 "emoji": "🇩🇰",
 "decimal_digits": 2,
-"position": "last"
+"position": "last",
+"thousand_separator": ",",
+"decimal_separator": "."
 },
 {
 "code": "DOP",
@@ -317,7 +395,9 @@ List<Map<String,dynamic>> currencies =[
 "symbol": "RD\$",
 "emoji": "🇩🇴",
 "decimal_digits": 2,
-"position": "first"
+"position": "first",
+"thousand_separator": ",",
+"decimal_separator": "."
 },
 {
 "code": "DZD",
@@ -325,7 +405,9 @@ List<Map<String,dynamic>> currencies =[
 "symbol": "دج",
 "emoji": "🇩🇿",
 "decimal_digits": 2,
-"position": "first"
+"position": "first",
+"thousand_separator": ",",
+"decimal_separator": "."
 },
 {
 "code": "EGP",
@@ -333,7 +415,9 @@ List<Map<String,dynamic>> currencies =[
 "symbol": "£",
 "emoji": "🇪🇬",
 "decimal_digits": 2,
-"position": "first"
+"position": "first",
+"thousand_separator": ",",
+"decimal_separator": "."
 },
 {
 "code": "ERN",
@@ -341,7 +425,9 @@ List<Map<String,dynamic>> currencies =[
 "symbol": "Nfk",
 "emoji": "🇪🇷",
 "decimal_digits": 2,
-"position": "last"
+"position": "last",
+"thousand_separator": ",",
+"decimal_separator": "."
 },
 {
 "code": "ETB",
@@ -349,7 +435,9 @@ List<Map<String,dynamic>> currencies =[
 "symbol": "Br",
 "emoji": "🇪🇹",
 "decimal_digits": 2,
-"position": "last"
+"position": "last",
+"thousand_separator": ",",
+"decimal_separator": "."
 },
 {
 "code": "EUR",
@@ -357,7 +445,9 @@ List<Map<String,dynamic>> currencies =[
 "symbol": "€",
 "emoji": "🇪🇺",
 "decimal_digits": 2,
-"position": "first"
+"position": "first",
+"thousand_separator": ".",
+"decimal_separator": ","
 },
 {
 "code": "FJD",
@@ -365,7 +455,9 @@ List<Map<String,dynamic>> currencies =[
 "symbol": "FJ\$",
 "emoji": "🇫🇯",
 "decimal_digits": 2,
-"position": "first"
+"position": "first",
+"thousand_separator": ",",
+"decimal_separator": "."
 },
 {
 "code": "FKP",
@@ -373,7 +465,9 @@ List<Map<String,dynamic>> currencies =[
 "symbol": "£",
 "emoji": "🇫🇰",
 "decimal_digits": 2,
-"position": "first"
+"position": "first",
+"thousand_separator": ",",
+"decimal_separator": "."
 },
 {
 "code": "GBP",
@@ -381,7 +475,9 @@ List<Map<String,dynamic>> currencies =[
 "symbol": "£",
 "emoji": "🇬🇧",
 "decimal_digits": 2,
-"position": "first"
+"position": "first",
+"thousand_separator": ",",
+"decimal_separator": "."
 },
 {
 "code": "GEL",
@@ -389,7 +485,9 @@ List<Map<String,dynamic>> currencies =[
 "symbol": "₾",
 "emoji": "🇬🇪",
 "decimal_digits": 2,
-"position": "last"
+"position": "last",
+"thousand_separator": ",",
+"decimal_separator": "."
 },
 {
 "code": "GHS",
@@ -397,7 +495,9 @@ List<Map<String,dynamic>> currencies =[
 "symbol": "₵",
 "emoji": "🇬🇭",
 "decimal_digits": 2,
-"position": "first"
+"position": "first",
+"thousand_separator": ",",
+"decimal_separator": "."
 },
 {
 "code": "GIP",
@@ -405,7 +505,9 @@ List<Map<String,dynamic>> currencies =[
 "symbol": "£",
 "emoji": "🇬🇮",
 "decimal_digits": 2,
-"position": "first"
+"position": "first",
+"thousand_separator": ",",
+"decimal_separator": "."
 },
 {
 "code": "GMD",
@@ -413,7 +515,9 @@ List<Map<String,dynamic>> currencies =[
 "symbol": "D",
 "emoji": "🇬🇲",
 "decimal_digits": 2,
-"position": "last"
+"position": "last",
+"thousand_separator": ",",
+"decimal_separator": "."
 },
 {
 "code": "GNF",
@@ -421,7 +525,9 @@ List<Map<String,dynamic>> currencies =[
 "symbol": "FG",
 "emoji": "🇬🇳",
 "decimal_digits": 0,
-"position": "last"
+"position": "last",
+"thousand_separator": ",",
+"decimal_separator": "."
 },
 {
 "code": "GTQ",
@@ -429,7 +535,9 @@ List<Map<String,dynamic>> currencies =[
 "symbol": "Q",
 "emoji": "🇬🇹",
 "decimal_digits": 2,
-"position": "first"
+"position": "first",
+"thousand_separator": ",",
+"decimal_separator": "."
 },
 {
 "code": "GYD",
@@ -437,7 +545,9 @@ List<Map<String,dynamic>> currencies =[
 "symbol": "GY\$",
 "emoji": "🇬🇾",
 "decimal_digits": 2,
-"position": "first"
+"position": "first",
+"thousand_separator": ",",
+"decimal_separator": "."
 },
 {
 "code": "HKD",
@@ -445,7 +555,9 @@ List<Map<String,dynamic>> currencies =[
 "symbol": "HK\$",
 "emoji": "🇭🇰",
 "decimal_digits": 2,
-"position": "first"
+"position": "first",
+"thousand_separator": ",",
+"decimal_separator": "."
 },
 {
 "code": "HNL",
@@ -453,7 +565,9 @@ List<Map<String,dynamic>> currencies =[
 "symbol": "L",
 "emoji": "🇭🇳",
 "decimal_digits": 2,
-"position": "first"
+"position": "first",
+"thousand_separator": ",",
+"decimal_separator": "."
 },
 {
 "code": "HTG",
@@ -461,7 +575,9 @@ List<Map<String,dynamic>> currencies =[
 "symbol": "G",
 "emoji": "🇭🇹",
 "decimal_digits": 2,
-"position": "first"
+"position": "first",
+"thousand_separator": ",",
+"decimal_separator": "."
 },
 {
 "code": "HUF",
@@ -469,7 +585,9 @@ List<Map<String,dynamic>> currencies =[
 "symbol": "Ft",
 "emoji": "🇭🇺",
 "decimal_digits": 0,
-"position": "last"
+"position": "last",
+"thousand_separator": ",",
+"decimal_separator": "."
 },
 {
 "code": "IDR",
@@ -477,7 +595,9 @@ List<Map<String,dynamic>> currencies =[
 "symbol": "Rp",
 "emoji": "🇮🇩",
 "decimal_digits": 0,
-"position": "first"
+"position": "first",
+"thousand_separator": ",",
+"decimal_separator": "."
 },
 {
 "code": "ILS",
@@ -485,7 +605,9 @@ List<Map<String,dynamic>> currencies =[
 "symbol": "₪",
 "emoji": "🇮🇱",
 "decimal_digits": 2,
-"position": "first"
+"position": "first",
+"thousand_separator": ",",
+"decimal_separator": "."
 },
 {
 "code": "INR",
@@ -493,7 +615,9 @@ List<Map<String,dynamic>> currencies =[
 "symbol": "₹",
 "emoji": "🇮🇳",
 "decimal_digits": 2,
-"position": "first"
+"position": "first",
+"thousand_separator": ",",
+"decimal_separator": "."
 },
 {
 "code": "IQD",
@@ -501,7 +625,9 @@ List<Map<String,dynamic>> currencies =[
 "symbol": "ع.د",
 "emoji": "🇮🇶",
 "decimal_digits": 3,
-"position": "first"
+"position": "first",
+"thousand_separator": ",",
+"decimal_separator": "."
 },
 {
 "code": "IRR",
@@ -509,7 +635,9 @@ List<Map<String,dynamic>> currencies =[
 "symbol": "﷼",
 "emoji": "🇮🇷",
 "decimal_digits": 2,
-"position": "first"
+"position": "first",
+"thousand_separator": ",",
+"decimal_separator": "."
 },
 {
 "code": "ISK",
@@ -517,7 +645,9 @@ List<Map<String,dynamic>> currencies =[
 "symbol": "kr",
 "emoji": "🇮🇸",
 "decimal_digits": 0,
-"position": "last"
+"position": "last",
+"thousand_separator": ",",
+"decimal_separator": "."
 },
 {
 "code": "JMD",
@@ -525,7 +655,9 @@ List<Map<String,dynamic>> currencies =[
 "symbol": "J\$",
 "emoji": "🇯🇲",
 "decimal_digits": 2,
-"position": "first"
+"position": "first",
+"thousand_separator": ",",
+"decimal_separator": "."
 },
 {
 "code": "JOD",
@@ -533,7 +665,9 @@ List<Map<String,dynamic>> currencies =[
 "symbol": "JD",
 "emoji": "🇯🇴",
 "decimal_digits": 3,
-"position": "first"
+"position": "first",
+"thousand_separator": ",",
+"decimal_separator": "."
 },
 {
 "code": "JPY",
@@ -541,7 +675,9 @@ List<Map<String,dynamic>> currencies =[
 "symbol": "¥",
 "emoji": "🇯🇵",
 "decimal_digits": 0,
-"position": "first"
+"position": "first",
+"thousand_separator": ",",
+"decimal_separator": "."
 },
 {
 "code": "KES",
@@ -549,15 +685,19 @@ List<Map<String,dynamic>> currencies =[
 "symbol": "KSh",
 "emoji": "🇰🇪",
 "decimal_digits": 2,
-"position": "first"
+"position": "first",
+"thousand_separator": ",",
+"decimal_separator": "."
 },
 {
 "code": "KGS",
 "name": "Kyrgyzstani som",
-"symbol": "лв",
+"symbol": "с",
 "emoji": "🇰🇬",
 "decimal_digits": 2,
-"position": "last"
+"position": "last",
+"thousand_separator": ",",
+"decimal_separator": "."
 },
 {
 "code": "KHR",
@@ -565,7 +705,9 @@ List<Map<String,dynamic>> currencies =[
 "symbol": "៛",
 "emoji": "🇰🇭",
 "decimal_digits": 2,
-"position": "last"
+"position": "last",
+"thousand_separator": ",",
+"decimal_separator": "."
 },
 {
 "code": "KMF",
@@ -573,7 +715,9 @@ List<Map<String,dynamic>> currencies =[
 "symbol": "CF",
 "emoji": "🇰🇲",
 "decimal_digits": 0,
-"position": "last"
+"position": "last",
+"thousand_separator": ",",
+"decimal_separator": "."
 },
 {
 "code": "KPW",
@@ -581,7 +725,9 @@ List<Map<String,dynamic>> currencies =[
 "symbol": "₩",
 "emoji": "🇰🇵",
 "decimal_digits": 2,
-"position": "first"
+"position": "first",
+"thousand_separator": ",",
+"decimal_separator": "."
 },
 {
 "code": "KRW",
@@ -589,7 +735,9 @@ List<Map<String,dynamic>> currencies =[
 "symbol": "₩",
 "emoji": "🇰🇷",
 "decimal_digits": 0,
-"position": "first"
+"position": "first",
+"thousand_separator": ",",
+"decimal_separator": "."
 },
 {
 "code": "KWD",
@@ -597,7 +745,9 @@ List<Map<String,dynamic>> currencies =[
 "symbol": "د.ك",
 "emoji": "🇰🇼",
 "decimal_digits": 3,
-"position": "first"
+"position": "first",
+"thousand_separator": ",",
+"decimal_separator": "."
 },
 {
 "code": "KYD",
@@ -605,7 +755,9 @@ List<Map<String,dynamic>> currencies =[
 "symbol": "CI\$",
 "emoji": "🇰🇾",
 "decimal_digits": 2,
-"position": "first"
+"position": "first",
+"thousand_separator": ",",
+"decimal_separator": "."
 },
 {
 "code": "KZT",
@@ -613,7 +765,9 @@ List<Map<String,dynamic>> currencies =[
 "symbol": "₸",
 "emoji": "🇰🇿",
 "decimal_digits": 2,
-"position": "last"
+"position": "last",
+"thousand_separator": ",",
+"decimal_separator": "."
 },
 {
 "code": "LAK",
@@ -621,7 +775,9 @@ List<Map<String,dynamic>> currencies =[
 "symbol": "₭",
 "emoji": "🇱🇦",
 "decimal_digits": 2,
-"position": "last"
+"position": "last",
+"thousand_separator": ",",
+"decimal_separator": "."
 },
 {
 "code": "LBP",
@@ -629,7 +785,9 @@ List<Map<String,dynamic>> currencies =[
 "symbol": "£",
 "emoji": "🇱🇧",
 "decimal_digits": 2,
-"position": "first"
+"position": "first",
+"thousand_separator": ",",
+"decimal_separator": "."
 },
 {
 "code": "LKR",
@@ -637,7 +795,9 @@ List<Map<String,dynamic>> currencies =[
 "symbol": "Rs",
 "emoji": "🇱🇰",
 "decimal_digits": 2,
-"position": "first"
+"position": "first",
+"thousand_separator": ",",
+"decimal_separator": "."
 },
 {
 "code": "LRD",
@@ -645,7 +805,9 @@ List<Map<String,dynamic>> currencies =[
 "symbol": "L\$",
 "emoji": "🇱🇷",
 "decimal_digits": 2,
-"position": "first"
+"position": "first",
+"thousand_separator": ",",
+"decimal_separator": "."
 },
 {
 "code": "LSL",
@@ -653,7 +815,9 @@ List<Map<String,dynamic>> currencies =[
 "symbol": "M",
 "emoji": "🇱🇸",
 "decimal_digits": 2,
-"position": "first"
+"position": "first",
+"thousand_separator": ",",
+"decimal_separator": "."
 },
 {
 "code": "LYD",
@@ -661,7 +825,9 @@ List<Map<String,dynamic>> currencies =[
 "symbol": "ل.د",
 "emoji": "🇱🇾",
 "decimal_digits": 3,
-"position": "first"
+"position": "first",
+"thousand_separator": ",",
+"decimal_separator": "."
 },
 {
 "code": "MAD",
@@ -669,7 +835,9 @@ List<Map<String,dynamic>> currencies =[
 "symbol": "د.م.",
 "emoji": "🇲🇦",
 "decimal_digits": 2,
-"position": "first"
+"position": "first",
+"thousand_separator": ",",
+"decimal_separator": "."
 },
 {
 "code": "MDL",
@@ -677,7 +845,9 @@ List<Map<String,dynamic>> currencies =[
 "symbol": "L",
 "emoji": "🇲🇩",
 "decimal_digits": 2,
-"position": "last"
+"position": "last",
+"thousand_separator": ",",
+"decimal_separator": "."
 },
 {
 "code": "MGA",
@@ -685,7 +855,9 @@ List<Map<String,dynamic>> currencies =[
 "symbol": "Ar",
 "emoji": "🇲🇬",
 "decimal_digits": 2,
-"position": "first"
+"position": "first",
+"thousand_separator": ",",
+"decimal_separator": "."
 },
 {
 "code": "MKD",
@@ -693,7 +865,9 @@ List<Map<String,dynamic>> currencies =[
 "symbol": "ден",
 "emoji": "🇲🇰",
 "decimal_digits": 2,
-"position": "last"
+"position": "last",
+"thousand_separator": ",",
+"decimal_separator": "."
 },
 {
 "code": "MMK",
@@ -701,7 +875,9 @@ List<Map<String,dynamic>> currencies =[
 "symbol": "K",
 "emoji": "🇲🇲",
 "decimal_digits": 2,
-"position": "first"
+"position": "first",
+"thousand_separator": ",",
+"decimal_separator": "."
 },
 {
 "code": "MNT",
@@ -709,7 +885,9 @@ List<Map<String,dynamic>> currencies =[
 "symbol": "₮",
 "emoji": "🇲🇳",
 "decimal_digits": 2,
-"position": "first"
+"position": "first",
+"thousand_separator": ",",
+"decimal_separator": "."
 },
 {
 "code": "MOP",
@@ -717,7 +895,9 @@ List<Map<String,dynamic>> currencies =[
 "symbol": "P",
 "emoji": "🇲🇴",
 "decimal_digits": 2,
-"position": "last"
+"position": "last",
+"thousand_separator": ",",
+"decimal_separator": "."
 },
 {
 "code": "MRU",
@@ -725,7 +905,9 @@ List<Map<String,dynamic>> currencies =[
 "symbol": "UM",
 "emoji": "🇲🇷",
 "decimal_digits": 2,
-"position": "last"
+"position": "last",
+"thousand_separator": ",",
+"decimal_separator": "."
 },
 {
 "code": "MUR",
@@ -733,7 +915,9 @@ List<Map<String,dynamic>> currencies =[
 "symbol": "Rs",
 "emoji": "🇲🇺",
 "decimal_digits": 2,
-"position": "first"
+"position": "first",
+"thousand_separator": ",",
+"decimal_separator": "."
 },
 {
 "code": "MVR",
@@ -741,7 +925,9 @@ List<Map<String,dynamic>> currencies =[
 "symbol": "Rf",
 "emoji": "🇲🇻",
 "decimal_digits": 2,
-"position": "last"
+"position": "last",
+"thousand_separator": ",",
+"decimal_separator": "."
 },
 {
 "code": "MWK",
@@ -749,7 +935,9 @@ List<Map<String,dynamic>> currencies =[
 "symbol": "MK",
 "emoji": "🇲🇼",
 "decimal_digits": 2,
-"position": "first"
+"position": "first",
+"thousand_separator": ",",
+"decimal_separator": "."
 },
 {
 "code": "MXN",
@@ -757,7 +945,9 @@ List<Map<String,dynamic>> currencies =[
 "symbol": "\$",
 "emoji": "🇲🇽",
 "decimal_digits": 2,
-"position": "first"
+"position": "first",
+"thousand_separator": ",",
+"decimal_separator": "."
 },
 {
 "code": "MXV",
@@ -765,7 +955,9 @@ List<Map<String,dynamic>> currencies =[
 "symbol": "MXV",
 "emoji": "🇲🇽",
 "decimal_digits": 2,
-"position": "first"
+"position": "first",
+"thousand_separator": ",",
+"decimal_separator": "."
 },
 {
 "code": "MYR",
@@ -773,7 +965,9 @@ List<Map<String,dynamic>> currencies =[
 "symbol": "RM",
 "emoji": "🇲🇾",
 "decimal_digits": 2,
-"position": "first"
+"position": "first",
+"thousand_separator": ",",
+"decimal_separator": "."
 },
 {
 "code": "MZN",
@@ -781,7 +975,9 @@ List<Map<String,dynamic>> currencies =[
 "symbol": "MT",
 "emoji": "🇲🇿",
 "decimal_digits": 2,
-"position": "first"
+"position": "first",
+"thousand_separator": ",",
+"decimal_separator": "."
 },
 {
 "code": "NAD",
@@ -789,7 +985,9 @@ List<Map<String,dynamic>> currencies =[
 "symbol": "N\$",
 "emoji": "🇳🇦",
 "decimal_digits": 2,
-"position": "first"
+"position": "first",
+"thousand_separator": ",",
+"decimal_separator": "."
 },
 {
 "code": "NGN",
@@ -797,7 +995,9 @@ List<Map<String,dynamic>> currencies =[
 "symbol": "₦",
 "emoji": "🇳🇬",
 "decimal_digits": 2,
-"position": "first"
+"position": "first",
+"thousand_separator": ",",
+"decimal_separator": "."
 },
 {
 "code": "NIO",
@@ -805,7 +1005,9 @@ List<Map<String,dynamic>> currencies =[
 "symbol": "C\$",
 "emoji": "🇳🇮",
 "decimal_digits": 2,
-"position": "first"
+"position": "first",
+"thousand_separator": ",",
+"decimal_separator": "."
 },
 {
 "code": "NOK",
@@ -813,7 +1015,9 @@ List<Map<String,dynamic>> currencies =[
 "symbol": "kr",
 "emoji": "🇳🇴",
 "decimal_digits": 2,
-"position": "last"
+"position": "last",
+"thousand_separator": ",",
+"decimal_separator": "."
 },
 {
 "code": "NPR",
@@ -821,7 +1025,9 @@ List<Map<String,dynamic>> currencies =[
 "symbol": "Rs",
 "emoji": "🇳🇵",
 "decimal_digits": 2,
-"position": "first"
+"position": "first",
+"thousand_separator": ",",
+"decimal_separator": "."
 },
 {
 "code": "NZD",
@@ -829,7 +1035,9 @@ List<Map<String,dynamic>> currencies =[
 "symbol": "NZ\$",
 "emoji": "🇳🇿",
 "decimal_digits": 2,
-"position": "first"
+"position": "first",
+"thousand_separator": ",",
+"decimal_separator": "."
 },
 {
 "code": "OMR",
@@ -837,7 +1045,9 @@ List<Map<String,dynamic>> currencies =[
 "symbol": "ر.ع.",
 "emoji": "🇴🇲",
 "decimal_digits": 3,
-"position": "first"
+"position": "first",
+"thousand_separator": ",",
+"decimal_separator": "."
 },
 {
 "code": "PAB",
@@ -845,7 +1055,9 @@ List<Map<String,dynamic>> currencies =[
 "symbol": "B/.",
 "emoji": "🇵🇦",
 "decimal_digits": 2,
-"position": "first"
+"position": "first",
+"thousand_separator": ",",
+"decimal_separator": "."
 },
 {
 "code": "PEN",
@@ -853,7 +1065,9 @@ List<Map<String,dynamic>> currencies =[
 "symbol": "S/",
 "emoji": "🇵🇪",
 "decimal_digits": 2,
-"position": "first"
+"position": "first",
+"thousand_separator": ",",
+"decimal_separator": "."
 },
 {
 "code": "PGK",
@@ -861,7 +1075,9 @@ List<Map<String,dynamic>> currencies =[
 "symbol": "K",
 "emoji": "🇵🇬",
 "decimal_digits": 2,
-"position": "first"
+"position": "first",
+"thousand_separator": ",",
+"decimal_separator": "."
 },
 {
 "code": "PHP",
@@ -869,7 +1085,9 @@ List<Map<String,dynamic>> currencies =[
 "symbol": "₱",
 "emoji": "🇵🇭",
 "decimal_digits": 2,
-"position": "first"
+"position": "first",
+"thousand_separator": ",",
+"decimal_separator": "."
 },
 {
 "code": "PKR",
@@ -877,7 +1095,9 @@ List<Map<String,dynamic>> currencies =[
 "symbol": "Rs",
 "emoji": "🇵🇰",
 "decimal_digits": 2,
-"position": "first"
+"position": "first",
+"thousand_separator": ",",
+"decimal_separator": "."
 },
 {
 "code": "PLN",
@@ -885,7 +1105,9 @@ List<Map<String,dynamic>> currencies =[
 "symbol": "zł",
 "emoji": "🇵🇱",
 "decimal_digits": 2,
-"position": "last"
+"position": "last",
+"thousand_separator": ",",
+"decimal_separator": "."
 },
 {
 "code": "PYG",
@@ -893,7 +1115,9 @@ List<Map<String,dynamic>> currencies =[
 "symbol": "₲",
 "emoji": "🇵🇾",
 "decimal_digits": 0,
-"position": "first"
+"position": "first",
+"thousand_separator": ".",
+"decimal_separator": ","
 },
 {
 "code": "QAR",
@@ -901,7 +1125,9 @@ List<Map<String,dynamic>> currencies =[
 "symbol": "ر.ق",
 "emoji": "🇶🇦",
 "decimal_digits": 2,
-"position": "first"
+"position": "first",
+"thousand_separator": ",",
+"decimal_separator": "."
 },
 {
 "code": "RON",
@@ -909,7 +1135,9 @@ List<Map<String,dynamic>> currencies =[
 "symbol": "lei",
 "emoji": "🇷🇴",
 "decimal_digits": 2,
-"position": "last"
+"position": "last",
+"thousand_separator": ",",
+"decimal_separator": "."
 },
 {
 "code": "RSD",
@@ -917,7 +1145,9 @@ List<Map<String,dynamic>> currencies =[
 "symbol": "дин.",
 "emoji": "🇷🇸",
 "decimal_digits": 2,
-"position": "last"
+"position": "last",
+"thousand_separator": ",",
+"decimal_separator": "."
 },
 {
 "code": "RUB",
@@ -925,7 +1155,9 @@ List<Map<String,dynamic>> currencies =[
 "symbol": "₽",
 "emoji": "🇷🇺",
 "decimal_digits": 2,
-"position": "last"
+"position": "last",
+"thousand_separator": ",",
+"decimal_separator": "."
 },
 {
 "code": "RWF",
@@ -933,7 +1165,9 @@ List<Map<String,dynamic>> currencies =[
 "symbol": "FRw",
 "emoji": "🇷🇼",
 "decimal_digits": 0,
-"position": "last"
+"position": "last",
+"thousand_separator": ",",
+"decimal_separator": "."
 },
 {
 "code": "SAR",
@@ -941,7 +1175,9 @@ List<Map<String,dynamic>> currencies =[
 "symbol": "ر.س",
 "emoji": "🇸🇦",
 "decimal_digits": 2,
-"position": "first"
+"position": "first",
+"thousand_separator": ",",
+"decimal_separator": "."
 },
 {
 "code": "SBD",
@@ -949,7 +1185,9 @@ List<Map<String,dynamic>> currencies =[
 "symbol": "SI\$",
 "emoji": "🇸🇧",
 "decimal_digits": 2,
-"position": "first"
+"position": "first",
+"thousand_separator": ",",
+"decimal_separator": "."
 },
 {
 "code": "SCR",
@@ -957,7 +1195,9 @@ List<Map<String,dynamic>> currencies =[
 "symbol": "SR",
 "emoji": "🇸🇨",
 "decimal_digits": 2,
-"position": "first"
+"position": "first",
+"thousand_separator": ",",
+"decimal_separator": "."
 },
 {
 "code": "SDG",
@@ -965,7 +1205,9 @@ List<Map<String,dynamic>> currencies =[
 "symbol": "SDG",
 "emoji": "🇸🇩",
 "decimal_digits": 2,
-"position": "first"
+"position": "first",
+"thousand_separator": ",",
+"decimal_separator": "."
 },
 {
 "code": "SEK",
@@ -973,7 +1215,9 @@ List<Map<String,dynamic>> currencies =[
 "symbol": "kr",
 "emoji": "🇸🇪",
 "decimal_digits": 2,
-"position": "last"
+"position": "last",
+"thousand_separator": ",",
+"decimal_separator": "."
 },
 {
 "code": "SGD",
@@ -981,7 +1225,9 @@ List<Map<String,dynamic>> currencies =[
 "symbol": "S\$",
 "emoji": "🇸🇬",
 "decimal_digits": 2,
-"position": "first"
+"position": "first",
+"thousand_separator": ",",
+"decimal_separator": "."
 },
 {
 "code": "SHP",
@@ -989,7 +1235,9 @@ List<Map<String,dynamic>> currencies =[
 "symbol": "£",
 "emoji": "🇸🇭",
 "decimal_digits": 2,
-"position": "first"
+"position": "first",
+"thousand_separator": ",",
+"decimal_separator": "."
 },
 {
 "code": "SLE",
@@ -997,7 +1245,9 @@ List<Map<String,dynamic>> currencies =[
 "symbol": "Le",
 "emoji": "🇸🇱",
 "decimal_digits": 2,
-"position": "first"
+"position": "first",
+"thousand_separator": ",",
+"decimal_separator": "."
 },
 {
 "code": "SOS",
@@ -1005,7 +1255,9 @@ List<Map<String,dynamic>> currencies =[
 "symbol": "Ssh",
 "emoji": "🇸🇴",
 "decimal_digits": 2,
-"position": "first"
+"position": "first",
+"thousand_separator": ",",
+"decimal_separator": "."
 },
 {
 "code": "SRD",
@@ -1013,7 +1265,9 @@ List<Map<String,dynamic>> currencies =[
 "symbol": "SR\$",
 "emoji": "🇸🇷",
 "decimal_digits": 2,
-"position": "first"
+"position": "first",
+"thousand_separator": ",",
+"decimal_separator": "."
 },
 {
 "code": "SSP",
@@ -1021,7 +1275,9 @@ List<Map<String,dynamic>> currencies =[
 "symbol": "SS£",
 "emoji": "🇸🇸",
 "decimal_digits": 2,
-"position": "first"
+"position": "first",
+"thousand_separator": ",",
+"decimal_separator": "."
 },
 {
 "code": "STN",
@@ -1029,7 +1285,9 @@ List<Map<String,dynamic>> currencies =[
 "symbol": "Db",
 "emoji": "🇸🇹",
 "decimal_digits": 2,
-"position": "last"
+"position": "last",
+"thousand_separator": ",",
+"decimal_separator": "."
 },
 {
 "code": "SVC",
@@ -1037,7 +1295,9 @@ List<Map<String,dynamic>> currencies =[
 "symbol": "₡",
 "emoji": "🇸🇻",
 "decimal_digits": 2,
-"position": "first"
+"position": "first",
+"thousand_separator": ",",
+"decimal_separator": "."
 },
 {
 "code": "SYP",
@@ -1045,7 +1305,9 @@ List<Map<String,dynamic>> currencies =[
 "symbol": "£",
 "emoji": "🇸🇾",
 "decimal_digits": 2,
-"position": "first"
+"position": "first",
+"thousand_separator": ",",
+"decimal_separator": "."
 },
 {
 "code": "SZL",
@@ -1053,7 +1315,9 @@ List<Map<String,dynamic>> currencies =[
 "symbol": "E",
 "emoji": "🇸🇿",
 "decimal_digits": 2,
-"position": "first"
+"position": "first",
+"thousand_separator": ",",
+"decimal_separator": "."
 },
 {
 "code": "THB",
@@ -1061,7 +1325,9 @@ List<Map<String,dynamic>> currencies =[
 "symbol": "฿",
 "emoji": "🇹🇭",
 "decimal_digits": 2,
-"position": "first"
+"position": "first",
+"thousand_separator": ",",
+"decimal_separator": "."
 },
 {
 "code": "TJS",
@@ -1069,7 +1335,9 @@ List<Map<String,dynamic>> currencies =[
 "symbol": "ЅМ",
 "emoji": "🇹🇯",
 "decimal_digits": 2,
-"position": "last"
+"position": "last",
+"thousand_separator": ",",
+"decimal_separator": "."
 },
 {
 "code": "TMT",
@@ -1077,7 +1345,9 @@ List<Map<String,dynamic>> currencies =[
 "symbol": "m",
 "emoji": "🇹🇲",
 "decimal_digits": 2,
-"position": "last"
+"position": "last",
+"thousand_separator": ",",
+"decimal_separator": "."
 },
 {
 "code": "TND",
@@ -1085,7 +1355,9 @@ List<Map<String,dynamic>> currencies =[
 "symbol": "د.ت",
 "emoji": "🇹🇳",
 "decimal_digits": 3,
-"position": "first"
+"position": "first",
+"thousand_separator": ",",
+"decimal_separator": "."
 },
 {
 "code": "TOP",
@@ -1093,7 +1365,9 @@ List<Map<String,dynamic>> currencies =[
 "symbol": "T\$",
 "emoji": "🇹🇴",
 "decimal_digits": 2,
-"position": "first"
+"position": "first",
+"thousand_separator": ",",
+"decimal_separator": "."
 },
 {
 "code": "TRY",
@@ -1101,7 +1375,9 @@ List<Map<String,dynamic>> currencies =[
 "symbol": "₺",
 "emoji": "🇹🇷",
 "decimal_digits": 2,
-"position": "first"
+"position": "first",
+"thousand_separator": ",",
+"decimal_separator": "."
 },
 {
 "code": "TTD",
@@ -1109,7 +1385,9 @@ List<Map<String,dynamic>> currencies =[
 "symbol": "TT\$",
 "emoji": "🇹🇹",
 "decimal_digits": 2,
-"position": "first"
+"position": "first",
+"thousand_separator": ",",
+"decimal_separator": "."
 },
 {
 "code": "TWD",
@@ -1117,7 +1395,9 @@ List<Map<String,dynamic>> currencies =[
 "symbol": "NT\$",
 "emoji": "🇹🇼",
 "decimal_digits": 0,
-"position": "first"
+"position": "first",
+"thousand_separator": ",",
+"decimal_separator": "."
 },
 {
 "code": "TZS",
@@ -1125,7 +1405,9 @@ List<Map<String,dynamic>> currencies =[
 "symbol": "TZS",
 "emoji": "🇹🇿",
 "decimal_digits": 2,
-"position": "first"
+"position": "first",
+"thousand_separator": ",",
+"decimal_separator": "."
 },
 {
 "code": "UAH",
@@ -1133,7 +1415,9 @@ List<Map<String,dynamic>> currencies =[
 "symbol": "₴",
 "emoji": "🇺🇦",
 "decimal_digits": 2,
-"position": "last"
+"position": "last",
+"thousand_separator": ",",
+"decimal_separator": "."
 },
 {
 "code": "UGX",
@@ -1141,7 +1425,9 @@ List<Map<String,dynamic>> currencies =[
 "symbol": "USh",
 "emoji": "🇺🇬",
 "decimal_digits": 0,
-"position": "first"
+"position": "first",
+"thousand_separator": ",",
+"decimal_separator": "."
 },
 {
 "code": "USD",
@@ -1149,7 +1435,9 @@ List<Map<String,dynamic>> currencies =[
 "symbol": "\$",
 "emoji": "🇺🇸",
 "decimal_digits": 2,
-"position": "first"
+"position": "first",
+"thousand_separator": ",",
+"decimal_separator": "."
 },
 {
 "code": "USN",
@@ -1157,7 +1445,9 @@ List<Map<String,dynamic>> currencies =[
 "symbol": "USN",
 "emoji": "🇺🇸",
 "decimal_digits": 2,
-"position": "first"
+"position": "first",
+"thousand_separator": ",",
+"decimal_separator": "."
 },
 {
 "code": "UYI",
@@ -1165,7 +1455,9 @@ List<Map<String,dynamic>> currencies =[
 "symbol": "UYI",
 "emoji": "🇺🇾",
 "decimal_digits": 0,
-"position": "first"
+"position": "first",
+"thousand_separator": ",",
+"decimal_separator": "."
 },
 {
 "code": "UYU",
@@ -1173,7 +1465,9 @@ List<Map<String,dynamic>> currencies =[
 "symbol": "\$U",
 "emoji": "🇺🇾",
 "decimal_digits": 2,
-"position": "first"
+"position": "first",
+"thousand_separator": ".",
+"decimal_separator": ","
 },
 {
 "code": "UYW",
@@ -1181,15 +1475,19 @@ List<Map<String,dynamic>> currencies =[
 "symbol": "UYW",
 "emoji": "🇺🇾",
 "decimal_digits": 4,
-"position": "first"
+"position": "first",
+"thousand_separator": ",",
+"decimal_separator": "."
 },
 {
 "code": "UZS",
 "name": "Uzbekistani soʻm",
-"symbol": "лв",
+"symbol": "so'm",
 "emoji": "🇺🇿",
 "decimal_digits": 2,
-"position": "last"
+"position": "last",
+"thousand_separator": ",",
+"decimal_separator": "."
 },
 {
 "code": "VES",
@@ -1197,7 +1495,9 @@ List<Map<String,dynamic>> currencies =[
 "symbol": "Bs.",
 "emoji": "🇻🇪",
 "decimal_digits": 2,
-"position": "first"
+"position": "first",
+"thousand_separator": ".",
+"decimal_separator": ","
 },
 {
 "code": "VND",
@@ -1205,7 +1505,9 @@ List<Map<String,dynamic>> currencies =[
 "symbol": "₫",
 "emoji": "🇻🇳",
 "decimal_digits": 0,
-"position": "last"
+"position": "last",
+"thousand_separator": ",",
+"decimal_separator": "."
 },
 {
 "code": "VUV",
@@ -1213,7 +1515,9 @@ List<Map<String,dynamic>> currencies =[
 "symbol": "VT",
 "emoji": "🇻🇺",
 "decimal_digits": 0,
-"position": "first"
+"position": "first",
+"thousand_separator": ",",
+"decimal_separator": "."
 },
 {
 "code": "WST",
@@ -1221,7 +1525,9 @@ List<Map<String,dynamic>> currencies =[
 "symbol": "WS\$",
 "emoji": "🇼🇸",
 "decimal_digits": 2,
-"position": "first"
+"position": "first",
+"thousand_separator": ",",
+"decimal_separator": "."
 },
 {
 "code": "XAF",
@@ -1229,7 +1535,9 @@ List<Map<String,dynamic>> currencies =[
 "symbol": "FCFA",
 "emoji": "🇨🇲",
 "decimal_digits": 0,
-"position": "first"
+"position": "first",
+"thousand_separator": ",",
+"decimal_separator": "."
 },
 {
 "code": "XAG",
@@ -1237,7 +1545,9 @@ List<Map<String,dynamic>> currencies =[
 "symbol": "XAG",
 "emoji": "🪙",
 "decimal_digits": 0,
-"position": "first"
+"position": "first",
+"thousand_separator": ",",
+"decimal_separator": "."
 },
 {
 "code": "XAU",
@@ -1245,7 +1555,9 @@ List<Map<String,dynamic>> currencies =[
 "symbol": "XAU",
 "emoji": "🪙",
 "decimal_digits": 0,
-"position": "first"
+"position": "first",
+"thousand_separator": ",",
+"decimal_separator": "."
 },
 {
 "code": "XBA",
@@ -1253,7 +1565,9 @@ List<Map<String,dynamic>> currencies =[
 "symbol": "XBA",
 "emoji": "🇪🇺",
 "decimal_digits": 0,
-"position": "first"
+"position": "first",
+"thousand_separator": ",",
+"decimal_separator": "."
 },
 {
 "code": "XBB",
@@ -1261,7 +1575,9 @@ List<Map<String,dynamic>> currencies =[
 "symbol": "XBB",
 "emoji": "🇪🇺",
 "decimal_digits": 0,
-"position": "first"
+"position": "first",
+"thousand_separator": ",",
+"decimal_separator": "."
 },
 {
 "code": "XBC",
@@ -1269,7 +1585,9 @@ List<Map<String,dynamic>> currencies =[
 "symbol": "XBC",
 "emoji": "🇪🇺",
 "decimal_digits": 0,
-"position": "first"
+"position": "first",
+"thousand_separator": ",",
+"decimal_separator": "."
 },
 {
 "code": "XBD",
@@ -1277,7 +1595,9 @@ List<Map<String,dynamic>> currencies =[
 "symbol": "XBD",
 "emoji": "🇪🇺",
 "decimal_digits": 0,
-"position": "first"
+"position": "first",
+"thousand_separator": ",",
+"decimal_separator": "."
 },
 {
 "code": "XCD",
@@ -1285,7 +1605,9 @@ List<Map<String,dynamic>> currencies =[
 "symbol": "EC\$",
 "emoji": "🇰🇳",
 "decimal_digits": 2,
-"position": "first"
+"position": "first",
+"thousand_separator": ",",
+"decimal_separator": "."
 },
 {
 "code": "XDR",
@@ -1293,7 +1615,9 @@ List<Map<String,dynamic>> currencies =[
 "symbol": "SDR",
 "emoji": "🏦",
 "decimal_digits": 0,
-"position": "first"
+"position": "first",
+"thousand_separator": ",",
+"decimal_separator": "."
 },
 {
 "code": "XOF",
@@ -1301,7 +1625,9 @@ List<Map<String,dynamic>> currencies =[
 "symbol": "CFA",
 "emoji": "🇨🇮",
 "decimal_digits": 0,
-"position": "first"
+"position": "first",
+"thousand_separator": ",",
+"decimal_separator": "."
 },
 {
 "code": "XPD",
@@ -1309,7 +1635,9 @@ List<Map<String,dynamic>> currencies =[
 "symbol": "XPD",
 "emoji": "🪙",
 "decimal_digits": 0,
-"position": "first"
+"position": "first",
+"thousand_separator": ",",
+"decimal_separator": "."
 },
 {
 "code": "XPF",
@@ -1317,7 +1645,9 @@ List<Map<String,dynamic>> currencies =[
 "symbol": "F",
 "emoji": "🇵🇫",
 "decimal_digits": 0,
-"position": "last"
+"position": "last",
+"thousand_separator": ",",
+"decimal_separator": "."
 },
 {
 "code": "XPT",
@@ -1325,7 +1655,9 @@ List<Map<String,dynamic>> currencies =[
 "symbol": "XPT",
 "emoji": "🪙",
 "decimal_digits": 0,
-"position": "first"
+"position": "first",
+"thousand_separator": ",",
+"decimal_separator": "."
 },
 {
 "code": "XSU",
@@ -1333,7 +1665,9 @@ List<Map<String,dynamic>> currencies =[
 "symbol": "XSU",
 "emoji": "🇪🇨",
 "decimal_digits": 0,
-"position": "first"
+"position": "first",
+"thousand_separator": ",",
+"decimal_separator": "."
 },
 {
 "code": "XTS",
@@ -1341,7 +1675,9 @@ List<Map<String,dynamic>> currencies =[
 "symbol": "XTS",
 "emoji": "❓",
 "decimal_digits": 0,
-"position": "first"
+"position": "first",
+"thousand_separator": ",",
+"decimal_separator": "."
 },
 {
 "code": "XUA",
@@ -1349,7 +1685,9 @@ List<Map<String,dynamic>> currencies =[
 "symbol": "XUA",
 "emoji": "🏦",
 "decimal_digits": 0,
-"position": "first"
+"position": "first",
+"thousand_separator": ",",
+"decimal_separator": "."
 },
 {
 "code": "YER",
@@ -1357,7 +1695,9 @@ List<Map<String,dynamic>> currencies =[
 "symbol": "﷼",
 "emoji": "🇾🇪",
 "decimal_digits": 2,
-"position": "first"
+"position": "first",
+"thousand_separator": ",",
+"decimal_separator": "."
 },
 {
 "code": "ZAR",
@@ -1365,7 +1705,9 @@ List<Map<String,dynamic>> currencies =[
 "symbol": "R",
 "emoji": "🇿🇦",
 "decimal_digits": 2,
-"position": "first"
+"position": "first",
+"thousand_separator": ",",
+"decimal_separator": "."
 },
 {
 "code": "ZMW",
@@ -1373,7 +1715,9 @@ List<Map<String,dynamic>> currencies =[
 "symbol": "ZK",
 "emoji": "🇿🇲",
 "decimal_digits": 2,
-"position": "first"
+"position": "first",
+"thousand_separator": ",",
+"decimal_separator": "."
 },
 {
 "code": "ZWL",
@@ -1381,6 +1725,8 @@ List<Map<String,dynamic>> currencies =[
 "symbol": "Z\$",
 "emoji": "🇿🇼",
 "decimal_digits": 2,
-"position": "first"
+"position": "first",
+"thousand_separator": ",",
+"decimal_separator": "."
 }
 ];
