@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 
 import '../../currency_widget.dart';
+import '../utils/currency_format_utils.dart';
 
 class CurrencyCardReport extends StatefulWidget {
   final String title;
@@ -38,8 +39,10 @@ class _CurrencyCardReportState extends State<CurrencyCardReport> {
     currencyController.currency = currency;
     
     textController = TextEditingController(
-      text: currencyController.mount.value
-          ?.toStringAsFixed(currency?.decimalDigits ?? 0),
+      text: currencyController.mount.value != null && currency != null
+          ? CurrencyFormatUtils.formatAmount(
+              currencyController.mount.value!, currency!)
+          : '',
     );
   }
 

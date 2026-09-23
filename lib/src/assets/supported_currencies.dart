@@ -11,6 +11,8 @@ final supportedCurrencies = <Currency>[
     emoji: "🇦🇪",
     decimalDigits: 2,
     position: "first",
+    thousandSeparator: ",",
+    decimalSeparator: ".",
   ),
   Currency(
     code: "AFN",
@@ -19,6 +21,8 @@ final supportedCurrencies = <Currency>[
     emoji: "🇦🇫",
     decimalDigits: 2,
     position: "last",
+    thousandSeparator: ",",
+    decimalSeparator: ".",
   ),
   Currency(
     code: "ALL",
@@ -27,6 +31,8 @@ final supportedCurrencies = <Currency>[
     emoji: "🇦🇱",
     decimalDigits: 2,
     position: "last",
+    thousandSeparator: ",",
+    decimalSeparator: ".",
   ),
   Currency(
     code: "AMD",
@@ -35,6 +41,8 @@ final supportedCurrencies = <Currency>[
     emoji: "🇦🇲",
     decimalDigits: 2,
     position: "last",
+    thousandSeparator: ",",
+    decimalSeparator: ".",
   ),
   Currency(
     code: "AOA",
@@ -43,6 +51,8 @@ final supportedCurrencies = <Currency>[
     emoji: "🇦🇴",
     decimalDigits: 2,
     position: "first",
+    thousandSeparator: ",",
+    decimalSeparator: ".",
   ),
   Currency(
     code: "ARS",
@@ -51,6 +61,8 @@ final supportedCurrencies = <Currency>[
     emoji: "🇦🇷",
     decimalDigits: 2,
     position: "first",
+    thousandSeparator: ".",
+    decimalSeparator: ",",
   ),
   Currency(
     code: "AUD",
@@ -59,6 +71,8 @@ final supportedCurrencies = <Currency>[
     emoji: "🇦🇺",
     decimalDigits: 2,
     position: "first",
+    thousandSeparator: ",",
+    decimalSeparator: ".",
   ),
   Currency(
     code: "AWG",
@@ -67,6 +81,8 @@ final supportedCurrencies = <Currency>[
     emoji: "🇦🇼",
     decimalDigits: 2,
     position: "first",
+    thousandSeparator: ",",
+    decimalSeparator: ".",
   ),
   Currency(
     code: "AZN",
@@ -75,6 +91,8 @@ final supportedCurrencies = <Currency>[
     emoji: "🇦🇿",
     decimalDigits: 2,
     position: "last",
+    thousandSeparator: ",",
+    decimalSeparator: ".",
   ),
   Currency(
     code: "BAM",
@@ -83,6 +101,8 @@ final supportedCurrencies = <Currency>[
     emoji: "🇧🇦",
     decimalDigits: 2,
     position: "last",
+    thousandSeparator: ",",
+    decimalSeparator: ".",
   ),
   Currency(
     code: "BBD",
@@ -91,6 +111,8 @@ final supportedCurrencies = <Currency>[
     emoji: "🇧🇧",
     decimalDigits: 2,
     position: "first",
+    thousandSeparator: ",",
+    decimalSeparator: ".",
   ),
   Currency(
     code: "BDT",
@@ -99,6 +121,8 @@ final supportedCurrencies = <Currency>[
     emoji: "🇧🇩",
     decimalDigits: 2,
     position: "first",
+    thousandSeparator: ",",
+    decimalSeparator: ".",
   ),
   Currency(
     code: "BGN",
@@ -107,6 +131,8 @@ final supportedCurrencies = <Currency>[
     emoji: "🇧🇬",
     decimalDigits: 2,
     position: "last",
+    thousandSeparator: ",",
+    decimalSeparator: ".",
   ),
   Currency(
     code: "BHD",
@@ -115,6 +141,8 @@ final supportedCurrencies = <Currency>[
     emoji: "🇧🇭",
     decimalDigits: 3,
     position: "first",
+    thousandSeparator: ",",
+    decimalSeparator: ".",
   ),
   Currency(
     code: "BIF",
@@ -123,6 +151,8 @@ final supportedCurrencies = <Currency>[
     emoji: "🇧🇮",
     decimalDigits: 0,
     position: "last",
+    thousandSeparator: ",",
+    decimalSeparator: ".",
   ),
   Currency(
     code: "BMD",
@@ -131,6 +161,8 @@ final supportedCurrencies = <Currency>[
     emoji: "🇧🇲",
     decimalDigits: 2,
     position: "first",
+    thousandSeparator: ",",
+    decimalSeparator: ".",
   ),
   Currency(
     code: "BND",
@@ -139,6 +171,8 @@ final supportedCurrencies = <Currency>[
     emoji: "🇧🇳",
     decimalDigits: 2,
     position: "first",
+    thousandSeparator: ",",
+    decimalSeparator: ".",
   ),
   Currency(
     code: "BOB",
@@ -147,6 +181,8 @@ final supportedCurrencies = <Currency>[
     emoji: "🇧🇴",
     decimalDigits: 2,
     position: "first",
+    thousandSeparator: ".",
+    decimalSeparator: ",",
   ),
   Currency(
     code: "BOV",
@@ -155,6 +191,8 @@ final supportedCurrencies = <Currency>[
     emoji: "🇧🇴",
     decimalDigits: 2,
     position: "first",
+    thousandSeparator: ",",
+    decimalSeparator: ".",
   ),
   Currency(
     code: "BRL",
@@ -163,6 +201,8 @@ final supportedCurrencies = <Currency>[
     emoji: "🇧🇷",
     decimalDigits: 2,
     position: "first",
+    thousandSeparator: ".",
+    decimalSeparator: ",",
   ),
   Currency(
     code: "BSD",
@@ -171,6 +211,8 @@ final supportedCurrencies = <Currency>[
     emoji: "🇧🇸",
     decimalDigits: 2,
     position: "first",
+    thousandSeparator: ",",
+    decimalSeparator: ".",
   ),
   Currency(
     code: "BTN",
@@ -179,6 +221,8 @@ final supportedCurrencies = <Currency>[
     emoji: "🇧🇹",
     decimalDigits: 2,
     position: "last",
+    thousandSeparator: ",",
+    decimalSeparator: ".",
   ),
   Currency(
     code: "BWP",
@@ -187,6 +231,8 @@ final supportedCurrencies = <Currency>[
     emoji: "🇧🇼",
     decimalDigits: 2,
     position: "first",
+    thousandSeparator: ",",
+    decimalSeparator: ".",
   ),
   Currency(
     code: "BYN",
@@ -195,6 +241,8 @@ final supportedCurrencies = <Currency>[
     emoji: "🇧🇾",
     decimalDigits: 2,
     position: "last",
+    thousandSeparator: ",",
+    decimalSeparator: ".",
   ),
   Currency(
     code: "BZD",
@@ -203,6 +251,8 @@ final supportedCurrencies = <Currency>[
     emoji: "🇧🇿",
     decimalDigits: 2,
     position: "first",
+    thousandSeparator: ",",
+    decimalSeparator: ".",
   ),
   Currency(
     code: "CAD",
@@ -211,6 +261,8 @@ final supportedCurrencies = <Currency>[
     emoji: "🇨🇦",
     decimalDigits: 2,
     position: "first",
+    thousandSeparator: ",",
+    decimalSeparator: ".",
   ),
   Currency(
     code: "CDF",
@@ -219,6 +271,8 @@ final supportedCurrencies = <Currency>[
     emoji: "🇨🇩",
     decimalDigits: 2,
     position: "last",
+    thousandSeparator: ",",
+    decimalSeparator: ".",
   ),
   Currency(
     code: "CHF",
@@ -227,6 +281,8 @@ final supportedCurrencies = <Currency>[
     emoji: "🇨🇭",
     decimalDigits: 2,
     position: "first",
+    thousandSeparator: ",",
+    decimalSeparator: ".",
   ),
   Currency(
     code: "CLF",
@@ -235,6 +291,8 @@ final supportedCurrencies = <Currency>[
     emoji: "🇨🇱",
     decimalDigits: 4,
     position: "first",
+    thousandSeparator: ",",
+    decimalSeparator: ".",
   ),
   Currency(
     code: "CLP",
@@ -243,6 +301,8 @@ final supportedCurrencies = <Currency>[
     emoji: "🇨🇱",
     decimalDigits: 0,
     position: "first",
+    thousandSeparator: ".",
+    decimalSeparator: ",",
   ),
   Currency(
     code: "CNY",
@@ -251,6 +311,8 @@ final supportedCurrencies = <Currency>[
     emoji: "🇨🇳",
     decimalDigits: 2,
     position: "first",
+    thousandSeparator: ",",
+    decimalSeparator: ".",
   ),
   Currency(
     code: "COP",
@@ -259,6 +321,8 @@ final supportedCurrencies = <Currency>[
     emoji: "🇨🇴",
     decimalDigits: 2,
     position: "first",
+    thousandSeparator: ".",
+    decimalSeparator: ",",
   ),
   Currency(
     code: "COU",
@@ -267,6 +331,8 @@ final supportedCurrencies = <Currency>[
     emoji: "🇨🇴",
     decimalDigits: 2,
     position: "first",
+    thousandSeparator: ",",
+    decimalSeparator: ".",
   ),
   Currency(
     code: "CRC",
@@ -275,6 +341,8 @@ final supportedCurrencies = <Currency>[
     emoji: "🇨🇷",
     decimalDigits: 2,
     position: "first",
+    thousandSeparator: ".",
+    decimalSeparator: ",",
   ),
   Currency(
     code: "CUP",
@@ -283,6 +351,8 @@ final supportedCurrencies = <Currency>[
     emoji: "🇨🇺",
     decimalDigits: 2,
     position: "first",
+    thousandSeparator: ",",
+    decimalSeparator: ".",
   ),
   Currency(
     code: "CVE",
@@ -291,6 +361,8 @@ final supportedCurrencies = <Currency>[
     emoji: "🇨🇻",
     decimalDigits: 2,
     position: "first",
+    thousandSeparator: ",",
+    decimalSeparator: ".",
   ),
   Currency(
     code: "CZK",
@@ -299,6 +371,8 @@ final supportedCurrencies = <Currency>[
     emoji: "🇨🇿",
     decimalDigits: 2,
     position: "last",
+    thousandSeparator: ",",
+    decimalSeparator: ".",
   ),
   Currency(
     code: "DJF",
@@ -307,6 +381,8 @@ final supportedCurrencies = <Currency>[
     emoji: "🇩🇯",
     decimalDigits: 0,
     position: "last",
+    thousandSeparator: ",",
+    decimalSeparator: ".",
   ),
   Currency(
     code: "DKK",
@@ -315,6 +391,8 @@ final supportedCurrencies = <Currency>[
     emoji: "🇩🇰",
     decimalDigits: 2,
     position: "last",
+    thousandSeparator: ",",
+    decimalSeparator: ".",
   ),
   Currency(
     code: "DOP",
@@ -323,6 +401,8 @@ final supportedCurrencies = <Currency>[
     emoji: "🇩🇴",
     decimalDigits: 2,
     position: "first",
+    thousandSeparator: ",",
+    decimalSeparator: ".",
   ),
   Currency(
     code: "DZD",
@@ -331,6 +411,8 @@ final supportedCurrencies = <Currency>[
     emoji: "🇩🇿",
     decimalDigits: 2,
     position: "first",
+    thousandSeparator: ",",
+    decimalSeparator: ".",
   ),
   Currency(
     code: "EGP",
@@ -339,6 +421,8 @@ final supportedCurrencies = <Currency>[
     emoji: "🇪🇬",
     decimalDigits: 2,
     position: "first",
+    thousandSeparator: ",",
+    decimalSeparator: ".",
   ),
   Currency(
     code: "ERN",
@@ -347,6 +431,8 @@ final supportedCurrencies = <Currency>[
     emoji: "🇪🇷",
     decimalDigits: 2,
     position: "last",
+    thousandSeparator: ",",
+    decimalSeparator: ".",
   ),
   Currency(
     code: "ETB",
@@ -355,6 +441,8 @@ final supportedCurrencies = <Currency>[
     emoji: "🇪🇹",
     decimalDigits: 2,
     position: "last",
+    thousandSeparator: ",",
+    decimalSeparator: ".",
   ),
   Currency(
     code: "EUR",
@@ -363,6 +451,8 @@ final supportedCurrencies = <Currency>[
     emoji: "🇪🇺",
     decimalDigits: 2,
     position: "first",
+    thousandSeparator: ".",
+    decimalSeparator: ",",
   ),
   Currency(
     code: "FJD",
@@ -371,6 +461,8 @@ final supportedCurrencies = <Currency>[
     emoji: "🇫🇯",
     decimalDigits: 2,
     position: "first",
+    thousandSeparator: ",",
+    decimalSeparator: ".",
   ),
   Currency(
     code: "FKP",
@@ -379,6 +471,8 @@ final supportedCurrencies = <Currency>[
     emoji: "🇫🇰",
     decimalDigits: 2,
     position: "first",
+    thousandSeparator: ",",
+    decimalSeparator: ".",
   ),
   Currency(
     code: "GBP",
@@ -387,6 +481,8 @@ final supportedCurrencies = <Currency>[
     emoji: "🇬🇧",
     decimalDigits: 2,
     position: "first",
+    thousandSeparator: ",",
+    decimalSeparator: ".",
   ),
   Currency(
     code: "GEL",
@@ -395,6 +491,8 @@ final supportedCurrencies = <Currency>[
     emoji: "🇬🇪",
     decimalDigits: 2,
     position: "last",
+    thousandSeparator: ",",
+    decimalSeparator: ".",
   ),
   Currency(
     code: "GHS",
@@ -403,6 +501,8 @@ final supportedCurrencies = <Currency>[
     emoji: "🇬🇭",
     decimalDigits: 2,
     position: "first",
+    thousandSeparator: ",",
+    decimalSeparator: ".",
   ),
   Currency(
     code: "GIP",
@@ -411,6 +511,8 @@ final supportedCurrencies = <Currency>[
     emoji: "🇬🇮",
     decimalDigits: 2,
     position: "first",
+    thousandSeparator: ",",
+    decimalSeparator: ".",
   ),
   Currency(
     code: "GMD",
@@ -419,6 +521,8 @@ final supportedCurrencies = <Currency>[
     emoji: "🇬🇲",
     decimalDigits: 2,
     position: "last",
+    thousandSeparator: ",",
+    decimalSeparator: ".",
   ),
   Currency(
     code: "GNF",
@@ -427,6 +531,8 @@ final supportedCurrencies = <Currency>[
     emoji: "🇬🇳",
     decimalDigits: 0,
     position: "last",
+    thousandSeparator: ",",
+    decimalSeparator: ".",
   ),
   Currency(
     code: "GTQ",
@@ -435,6 +541,8 @@ final supportedCurrencies = <Currency>[
     emoji: "🇬🇹",
     decimalDigits: 2,
     position: "first",
+    thousandSeparator: ",",
+    decimalSeparator: ".",
   ),
   Currency(
     code: "GYD",
@@ -443,6 +551,8 @@ final supportedCurrencies = <Currency>[
     emoji: "🇬🇾",
     decimalDigits: 2,
     position: "first",
+    thousandSeparator: ",",
+    decimalSeparator: ".",
   ),
   Currency(
     code: "HKD",
@@ -451,6 +561,8 @@ final supportedCurrencies = <Currency>[
     emoji: "🇭🇰",
     decimalDigits: 2,
     position: "first",
+    thousandSeparator: ",",
+    decimalSeparator: ".",
   ),
   Currency(
     code: "HNL",
@@ -459,6 +571,8 @@ final supportedCurrencies = <Currency>[
     emoji: "🇭🇳",
     decimalDigits: 2,
     position: "first",
+    thousandSeparator: ",",
+    decimalSeparator: ".",
   ),
   Currency(
     code: "HTG",
@@ -467,6 +581,8 @@ final supportedCurrencies = <Currency>[
     emoji: "🇭🇹",
     decimalDigits: 2,
     position: "first",
+    thousandSeparator: ",",
+    decimalSeparator: ".",
   ),
   Currency(
     code: "HUF",
@@ -475,6 +591,8 @@ final supportedCurrencies = <Currency>[
     emoji: "🇭🇺",
     decimalDigits: 0,
     position: "last",
+    thousandSeparator: ",",
+    decimalSeparator: ".",
   ),
   Currency(
     code: "IDR",
@@ -483,6 +601,8 @@ final supportedCurrencies = <Currency>[
     emoji: "🇮🇩",
     decimalDigits: 0,
     position: "first",
+    thousandSeparator: ",",
+    decimalSeparator: ".",
   ),
   Currency(
     code: "ILS",
@@ -491,6 +611,8 @@ final supportedCurrencies = <Currency>[
     emoji: "🇮🇱",
     decimalDigits: 2,
     position: "first",
+    thousandSeparator: ",",
+    decimalSeparator: ".",
   ),
   Currency(
     code: "INR",
@@ -499,6 +621,8 @@ final supportedCurrencies = <Currency>[
     emoji: "🇮🇳",
     decimalDigits: 2,
     position: "first",
+    thousandSeparator: ",",
+    decimalSeparator: ".",
   ),
   Currency(
     code: "IQD",
@@ -507,6 +631,8 @@ final supportedCurrencies = <Currency>[
     emoji: "🇮🇶",
     decimalDigits: 3,
     position: "first",
+    thousandSeparator: ",",
+    decimalSeparator: ".",
   ),
   Currency(
     code: "IRR",
@@ -515,6 +641,8 @@ final supportedCurrencies = <Currency>[
     emoji: "🇮🇷",
     decimalDigits: 2,
     position: "first",
+    thousandSeparator: ",",
+    decimalSeparator: ".",
   ),
   Currency(
     code: "ISK",
@@ -523,6 +651,8 @@ final supportedCurrencies = <Currency>[
     emoji: "🇮🇸",
     decimalDigits: 0,
     position: "last",
+    thousandSeparator: ",",
+    decimalSeparator: ".",
   ),
   Currency(
     code: "JMD",
@@ -531,6 +661,8 @@ final supportedCurrencies = <Currency>[
     emoji: "🇯🇲",
     decimalDigits: 2,
     position: "first",
+    thousandSeparator: ",",
+    decimalSeparator: ".",
   ),
   Currency(
     code: "JOD",
@@ -539,6 +671,8 @@ final supportedCurrencies = <Currency>[
     emoji: "🇯🇴",
     decimalDigits: 3,
     position: "first",
+    thousandSeparator: ",",
+    decimalSeparator: ".",
   ),
   Currency(
     code: "JPY",
@@ -547,6 +681,8 @@ final supportedCurrencies = <Currency>[
     emoji: "🇯🇵",
     decimalDigits: 0,
     position: "first",
+    thousandSeparator: ",",
+    decimalSeparator: ".",
   ),
   Currency(
     code: "KES",
@@ -555,14 +691,18 @@ final supportedCurrencies = <Currency>[
     emoji: "🇰🇪",
     decimalDigits: 2,
     position: "first",
+    thousandSeparator: ",",
+    decimalSeparator: ".",
   ),
   Currency(
     code: "KGS",
     name: "Kyrgyzstani som",
-    symbol: "лв",
+    symbol: "с",
     emoji: "🇰🇬",
     decimalDigits: 2,
     position: "last",
+    thousandSeparator: ",",
+    decimalSeparator: ".",
   ),
   Currency(
     code: "KHR",
@@ -571,6 +711,8 @@ final supportedCurrencies = <Currency>[
     emoji: "🇰🇭",
     decimalDigits: 2,
     position: "last",
+    thousandSeparator: ",",
+    decimalSeparator: ".",
   ),
   Currency(
     code: "KMF",
@@ -579,6 +721,8 @@ final supportedCurrencies = <Currency>[
     emoji: "🇰🇲",
     decimalDigits: 0,
     position: "last",
+    thousandSeparator: ",",
+    decimalSeparator: ".",
   ),
   Currency(
     code: "KPW",
@@ -587,6 +731,8 @@ final supportedCurrencies = <Currency>[
     emoji: "🇰🇵",
     decimalDigits: 2,
     position: "first",
+    thousandSeparator: ",",
+    decimalSeparator: ".",
   ),
   Currency(
     code: "KRW",
@@ -595,6 +741,8 @@ final supportedCurrencies = <Currency>[
     emoji: "🇰🇷",
     decimalDigits: 0,
     position: "first",
+    thousandSeparator: ",",
+    decimalSeparator: ".",
   ),
   Currency(
     code: "KWD",
@@ -603,6 +751,8 @@ final supportedCurrencies = <Currency>[
     emoji: "🇰🇼",
     decimalDigits: 3,
     position: "first",
+    thousandSeparator: ",",
+    decimalSeparator: ".",
   ),
   Currency(
     code: "KYD",
@@ -611,6 +761,8 @@ final supportedCurrencies = <Currency>[
     emoji: "🇰🇾",
     decimalDigits: 2,
     position: "first",
+    thousandSeparator: ",",
+    decimalSeparator: ".",
   ),
   Currency(
     code: "KZT",
@@ -619,6 +771,8 @@ final supportedCurrencies = <Currency>[
     emoji: "🇰🇿",
     decimalDigits: 2,
     position: "last",
+    thousandSeparator: ",",
+    decimalSeparator: ".",
   ),
   Currency(
     code: "LAK",
@@ -627,6 +781,8 @@ final supportedCurrencies = <Currency>[
     emoji: "🇱🇦",
     decimalDigits: 2,
     position: "last",
+    thousandSeparator: ",",
+    decimalSeparator: ".",
   ),
   Currency(
     code: "LBP",
@@ -635,6 +791,8 @@ final supportedCurrencies = <Currency>[
     emoji: "🇱🇧",
     decimalDigits: 2,
     position: "first",
+    thousandSeparator: ",",
+    decimalSeparator: ".",
   ),
   Currency(
     code: "LKR",
@@ -643,6 +801,8 @@ final supportedCurrencies = <Currency>[
     emoji: "🇱🇰",
     decimalDigits: 2,
     position: "first",
+    thousandSeparator: ",",
+    decimalSeparator: ".",
   ),
   Currency(
     code: "LRD",
@@ -651,6 +811,8 @@ final supportedCurrencies = <Currency>[
     emoji: "🇱🇷",
     decimalDigits: 2,
     position: "first",
+    thousandSeparator: ",",
+    decimalSeparator: ".",
   ),
   Currency(
     code: "LSL",
@@ -659,6 +821,8 @@ final supportedCurrencies = <Currency>[
     emoji: "🇱🇸",
     decimalDigits: 2,
     position: "first",
+    thousandSeparator: ",",
+    decimalSeparator: ".",
   ),
   Currency(
     code: "LYD",
@@ -667,6 +831,8 @@ final supportedCurrencies = <Currency>[
     emoji: "🇱🇾",
     decimalDigits: 3,
     position: "first",
+    thousandSeparator: ",",
+    decimalSeparator: ".",
   ),
   Currency(
     code: "MAD",
@@ -675,6 +841,8 @@ final supportedCurrencies = <Currency>[
     emoji: "🇲🇦",
     decimalDigits: 2,
     position: "first",
+    thousandSeparator: ",",
+    decimalSeparator: ".",
   ),
   Currency(
     code: "MDL",
@@ -683,6 +851,8 @@ final supportedCurrencies = <Currency>[
     emoji: "🇲🇩",
     decimalDigits: 2,
     position: "last",
+    thousandSeparator: ",",
+    decimalSeparator: ".",
   ),
   Currency(
     code: "MGA",
@@ -691,6 +861,8 @@ final supportedCurrencies = <Currency>[
     emoji: "🇲🇬",
     decimalDigits: 2,
     position: "first",
+    thousandSeparator: ",",
+    decimalSeparator: ".",
   ),
   Currency(
     code: "MKD",
@@ -699,6 +871,8 @@ final supportedCurrencies = <Currency>[
     emoji: "🇲🇰",
     decimalDigits: 2,
     position: "last",
+    thousandSeparator: ",",
+    decimalSeparator: ".",
   ),
   Currency(
     code: "MMK",
@@ -707,6 +881,8 @@ final supportedCurrencies = <Currency>[
     emoji: "🇲🇲",
     decimalDigits: 2,
     position: "first",
+    thousandSeparator: ",",
+    decimalSeparator: ".",
   ),
   Currency(
     code: "MNT",
@@ -715,6 +891,8 @@ final supportedCurrencies = <Currency>[
     emoji: "🇲🇳",
     decimalDigits: 2,
     position: "first",
+    thousandSeparator: ",",
+    decimalSeparator: ".",
   ),
   Currency(
     code: "MOP",
@@ -723,6 +901,8 @@ final supportedCurrencies = <Currency>[
     emoji: "🇲🇴",
     decimalDigits: 2,
     position: "last",
+    thousandSeparator: ",",
+    decimalSeparator: ".",
   ),
   Currency(
     code: "MRU",
@@ -731,6 +911,8 @@ final supportedCurrencies = <Currency>[
     emoji: "🇲🇷",
     decimalDigits: 2,
     position: "last",
+    thousandSeparator: ",",
+    decimalSeparator: ".",
   ),
   Currency(
     code: "MUR",
@@ -739,6 +921,8 @@ final supportedCurrencies = <Currency>[
     emoji: "🇲🇺",
     decimalDigits: 2,
     position: "first",
+    thousandSeparator: ",",
+    decimalSeparator: ".",
   ),
   Currency(
     code: "MVR",
@@ -747,6 +931,8 @@ final supportedCurrencies = <Currency>[
     emoji: "🇲🇻",
     decimalDigits: 2,
     position: "last",
+    thousandSeparator: ",",
+    decimalSeparator: ".",
   ),
   Currency(
     code: "MWK",
@@ -755,6 +941,8 @@ final supportedCurrencies = <Currency>[
     emoji: "🇲🇼",
     decimalDigits: 2,
     position: "first",
+    thousandSeparator: ",",
+    decimalSeparator: ".",
   ),
   Currency(
     code: "MXN",
@@ -763,6 +951,8 @@ final supportedCurrencies = <Currency>[
     emoji: "🇲🇽",
     decimalDigits: 2,
     position: "first",
+    thousandSeparator: ",",
+    decimalSeparator: ".",
   ),
   Currency(
     code: "MXV",
@@ -771,6 +961,8 @@ final supportedCurrencies = <Currency>[
     emoji: "🇲🇽",
     decimalDigits: 2,
     position: "first",
+    thousandSeparator: ",",
+    decimalSeparator: ".",
   ),
   Currency(
     code: "MYR",
@@ -779,6 +971,8 @@ final supportedCurrencies = <Currency>[
     emoji: "🇲🇾",
     decimalDigits: 2,
     position: "first",
+    thousandSeparator: ",",
+    decimalSeparator: ".",
   ),
   Currency(
     code: "MZN",
@@ -787,6 +981,8 @@ final supportedCurrencies = <Currency>[
     emoji: "🇲🇿",
     decimalDigits: 2,
     position: "first",
+    thousandSeparator: ",",
+    decimalSeparator: ".",
   ),
   Currency(
     code: "NAD",
@@ -795,6 +991,8 @@ final supportedCurrencies = <Currency>[
     emoji: "🇳🇦",
     decimalDigits: 2,
     position: "first",
+    thousandSeparator: ",",
+    decimalSeparator: ".",
   ),
   Currency(
     code: "NGN",
@@ -803,6 +1001,8 @@ final supportedCurrencies = <Currency>[
     emoji: "🇳🇬",
     decimalDigits: 2,
     position: "first",
+    thousandSeparator: ",",
+    decimalSeparator: ".",
   ),
   Currency(
     code: "NIO",
@@ -811,6 +1011,8 @@ final supportedCurrencies = <Currency>[
     emoji: "🇳🇮",
     decimalDigits: 2,
     position: "first",
+    thousandSeparator: ",",
+    decimalSeparator: ".",
   ),
   Currency(
     code: "NOK",
@@ -819,6 +1021,8 @@ final supportedCurrencies = <Currency>[
     emoji: "🇳🇴",
     decimalDigits: 2,
     position: "last",
+    thousandSeparator: ",",
+    decimalSeparator: ".",
   ),
   Currency(
     code: "NPR",
@@ -827,6 +1031,8 @@ final supportedCurrencies = <Currency>[
     emoji: "🇳🇵",
     decimalDigits: 2,
     position: "first",
+    thousandSeparator: ",",
+    decimalSeparator: ".",
   ),
   Currency(
     code: "NZD",
@@ -835,6 +1041,8 @@ final supportedCurrencies = <Currency>[
     emoji: "🇳🇿",
     decimalDigits: 2,
     position: "first",
+    thousandSeparator: ",",
+    decimalSeparator: ".",
   ),
   Currency(
     code: "OMR",
@@ -843,6 +1051,8 @@ final supportedCurrencies = <Currency>[
     emoji: "🇴🇲",
     decimalDigits: 3,
     position: "first",
+    thousandSeparator: ",",
+    decimalSeparator: ".",
   ),
   Currency(
     code: "PAB",
@@ -851,6 +1061,8 @@ final supportedCurrencies = <Currency>[
     emoji: "🇵🇦",
     decimalDigits: 2,
     position: "first",
+    thousandSeparator: ",",
+    decimalSeparator: ".",
   ),
   Currency(
     code: "PEN",
@@ -859,6 +1071,8 @@ final supportedCurrencies = <Currency>[
     emoji: "🇵🇪",
     decimalDigits: 2,
     position: "first",
+    thousandSeparator: ",",
+    decimalSeparator: ".",
   ),
   Currency(
     code: "PGK",
@@ -867,6 +1081,8 @@ final supportedCurrencies = <Currency>[
     emoji: "🇵🇬",
     decimalDigits: 2,
     position: "first",
+    thousandSeparator: ",",
+    decimalSeparator: ".",
   ),
   Currency(
     code: "PHP",
@@ -875,6 +1091,8 @@ final supportedCurrencies = <Currency>[
     emoji: "🇵🇭",
     decimalDigits: 2,
     position: "first",
+    thousandSeparator: ",",
+    decimalSeparator: ".",
   ),
   Currency(
     code: "PKR",
@@ -883,6 +1101,8 @@ final supportedCurrencies = <Currency>[
     emoji: "🇵🇰",
     decimalDigits: 2,
     position: "first",
+    thousandSeparator: ",",
+    decimalSeparator: ".",
   ),
   Currency(
     code: "PLN",
@@ -891,6 +1111,8 @@ final supportedCurrencies = <Currency>[
     emoji: "🇵🇱",
     decimalDigits: 2,
     position: "last",
+    thousandSeparator: ",",
+    decimalSeparator: ".",
   ),
   Currency(
     code: "PYG",
@@ -899,6 +1121,8 @@ final supportedCurrencies = <Currency>[
     emoji: "🇵🇾",
     decimalDigits: 0,
     position: "first",
+    thousandSeparator: ".",
+    decimalSeparator: ",",
   ),
   Currency(
     code: "QAR",
@@ -907,6 +1131,8 @@ final supportedCurrencies = <Currency>[
     emoji: "🇶🇦",
     decimalDigits: 2,
     position: "first",
+    thousandSeparator: ",",
+    decimalSeparator: ".",
   ),
   Currency(
     code: "RON",
@@ -915,6 +1141,8 @@ final supportedCurrencies = <Currency>[
     emoji: "🇷🇴",
     decimalDigits: 2,
     position: "last",
+    thousandSeparator: ",",
+    decimalSeparator: ".",
   ),
   Currency(
     code: "RSD",
@@ -923,6 +1151,8 @@ final supportedCurrencies = <Currency>[
     emoji: "🇷🇸",
     decimalDigits: 2,
     position: "last",
+    thousandSeparator: ",",
+    decimalSeparator: ".",
   ),
   Currency(
     code: "RUB",
@@ -931,6 +1161,8 @@ final supportedCurrencies = <Currency>[
     emoji: "🇷🇺",
     decimalDigits: 2,
     position: "last",
+    thousandSeparator: ",",
+    decimalSeparator: ".",
   ),
   Currency(
     code: "RWF",
@@ -939,6 +1171,8 @@ final supportedCurrencies = <Currency>[
     emoji: "🇷🇼",
     decimalDigits: 0,
     position: "last",
+    thousandSeparator: ",",
+    decimalSeparator: ".",
   ),
   Currency(
     code: "SAR",
@@ -947,6 +1181,8 @@ final supportedCurrencies = <Currency>[
     emoji: "🇸🇦",
     decimalDigits: 2,
     position: "first",
+    thousandSeparator: ",",
+    decimalSeparator: ".",
   ),
   Currency(
     code: "SBD",
@@ -955,6 +1191,8 @@ final supportedCurrencies = <Currency>[
     emoji: "🇸🇧",
     decimalDigits: 2,
     position: "first",
+    thousandSeparator: ",",
+    decimalSeparator: ".",
   ),
   Currency(
     code: "SCR",
@@ -963,6 +1201,8 @@ final supportedCurrencies = <Currency>[
     emoji: "🇸🇨",
     decimalDigits: 2,
     position: "first",
+    thousandSeparator: ",",
+    decimalSeparator: ".",
   ),
   Currency(
     code: "SDG",
@@ -971,6 +1211,8 @@ final supportedCurrencies = <Currency>[
     emoji: "🇸🇩",
     decimalDigits: 2,
     position: "first",
+    thousandSeparator: ",",
+    decimalSeparator: ".",
   ),
   Currency(
     code: "SEK",
@@ -979,6 +1221,8 @@ final supportedCurrencies = <Currency>[
     emoji: "🇸🇪",
     decimalDigits: 2,
     position: "last",
+    thousandSeparator: ",",
+    decimalSeparator: ".",
   ),
   Currency(
     code: "SGD",
@@ -987,6 +1231,8 @@ final supportedCurrencies = <Currency>[
     emoji: "🇸🇬",
     decimalDigits: 2,
     position: "first",
+    thousandSeparator: ",",
+    decimalSeparator: ".",
   ),
   Currency(
     code: "SHP",
@@ -995,6 +1241,8 @@ final supportedCurrencies = <Currency>[
     emoji: "🇸🇭",
     decimalDigits: 2,
     position: "first",
+    thousandSeparator: ",",
+    decimalSeparator: ".",
   ),
   Currency(
     code: "SLE",
@@ -1003,6 +1251,8 @@ final supportedCurrencies = <Currency>[
     emoji: "🇸🇱",
     decimalDigits: 2,
     position: "first",
+    thousandSeparator: ",",
+    decimalSeparator: ".",
   ),
   Currency(
     code: "SOS",
@@ -1011,6 +1261,8 @@ final supportedCurrencies = <Currency>[
     emoji: "🇸🇴",
     decimalDigits: 2,
     position: "first",
+    thousandSeparator: ",",
+    decimalSeparator: ".",
   ),
   Currency(
     code: "SRD",
@@ -1019,6 +1271,8 @@ final supportedCurrencies = <Currency>[
     emoji: "🇸🇷",
     decimalDigits: 2,
     position: "first",
+    thousandSeparator: ",",
+    decimalSeparator: ".",
   ),
   Currency(
     code: "SSP",
@@ -1027,6 +1281,8 @@ final supportedCurrencies = <Currency>[
     emoji: "🇸🇸",
     decimalDigits: 2,
     position: "first",
+    thousandSeparator: ",",
+    decimalSeparator: ".",
   ),
   Currency(
     code: "STN",
@@ -1035,6 +1291,8 @@ final supportedCurrencies = <Currency>[
     emoji: "🇸🇹",
     decimalDigits: 2,
     position: "last",
+    thousandSeparator: ",",
+    decimalSeparator: ".",
   ),
   Currency(
     code: "SVC",
@@ -1043,6 +1301,8 @@ final supportedCurrencies = <Currency>[
     emoji: "🇸🇻",
     decimalDigits: 2,
     position: "first",
+    thousandSeparator: ",",
+    decimalSeparator: ".",
   ),
   Currency(
     code: "SYP",
@@ -1051,6 +1311,8 @@ final supportedCurrencies = <Currency>[
     emoji: "🇸🇾",
     decimalDigits: 2,
     position: "first",
+    thousandSeparator: ",",
+    decimalSeparator: ".",
   ),
   Currency(
     code: "SZL",
@@ -1059,6 +1321,8 @@ final supportedCurrencies = <Currency>[
     emoji: "🇸🇿",
     decimalDigits: 2,
     position: "first",
+    thousandSeparator: ",",
+    decimalSeparator: ".",
   ),
   Currency(
     code: "THB",
@@ -1067,6 +1331,8 @@ final supportedCurrencies = <Currency>[
     emoji: "🇹🇭",
     decimalDigits: 2,
     position: "first",
+    thousandSeparator: ",",
+    decimalSeparator: ".",
   ),
   Currency(
     code: "TJS",
@@ -1075,6 +1341,8 @@ final supportedCurrencies = <Currency>[
     emoji: "🇹🇯",
     decimalDigits: 2,
     position: "last",
+    thousandSeparator: ",",
+    decimalSeparator: ".",
   ),
   Currency(
     code: "TMT",
@@ -1083,6 +1351,8 @@ final supportedCurrencies = <Currency>[
     emoji: "🇹🇲",
     decimalDigits: 2,
     position: "last",
+    thousandSeparator: ",",
+    decimalSeparator: ".",
   ),
   Currency(
     code: "TND",
@@ -1091,6 +1361,8 @@ final supportedCurrencies = <Currency>[
     emoji: "🇹🇳",
     decimalDigits: 3,
     position: "first",
+    thousandSeparator: ",",
+    decimalSeparator: ".",
   ),
   Currency(
     code: "TOP",
@@ -1099,6 +1371,8 @@ final supportedCurrencies = <Currency>[
     emoji: "🇹🇴",
     decimalDigits: 2,
     position: "first",
+    thousandSeparator: ",",
+    decimalSeparator: ".",
   ),
   Currency(
     code: "TRY",
@@ -1107,6 +1381,8 @@ final supportedCurrencies = <Currency>[
     emoji: "🇹🇷",
     decimalDigits: 2,
     position: "first",
+    thousandSeparator: ",",
+    decimalSeparator: ".",
   ),
   Currency(
     code: "TTD",
@@ -1115,6 +1391,8 @@ final supportedCurrencies = <Currency>[
     emoji: "🇹🇹",
     decimalDigits: 2,
     position: "first",
+    thousandSeparator: ",",
+    decimalSeparator: ".",
   ),
   Currency(
     code: "TWD",
@@ -1123,6 +1401,8 @@ final supportedCurrencies = <Currency>[
     emoji: "🇹🇼",
     decimalDigits: 0,
     position: "first",
+    thousandSeparator: ",",
+    decimalSeparator: ".",
   ),
   Currency(
     code: "TZS",
@@ -1131,6 +1411,8 @@ final supportedCurrencies = <Currency>[
     emoji: "🇹🇿",
     decimalDigits: 2,
     position: "first",
+    thousandSeparator: ",",
+    decimalSeparator: ".",
   ),
   Currency(
     code: "UAH",
@@ -1139,6 +1421,8 @@ final supportedCurrencies = <Currency>[
     emoji: "🇺🇦",
     decimalDigits: 2,
     position: "last",
+    thousandSeparator: ",",
+    decimalSeparator: ".",
   ),
   Currency(
     code: "UGX",
@@ -1147,6 +1431,8 @@ final supportedCurrencies = <Currency>[
     emoji: "🇺🇬",
     decimalDigits: 0,
     position: "first",
+    thousandSeparator: ",",
+    decimalSeparator: ".",
   ),
   Currency(
     code: "USD",
@@ -1155,6 +1441,8 @@ final supportedCurrencies = <Currency>[
     emoji: "🇺🇸",
     decimalDigits: 2,
     position: "first",
+    thousandSeparator: ",",
+    decimalSeparator: ".",
   ),
   Currency(
     code: "USN",
@@ -1163,6 +1451,8 @@ final supportedCurrencies = <Currency>[
     emoji: "🇺🇸",
     decimalDigits: 2,
     position: "first",
+    thousandSeparator: ",",
+    decimalSeparator: ".",
   ),
   Currency(
     code: "UYI",
@@ -1171,6 +1461,8 @@ final supportedCurrencies = <Currency>[
     emoji: "🇺🇾",
     decimalDigits: 0,
     position: "first",
+    thousandSeparator: ",",
+    decimalSeparator: ".",
   ),
   Currency(
     code: "UYU",
@@ -1179,6 +1471,8 @@ final supportedCurrencies = <Currency>[
     emoji: "🇺🇾",
     decimalDigits: 2,
     position: "first",
+    thousandSeparator: ".",
+    decimalSeparator: ",",
   ),
   Currency(
     code: "UYW",
@@ -1187,14 +1481,18 @@ final supportedCurrencies = <Currency>[
     emoji: "🇺🇾",
     decimalDigits: 4,
     position: "first",
+    thousandSeparator: ",",
+    decimalSeparator: ".",
   ),
   Currency(
     code: "UZS",
     name: "Uzbekistani soʻm",
-    symbol: "лв",
+    symbol: "so'm",
     emoji: "🇺🇿",
     decimalDigits: 2,
     position: "last",
+    thousandSeparator: ",",
+    decimalSeparator: ".",
   ),
   Currency(
     code: "VES",
@@ -1203,6 +1501,8 @@ final supportedCurrencies = <Currency>[
     emoji: "🇻🇪",
     decimalDigits: 2,
     position: "first",
+    thousandSeparator: ".",
+    decimalSeparator: ",",
   ),
   Currency(
     code: "VND",
@@ -1211,6 +1511,8 @@ final supportedCurrencies = <Currency>[
     emoji: "🇻🇳",
     decimalDigits: 0,
     position: "last",
+    thousandSeparator: ",",
+    decimalSeparator: ".",
   ),
   Currency(
     code: "VUV",
@@ -1219,6 +1521,8 @@ final supportedCurrencies = <Currency>[
     emoji: "🇻🇺",
     decimalDigits: 0,
     position: "first",
+    thousandSeparator: ",",
+    decimalSeparator: ".",
   ),
   Currency(
     code: "WST",
@@ -1227,6 +1531,8 @@ final supportedCurrencies = <Currency>[
     emoji: "🇼🇸",
     decimalDigits: 2,
     position: "first",
+    thousandSeparator: ",",
+    decimalSeparator: ".",
   ),
   Currency(
     code: "XAF",
@@ -1235,6 +1541,8 @@ final supportedCurrencies = <Currency>[
     emoji: "🇨🇲",
     decimalDigits: 0,
     position: "first",
+    thousandSeparator: ",",
+    decimalSeparator: ".",
   ),
   Currency(
     code: "XAG",
@@ -1243,6 +1551,8 @@ final supportedCurrencies = <Currency>[
     emoji: "🪙",
     decimalDigits: 0,
     position: "first",
+    thousandSeparator: ",",
+    decimalSeparator: ".",
   ),
   Currency(
     code: "XAU",
@@ -1251,6 +1561,8 @@ final supportedCurrencies = <Currency>[
     emoji: "🪙",
     decimalDigits: 0,
     position: "first",
+    thousandSeparator: ",",
+    decimalSeparator: ".",
   ),
   Currency(
     code: "XBA",
@@ -1259,6 +1571,8 @@ final supportedCurrencies = <Currency>[
     emoji: "🇪🇺",
     decimalDigits: 0,
     position: "first",
+    thousandSeparator: ",",
+    decimalSeparator: ".",
   ),
   Currency(
     code: "XBB",
@@ -1267,6 +1581,8 @@ final supportedCurrencies = <Currency>[
     emoji: "🇪🇺",
     decimalDigits: 0,
     position: "first",
+    thousandSeparator: ",",
+    decimalSeparator: ".",
   ),
   Currency(
     code: "XBC",
@@ -1275,6 +1591,8 @@ final supportedCurrencies = <Currency>[
     emoji: "🇪🇺",
     decimalDigits: 0,
     position: "first",
+    thousandSeparator: ",",
+    decimalSeparator: ".",
   ),
   Currency(
     code: "XBD",
@@ -1283,6 +1601,8 @@ final supportedCurrencies = <Currency>[
     emoji: "🇪🇺",
     decimalDigits: 0,
     position: "first",
+    thousandSeparator: ",",
+    decimalSeparator: ".",
   ),
   Currency(
     code: "XCD",
@@ -1291,6 +1611,8 @@ final supportedCurrencies = <Currency>[
     emoji: "🇰🇳",
     decimalDigits: 2,
     position: "first",
+    thousandSeparator: ",",
+    decimalSeparator: ".",
   ),
   Currency(
     code: "XDR",
@@ -1299,6 +1621,8 @@ final supportedCurrencies = <Currency>[
     emoji: "🏦",
     decimalDigits: 0,
     position: "first",
+    thousandSeparator: ",",
+    decimalSeparator: ".",
   ),
   Currency(
     code: "XOF",
@@ -1307,6 +1631,8 @@ final supportedCurrencies = <Currency>[
     emoji: "🇨🇮",
     decimalDigits: 0,
     position: "first",
+    thousandSeparator: ",",
+    decimalSeparator: ".",
   ),
   Currency(
     code: "XPD",
@@ -1315,6 +1641,8 @@ final supportedCurrencies = <Currency>[
     emoji: "🪙",
     decimalDigits: 0,
     position: "first",
+    thousandSeparator: ",",
+    decimalSeparator: ".",
   ),
   Currency(
     code: "XPF",
@@ -1323,6 +1651,8 @@ final supportedCurrencies = <Currency>[
     emoji: "🇵🇫",
     decimalDigits: 0,
     position: "last",
+    thousandSeparator: ",",
+    decimalSeparator: ".",
   ),
   Currency(
     code: "XPT",
@@ -1331,6 +1661,8 @@ final supportedCurrencies = <Currency>[
     emoji: "🪙",
     decimalDigits: 0,
     position: "first",
+    thousandSeparator: ",",
+    decimalSeparator: ".",
   ),
   Currency(
     code: "XSU",
@@ -1339,6 +1671,8 @@ final supportedCurrencies = <Currency>[
     emoji: "🇪🇨",
     decimalDigits: 0,
     position: "first",
+    thousandSeparator: ",",
+    decimalSeparator: ".",
   ),
   Currency(
     code: "XTS",
@@ -1347,6 +1681,8 @@ final supportedCurrencies = <Currency>[
     emoji: "❓",
     decimalDigits: 0,
     position: "first",
+    thousandSeparator: ",",
+    decimalSeparator: ".",
   ),
   Currency(
     code: "XUA",
@@ -1355,6 +1691,8 @@ final supportedCurrencies = <Currency>[
     emoji: "🏦",
     decimalDigits: 0,
     position: "first",
+    thousandSeparator: ",",
+    decimalSeparator: ".",
   ),
   Currency(
     code: "YER",
@@ -1363,6 +1701,8 @@ final supportedCurrencies = <Currency>[
     emoji: "🇾🇪",
     decimalDigits: 2,
     position: "first",
+    thousandSeparator: ",",
+    decimalSeparator: ".",
   ),
   Currency(
     code: "ZAR",
@@ -1371,6 +1711,8 @@ final supportedCurrencies = <Currency>[
     emoji: "🇿🇦",
     decimalDigits: 2,
     position: "first",
+    thousandSeparator: ",",
+    decimalSeparator: ".",
   ),
   Currency(
     code: "ZMW",
@@ -1379,6 +1721,8 @@ final supportedCurrencies = <Currency>[
     emoji: "🇿🇲",
     decimalDigits: 2,
     position: "first",
+    thousandSeparator: ",",
+    decimalSeparator: ".",
   ),
   Currency(
     code: "ZWL",
@@ -1387,5 +1731,7 @@ final supportedCurrencies = <Currency>[
     emoji: "🇿🇼",
     decimalDigits: 2,
     position: "first",
+    thousandSeparator: ",",
+    decimalSeparator: ".",
   ),
 ];
