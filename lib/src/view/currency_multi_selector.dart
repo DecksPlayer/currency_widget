@@ -76,7 +76,7 @@ class _CurrencyMultiSelectorState extends State<CurrencyMultiSelector> {
               message: currencyFilterTooltip(widget.lang, _showOnlyCommon),
               child: IconButton(
                 icon: Icon(
-                  _showOnlyCommon ? Icons.star : Icons.public,
+                  _showOnlyCommon ? Icons.favorite : Icons.public,
                   size: 22,
                 ),
                 onPressed: () {

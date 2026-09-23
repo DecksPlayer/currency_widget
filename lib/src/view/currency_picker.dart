@@ -8,7 +8,8 @@ import 'package:flutter/material.dart';
 class CurrencyPicker extends StatefulWidget {
   final CurrencyController currencyController;
   final String? defaultCurrencyCode;
-  const CurrencyPicker({super.key, required this.currencyController, this.defaultCurrencyCode});
+  const CurrencyPicker(
+      {super.key, required this.currencyController, this.defaultCurrencyCode});
 
   @override
   State<CurrencyPicker> createState() => _CurrencyPicker();
@@ -43,7 +44,6 @@ class _CurrencyPicker extends State<CurrencyPicker> {
               mount, widget.currencyController.currency)
           : '',
     );
-
   }
 
   void _updateCurrencyList() {
@@ -65,7 +65,7 @@ class _CurrencyPicker extends State<CurrencyPicker> {
                   message: _getTooltipText(),
                   child: IconButton(
                     icon: Icon(
-                      _showOnlyCommon ? Icons.star : Icons.public,
+                      _showOnlyCommon ? Icons.favorite : Icons.public,
                       size: 22,
                     ),
                     onPressed: () {
@@ -166,6 +166,7 @@ class _CurrencyPicker extends State<CurrencyPicker> {
   }
 
   String _getTooltipText() {
-    return currencyFilterTooltip(widget.currencyController.lang, _showOnlyCommon);
+    return currencyFilterTooltip(
+        widget.currencyController.lang, _showOnlyCommon);
   }
 }

@@ -99,3 +99,9 @@
 
 # 1.0.14
 * Fix Currency Decimal Format.
+
+# 1.0.15
+* Update Currency Filter Icon Button.
+
+# 1.0.16
+* Add `CustomCurrencyDropdown` widget to show favorite currencies in a dropdown.

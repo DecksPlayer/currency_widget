@@ -50,7 +50,31 @@ Similar to `CurrencyChooser` (no amount input), but displays the options as sele
 ### `CurrencyMultiSelector`
 A widget that allows the user to select multiple currencies at once. It displays currencies as actionable chips (`FilterChip`) in a responsive `Wrap` layout, including a toggle button to switch between favorite and all currencies.
 
+### `CustomCurrencyDropdown`
+A lightweight widget to **select a currency from a list of favorite currencies using a dropdown**. It defaults to the package's most-used currencies when no list is provided, but you can pass your own `favoriteCurrencyCodes` (e.g., `['USD', 'EUR', 'ARS']`) to restrict the options shown.
 
+## Supported Languages
+
+The package supports localization for currency names and UI tooltips across **14 languages**. You can pass any of these language codes to `CurrencyController(lang: ...)` or widgets that accept `lang`:
+
+| Code | Language | Native Name |
+|:----:|----------|-------------|
+| `en` | English *(default)* | English |
+| `es` | Spanish | Español |
+| `pt` | Portuguese | Português |
+| `fr` | French | Français |
+| `de` | German | Deutsch |
+| `it` | Italian | Italiano |
+| `ru` | Russian | Русский |
+| `zh` | Chinese | 中文 |
+| `ja` | Japanese | 日本語 |
+| `ko` | Korean | 한국어 |
+| `ar` | Arabic | العربية |
+| `hi` | Hindi | हिन्दी |
+| `id` | Indonesian | Bahasa Indonesia |
+| `ur` | Urdu | اردو |
+
+> **Note:** If an unsupported language code is provided, the package automatically defaults to English (`en`).
 
 ## Properties per Widget
 
@@ -65,6 +89,7 @@ A widget that allows the user to select multiple currencies at once. It displays
 | `CustomCurrencyPicker`| `currencyController`: (required) Manages currency state.<br>`currencyCodes`: (required) List of currency codes to allow.<br>`defaultCurrencyCode`: (optional) Initial currency to select. |
 | `CustomCurrencyChooser`| `currencyController`: (required) Manages currency state.<br>`currencyCodes`: (required) List of currency codes to allow.<br>`defaultCurrencyCode`: (optional) Initial currency to select. |
 | `CurrencyMultiSelector`| `onChanged`: (required) Callback fired when selection changes.<br>`initialSelected`: List of initially selected currencies.<br>`showOnlyCommon`: Toggle between common or all currencies.<br> |
+| `CustomCurrencyDropdown`| `currencyController`: (required) Manages currency state.<br>`favoriteCurrencyCodes`: List of favorite currency codes to show (defaults to the package's most-used currencies).<br>`defaultCurrencyCode`: (optional) Initial currency to select. |
 
 **Note**: All widgets also accept standard Flutter widget properties like `key`, `padding`, `margin`, etc.
 
@@ -187,6 +212,13 @@ class _MyCurrencyScreenState extends State<MyCurrencyScreen> {
               currencyController: _controller,
               currencyCodes: ['USD', 'GBP', 'JPY'],
               defaultCurrencyCode: 'GBP',
+            ),
+            SizedBox(height: 20),
+            // CustomCurrencyDropdown: pick a favorite currency from a dropdown
+            CustomCurrencyDropdown(
+              currencyController: _controller,
+              favoriteCurrencyCodes: ['USD', 'EUR', 'ARS'],
+              defaultCurrencyCode: 'USD',
             ),
           ],
         ),

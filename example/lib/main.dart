@@ -51,6 +51,9 @@ class _MyHomePageState extends State<MyHomePage> {
   final CurrencyController customCurrencyController = CurrencyController(
     lang: 'es',
   );
+  final CurrencyController favoriteDropdownController = CurrencyController(
+    lang: 'es',
+  );
   List<Currency> _selectedCurrencies = [];
   List<String> get _selectedCurrencyCodes =>
       _selectedCurrencies.map((c) => c.code).toList();
@@ -183,6 +186,24 @@ class _MyHomePageState extends State<MyHomePage> {
                   child: Text('Selecciona al menos una moneda arriba'),
                 ),
               ],
+              const Divider(),
+              const Text(
+                'CustomCurrencyDropdown (monedas favoritas)',
+                style: TextStyle(fontWeight: FontWeight.bold),
+              ),
+              CustomCurrencyDropdown(
+                currencyController: favoriteDropdownController,
+                favoriteCurrencyCodes: const ['USD', 'EUR', 'ARS'],
+                defaultCurrencyCode: 'USD',
+              ),
+              ListenableBuilder(
+                listenable: favoriteDropdownController.currencyNotifier,
+                builder: (context, child) {
+                  return Text(
+                    'Favorita seleccionada: ${favoriteDropdownController.currency.getDefaultView()}',
+                  );
+                },
+              ),
               const SizedBox(height: 40),
             ],
           ),

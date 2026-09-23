@@ -49,7 +49,9 @@ class _CurrencyChooserState extends State<CurrencyChooser> {
               message: _getTooltipText(),
               child: IconButton(
                 icon: Icon(
-                  _showOnlyCommon ? Icons.star : Icons.public,
+                  _showOnlyCommon
+                      ? Icons.currency_exchange_rounded
+                      : Icons.currency_exchange,
                   size: 22,
                 ),
                 onPressed: () {
@@ -91,6 +93,7 @@ class _CurrencyChooserState extends State<CurrencyChooser> {
   }
 
   String _getTooltipText() {
-    return currencyFilterTooltip(widget.currencyController.lang, _showOnlyCommon);
+    return currencyFilterTooltip(
+        widget.currencyController.lang, _showOnlyCommon);
   }
 }
